@@ -96,7 +96,7 @@ echo "Executable is running in cgroup $CGROUP_NAME under controller $CONTROLLER 
 
 # Wait for the executable to finish
 wait $PID
-
+wait $DW_PID
 # Kill the tracing processes after the executable ends
 # sudo kill $DW_PID
 # sudo kill $TURBOSTAT_PID

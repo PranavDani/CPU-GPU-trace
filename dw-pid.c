@@ -278,6 +278,56 @@ long long get_energy() {
     return atoll(energy_buffer);
 }
 
+long get_process_time(pid_t pid) {
+    char path[256];
+    FILE* fp;
+    char line[1024];
+    long utime = 0, stime = 0;
+
+    snprintf(path, sizeof(path), "/proc/%d/stat", pid);
+    if ((fp = fopen(path, "r")) == NULL) return -1;
+
+    if (fgets(line, sizeof(line), fp) == NULL) {
+        fclose(fp);
+        return -1;
+    }
+    fclose(fp);
+
+    char* start = strchr(line, '(');
+    char* end = strrchr(line, ')');
+    if (!start || !end) return -1;
+
+    // Start parsing after the command field.
+    char* p = end + 1;
+    int field = 2; // Already past pid and comm
+    while (*p && field < 14) {
+        if (*p == ' ') {
+            field++;
+            while (*++p == ' ');
+        }
+        else
+            p++;
+    }
+    sscanf(p, "%ld %ld", &utime, &stime);
+    return utime + stime;
+}
+
+long get_total_cpu_time() {
+    FILE* fp;
+    char line[1024];
+    long user, nice, system, idle, iowait, irq, softirq;
+
+    if ((fp = fopen("/proc/stat", "r")) == NULL) return -1;
+    fgets(line, sizeof(line), fp);
+    fclose(fp);
+
+    if (sscanf(line, "cpu  %ld %ld %ld %ld %ld %ld %ld",
+        &user, &nice, &system, &idle, &iowait, &irq, &softirq) != 7)
+        return -1;
+
+    return user + nice + system + irq + softirq;
+}
+
 int main(int argc, char** argv) {
     unsigned int samp_freq = 1000;
     unsigned int report_sleep = 1000000;
@@ -333,13 +383,21 @@ int main(int argc, char** argv) {
     struct timespec start;
     clock_gettime(CLOCK_MONOTONIC, &start);
 
-    printf("timestamp, callchains, power\n");
+    printf("timestamp, callchains, power, resource_usage\n");
 
     long long prevEnergy = get_energy();
 
     // Initialize a separate timer for power interval calculation.
     struct timespec prev_time = start;
     struct timespec now;
+
+    // Initialize CPU usage measurement variables.
+    long prev_process_time = get_process_time(pid);
+    long prev_total_time = get_total_cpu_time();
+    if (prev_process_time == -1 || prev_total_time == -1) {
+        fprintf(stderr, "Error reading initial CPU time values\n");
+        exit(EXIT_FAILURE);
+    }
 
     // Continuously read samples and print callchains and power in CSV format.
     while (1) {
@@ -355,33 +413,49 @@ int main(int argc, char** argv) {
         // Overall elapsed time from program start.
         clock_gettime(CLOCK_MONOTONIC, &now);
         double overall_elapsed = (now.tv_sec - start.tv_sec) + (now.tv_nsec - start.tv_nsec) / 1e9;
-
-        // Read current energy value.
         long long currentEnergy = get_energy();
-
-        // Calculate the energy consumed in this interval.
         long long deltaEnergy = currentEnergy - prevEnergy;
         prevEnergy = currentEnergy;
 
-        // Calculate the duration of the interval.
         double interval_seconds = (now.tv_sec - prev_time.tv_sec) + (now.tv_nsec - prev_time.tv_nsec) / 1e9;
         prev_time = now;
 
-        // Calculate power: energy (in joules) divided by time (in seconds).
-        // Convert microjoules to joules by dividing by 1e6.
         double power = (deltaEnergy / 1e6) / interval_seconds;
+
+        // CPU usage measurement
+        long curr_process_time = get_process_time(pid);
+        long curr_total_time = get_total_cpu_time();
+        double usage = 0.0;
+        if (curr_process_time == -1 || curr_total_time == -1) {
+            fprintf(stderr, "Error reading CPU time values\n");
+        }
+        else {
+            long delta_process = curr_process_time - prev_process_time;
+            long delta_total = curr_total_time - prev_total_time;
+            if (delta_total > 0)
+                usage = 100.0 * delta_process / delta_total;
+            else
+                fprintf(stderr, "No CPU time elapsed\n");
+
+            prev_process_time = curr_process_time;
+            prev_total_time = curr_total_time;
+        }
 
         char* callchains = get_callchains(buffer_info, dwfl);
         if (callchains)
-            printf("%.6lf, %s, %.6f\n", overall_elapsed, callchains, power);
+            printf("%.6lf, %s, %.6f, %.2f\n", overall_elapsed, callchains, power, usage);
         else
-            printf("%.6lf, , %.6f\n", overall_elapsed, power);
+            printf("%.6lf, , %.6f, %.2f\n", overall_elapsed, power, usage);
 
         free(callchains);
     }
 
+    // Clean up
+    ioctl(fd, PERF_EVENT_IOC_DISABLE, 0);
+    munmap(buffer, 2 * PAGE_SIZE);
+    close(fd);
     dwfl_end(dwfl);
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 // For reading standard metrics (reported from fd)
