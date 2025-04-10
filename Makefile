@@ -2,13 +2,13 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 LDFLAGS = -ldw -lelf
 
-dw-pid.exe: dw-pid.c
-	$(CC) $(CFLAGS) -o dw-pid.exe dw-pid.c $(LDFLAGS)
+dw-pid: dw-pid.c
+	$(CC) $(CFLAGS) -o dw-pid dw-pid.c $(LDFLAGS)
 
-dw.exe: dw.c
-	$(CC) $(CFLAGS) -o dw.exe dw.c $(LDFLAGS)
+dw: dw.c
+	$(CC) $(CFLAGS) -o dw dw.c $(LDFLAGS)
 
 clean:
-	rm -f dw.exe
+	rm -f dw
 
 .PHONY: clean

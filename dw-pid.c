@@ -11,6 +11,9 @@
 #include <elfutils/libdwfl.h>
 #include <elfutils/libdw.h>
 #include <libelf.h>
+#include <sys/time.h>
+#include <time.h>
+#include <signal.h> // Needed for kill()
 #include <assert.h>
 
 #define PAGE_SIZE 4096
@@ -253,9 +256,26 @@ char* get_callchains(struct perf_event_mmap_page* buffer, Dwfl* dwfl)
         buffer->data_tail += header.size;
     }
 
-    // __sync_synchronize();
-
+    __sync_synchronize();
     return strfreewrap(callchains);
+}
+
+// Open energy file and read the initial energy value
+// New helper function to read current energy in microjoules.
+long long get_energy() {
+    FILE* fp;
+    char energy_buffer[256];
+    fp = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj", "r");
+    if (fp == NULL) {
+        perror("fopen");
+        exit(EXIT_FAILURE);
+    }
+    if (!fgets(energy_buffer, sizeof(energy_buffer), fp)) {
+        perror("fgets");
+        exit(EXIT_FAILURE);
+    }
+    fclose(fp);
+    return atoll(energy_buffer);
 }
 
 int main(int argc, char** argv) {
@@ -310,18 +330,58 @@ int main(int argc, char** argv) {
 
     // Init dwfl
     Dwfl* dwfl = init_dwfl(pid);
+    struct timespec start;
+    clock_gettime(CLOCK_MONOTONIC, &start);
 
-    // Continuously read samples and print using print_sample()
+    printf("timestamp, callchains, power\n");
+
+    long long prevEnergy = get_energy();
+
+    // Initialize a separate timer for power interval calculation.
+    struct timespec prev_time = start;
+    struct timespec now;
+
+    // Continuously read samples and print callchains and power in CSV format.
     while (1) {
-        print_mmap_page(buffer_info);
+        usleep(report_sleep);
+        // Check if the process still exists.
+        if (kill(pid, 0) == -1) {
+            if (errno == ESRCH) {
+                fprintf(stderr, "Process %d has exited. Exiting program.\n", pid);
+                break;
+            }
+        }
+
+        // Overall elapsed time from program start.
+        clock_gettime(CLOCK_MONOTONIC, &now);
+        double overall_elapsed = (now.tv_sec - start.tv_sec) + (now.tv_nsec - start.tv_nsec) / 1e9;
+
+        // Read current energy value.
+        long long currentEnergy = get_energy();
+
+        // Calculate the energy consumed in this interval.
+        long long deltaEnergy = currentEnergy - prevEnergy;
+        prevEnergy = currentEnergy;
+
+        // Calculate the duration of the interval.
+        double interval_seconds = (now.tv_sec - prev_time.tv_sec) + (now.tv_nsec - prev_time.tv_nsec) / 1e9;
+        prev_time = now;
+
+        // Calculate power: energy (in joules) divided by time (in seconds).
+        // Convert microjoules to joules by dividing by 1e6.
+        double power = (deltaEnergy / 1e6) / interval_seconds;
+
         char* callchains = get_callchains(buffer_info, dwfl);
         if (callchains)
-            fprintf(stdout, "%s\n", callchains);
+            printf("%.6lf, %s, %.6f\n", overall_elapsed, callchains, power);
+        else
+            printf("%.6lf, , %.6f\n", overall_elapsed, power);
+
         free(callchains);
-        usleep(report_sleep);
     }
 
     dwfl_end(dwfl);
+    return 0;
 }
 
 // For reading standard metrics (reported from fd)
