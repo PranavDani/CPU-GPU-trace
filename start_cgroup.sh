@@ -45,7 +45,7 @@ run_executable() {
 
 # Function to start tracing using dw-pid and turbostat
 start_tracing() {
-    sudo ./dw-pid $PID > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_trace.csv" & DW_PID=$!
+    sudo ./CPU_Trace/dw-pid $PID > "./Result/${CGROUP_NAME}/${CGROUP_NAME}.csv" & DW_PID=$!
     echo "Tracing executable PID $PID with dw-pid..."
     # sudo turbostat --Summary --quiet --show Time_Of_Day_Seconds,CorWatt --interval 0.1 > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_RAPL.csv" & TURBOSTAT_PID=$!
 }
@@ -58,7 +58,7 @@ cleanup() {
 
 # Main execution flow
 
-make dw-pid
+( cd ./CPU_Trace && make dw-pid )
 
 # Check if sufficient arguments are provided
 if [ $# -lt 1 ]; then
@@ -100,3 +100,20 @@ wait $DW_PID
 # Kill the tracing processes after the executable ends
 # sudo kill $DW_PID
 # sudo kill $TURBOSTAT_PID
+
+# Function to process results and generate reports
+process_results() {
+    # Execute collapse_report.py on the generated csv
+    ./collapse_report.py -e 6 "./Result/${CGROUP_NAME}/${CGROUP_NAME}.csv"
+    
+    # Echo before running flamegraph.pl for energy flame graph
+    echo "Running flamegraph.pl for Energy Flame Graph..."
+    ./flamegraph.pl --title "Energy Flame Graph" --countname "microwatts" "./Result/${CGROUP_NAME}/${CGROUP_NAME}_energy.collapsed" > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_energy.svg"
+    
+    # Echo before running flamegraph.pl for CPU flame graph
+    echo "Running flamegraph.pl for CPU Flame Graph..."
+    ./flamegraph.pl --title "CPU Flame Graph" --countname "samples" "./Result/${CGROUP_NAME}/${CGROUP_NAME}_cpu.collapsed" > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_cpu.svg"
+}
+
+# Run the function to process results after tracing is complete
+process_results

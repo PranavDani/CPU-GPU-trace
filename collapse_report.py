@@ -3,11 +3,10 @@
 import os
 import argparse
 import configparser
-from pymongo import MongoClient
+import csv
 from collections import defaultdict
 import matplotlib.pyplot as plt
 from datetime import datetime
-import csv
 
 def arg_file(arg):
     """Validate that the argument is a valid file."""
@@ -16,81 +15,104 @@ def arg_file(arg):
     raise argparse.ArgumentTypeError(f"Not a valid file: '{arg}'.")
 
 def parse_args():
-    """Parse command-line arguments."""
+    """Parse command-line arguments.
+    
+    Now the user supplies a CSV file containing:
+      Column1: elapsed timestamp (seconds)
+      Column2: callchain records
+      Column3: total power consumption
+      Column4: percentage resource utilization
+    """
     parser = argparse.ArgumentParser(
-        description='Collapse power consumption db into performance collapse report.'
+        description='Collapse CSV power consumption data into a performance collapse report.'
     )
-    parser.add_argument('target', type=str, help='The target container.')
-    parser.add_argument('-e', '--scinot', type=int, default=0, help='Multiply power by 10^scinot for scientific notation.')
-    parser.add_argument(
-        '-c', '--config', type=arg_file,
-        default=os.path.dirname(os.path.realpath(__file__)) + '/collapse_report.ini',
-        help='Path to config file'
-    )
+    parser.add_argument('input_csv', type=arg_file,
+                        help='Path to input CSV file with raw data.')
+    parser.add_argument('-e', '--scinot', type=int, default=0,
+                        help='Multiply power by 10^scinot for scientific notation.')
     return parser.parse_args()
 
-def load_config(config_file):
-    """Load configuration from the provided config file."""
-    config = configparser.ConfigParser()
-    config.read(config_file)
-    return config['DEFAULT']
-
-def init_db(conf):
-    """Initialize the MongoDB connection and get the collection."""
-    client = MongoClient(conf['uri'])
-    db = client[conf['db']]
-    collection = db[conf['collection']]
-    return collection
+def read_csv_records(csv_path):
+    """
+    Read CSV file and transform rows into a list of records.
+    Each record is a dictionary with keys:
+      'timestamp'      -> elapsed time (string)
+      'metadata'       -> dict containing 'callchain'
+      'total_power'    -> total power consumption (string)
+      'resource_util'  -> percentage resource utilization (string)
+    Assumes the CSV file has a header row.
+    """
+    records = []
+    with open(csv_path, newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        header = next(reader)  # Skip header row
+        for row in reader:
+            if len(row) < 4:
+                continue  # skip malformed rows
+            r = {
+                'timestamp': row[0],
+                'metadata': {'callchain': row[1]},
+                'total_power': row[2],
+                'resource_util': row[3]
+            }
+            records.append(r)
+    return records
 
 def process_records(records, scinot):
     """
-    Process database records to extract timestamps, power consumption,
-    and aggregate callchain data.
+    Process CSV records to extract timestamps, power consumption,
+    effective (actual) power consumption, and aggregate callchain data.
+    
+    For each record:
+      - Total power is from column3.
+      - Effective power = (resource_util / 100) * total power.
     """
-    # Convert records cursor to list to allow indexing
-    records_list = list(records)
-    if not records_list:
-        raise ValueError("No records found for the given target.")
+    if not records:
+        raise ValueError("No records found in CSV file.")
 
-    # Get the timestamp of the first record for relative time calculation
-    first_timestamp = datetime.fromisoformat(
-        str(records_list[0]['timestamp']).replace("Z", "+00:00")
-    )
-
+    # The elapsed timestamp is already in seconds.
+    first_timestamp = float(records[0]['timestamp'])
     timestamps = []
-    power_consumption = []
+    total_power_series = []
+    effective_power_series = []
     callchain_power = defaultdict(float)
     callchain_num = defaultdict(int)
 
-    for record in records_list:
-        # Normalize timestamp and calculate time (in seconds) from first record
-        timestamp_str = str(record['timestamp'])
-        timestamp = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
-        timestamps.append((timestamp - first_timestamp).total_seconds())
-        power_consumption.append(record['power'])
+    for record in records:
+        # Use elapsed time directly
+        current_time = float(record['timestamp'])
+        timestamps.append(current_time - first_timestamp)
+        
+        total_power = float(record['total_power'])
+        total_power_series.append(total_power)
+        
+        resource_util = float(record['resource_util'])
+        effective_power = (resource_util / 100.0) * total_power
+        effective_power_series.append(effective_power)
         
         # Process callchains: split and ignore the last empty element
-        callchains = record['metadata']['callchain'].split('|')[0:-1]
+        callchain_str = record['metadata']['callchain']
+        callchains = callchain_str.split('|')[0:-1]
         if len(callchains) == 0:
             continue
-        # Distribute power equally among callchains
-        ppc = record['power'] / len(callchains)
+        # Distribute effective power equally among callchains
+        ppc = effective_power / len(callchains)
         for callchain in callchains:
             # Reverse the callchain order after splitting by ';'
             processed_chain = ';'.join(callchain.split(';')[:-1][::-1])
             callchain_power[processed_chain] += ppc
             callchain_num[processed_chain] += 1
 
-    # Apply scientific notation multiplier
+    # Apply scientific notation multiplier to callchain power values
     for key in callchain_power:
         callchain_power[key] *= (10 ** scinot)
         
-    return timestamps, power_consumption, callchain_power, callchain_num
+    return timestamps, total_power_series, effective_power_series, callchain_power, callchain_num
 
 def write_collapsed_files(target, directory, callchain_power, callchain_num):
     """
     Write collapsed energy and CPU data to files.
-    Format:
+    Format for each file:
       target;callchain value
     """
     # Write energy data
@@ -107,53 +129,28 @@ def write_collapsed_files(target, directory, callchain_power, callchain_num):
         for callchain, num in callchain_num.items():
             file.write(f'{target};{callchain} {num}\n')
 
-def plot_power_consumption(timestamps, power_consumption, directory, target):
-    """Plot power consumption over time and save to an SVG file."""
+def plot_power_consumption(timestamps, total_power_series, directory, target):
+    """Plot total power consumption over time and save to an SVG file."""
     plt.figure(figsize=(12, 6))
-    plt.plot(timestamps, power_consumption)
+    plt.plot(timestamps, total_power_series)
     plt.xlabel('Timestamp (seconds)')
-    plt.ylabel('Power Consumption (watts)')
-    plt.title('Power Consumption over Time')
+    plt.ylabel('Total Power Consumption (watts)')
+    plt.title('Total Power Consumption over Time')
     filename = f'{target}_power_consumption.svg'
     filepath = os.path.join(directory, filename)
     plt.savefig(filepath)
     plt.close()
 
-def process_and_plot_rapl(target, directory):
+def plot_effective_power(timestamps, effective_power_series, directory, target):
     """
-    Read the RAPL CSV file, process the data, and create a plot.
-    Expects the CSV file to be in the same directory with name '{target}_RAPL.csv'
+    Plot effective power consumption (actual power from resource utilization)
+    over time and save to an SVG file.
     """
-    filename_csv = f'{target}_RAPL.csv'
-    file_path_csv = os.path.join(directory, filename_csv)
-    rapl_data = []
-
-    with open(file_path_csv, 'r') as csvfile:
-        csvreader = csv.reader(csvfile)
-        header = next(csvreader)  # Skip header row
-        # Grab first row data for reference
-        first_row = next(csvreader)
-        first_timestamp_rapl = datetime.fromtimestamp(float(first_row[0].split('\t')[0]))
-        # Process first row entry as well
-        timestamp, rapl = first_row[0].split('\t')
-        timestamp = datetime.fromtimestamp(float(timestamp))
-        relative_timestamp = (timestamp - first_timestamp_rapl).total_seconds()
-        rapl_data.append([relative_timestamp, float(rapl)])
-
-        for row in csvreader:
-            timestamp, rapl = row[0].split('\t')
-            timestamp = datetime.fromtimestamp(float(timestamp))
-            relative_timestamp = (timestamp - first_timestamp_rapl).total_seconds()
-            rapl_data.append([relative_timestamp, float(rapl)])
-
-    # Unpack the RAPL data into timestamps and values
-    rapl_timestamps, rapl_values = zip(*rapl_data)
-
     plt.figure(figsize=(12, 6))
-    plt.plot(rapl_timestamps, rapl_values, label='RAPL Data', color='orange')
+    plt.plot(timestamps, effective_power_series, label='Effective Power', color='orange')
     plt.xlabel('Timestamp (seconds)')
-    plt.ylabel('RAPL (watts)')
-    plt.title('RAPL over Time')
+    plt.ylabel('Effective Power Consumption (watts)')
+    plt.title('Effective (Actual) Power Consumption over Time')
     plt.legend()
     filename = f'{target}_rapl_consumption.svg'
     filepath = os.path.join(directory, filename)
@@ -172,29 +169,26 @@ def main():
     # Parse command-line arguments
     args = parse_args()
 
-    # Load configuration from file
-    conf = load_config(args.config)
-
-    # Initialize database and get collection
-    collection = init_db(conf)
-
-    # Query records based on target container
-    records = collection.find({'target': args.target})
-
+    # Read CSV records from the input file
+    records = read_csv_records(args.input_csv)
+    
     # Process records to extract data
-    timestamps, power_consumption, callchain_power, callchain_num = process_records(records, args.scinot)
+    timestamps, total_power_series, effective_power_series, callchain_power, callchain_num = process_records(records, args.scinot)
 
+    # Determine target name from the CSV file name (without extension)
+    target = os.path.splitext(os.path.basename(args.input_csv))[0]
+    
     # Ensure output directory exists
-    target, directory = ensure_directory(args.target)
+    target_clean, directory = ensure_directory(target)
 
     # Write collapsed data files
-    write_collapsed_files(target, directory, callchain_power, callchain_num)
+    write_collapsed_files(target_clean, directory, callchain_power, callchain_num)
 
-    # Plot power consumption data over time
-    plot_power_consumption(timestamps, power_consumption, directory, target)
+    # Plot total power consumption over time
+    plot_power_consumption(timestamps, total_power_series, directory, target_clean)
 
-    # Plot RAPL data from CSV file (assumes the CSV file exists in the directory)
-    process_and_plot_rapl(target, directory)
+    # Plot effective (actual) power consumption over time (RAPL-like plot)
+    plot_effective_power(timestamps, effective_power_series, directory, target_clean)
 
 if __name__ == '__main__':
     main()
