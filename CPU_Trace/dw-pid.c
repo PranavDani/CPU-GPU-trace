@@ -11,10 +11,9 @@
 #include <elfutils/libdwfl.h>
 #include <elfutils/libdw.h>
 #include <libelf.h>
-#include <sys/time.h>
-#include <time.h>
 #include <signal.h> // Needed for kill()
 #include <assert.h>
+#include <czmq.h> // Include czmq's zclock functions
 
 #define PAGE_SIZE 4096
 
@@ -45,7 +44,6 @@ Dwfl* init_dwfl(pid_t pid) {
 
     return dwfl;
 }
-
 
 typedef unsigned long u64;
 
@@ -179,10 +177,9 @@ void append_symbols_from_sample(struct strbuffer* callchains, struct sample* sam
         return;
     }
 
-    // Create a stack buffer of size = 19[2(0x) + 16(length of hex string) + 1(;) + 1(\0)]
+    // Create a stack buffer of size = 20 bytes per ip.
     char ip_buffer[20];
 
-    // Perform symbolization
     if (dwfl) {
         for (uint64_t i = 0; i < sample->nr; i++) {
             Dwfl_Module* mod = dwfl_addrmodule(dwfl, sample->ips[i]);
@@ -213,11 +210,9 @@ char* get_callchains(struct perf_event_mmap_page* buffer, Dwfl* dwfl)
     uint64_t head = buffer->data_head;
     __sync_synchronize();
 
-    // Check if there's a new sample to be read
     if (head == buffer->data_tail)
         return NULL;
 
-    // Create helpers
     void* buffer_start = (void*)buffer + buffer->data_offset;
     struct strbuffer* callchains = strnew(1024);
     if (!callchains) {
@@ -225,19 +220,16 @@ char* get_callchains(struct perf_event_mmap_page* buffer, Dwfl* dwfl)
         return NULL;
     }
 
-    // Get pointers to struct samples.
     struct perf_event_header header;
     while (buffer->data_tail < head) {
-        // Get relative offset
-        uint64_t relative_loc = buffer->data_tail % buffer->data_size; // Number of bytes into buffer we are.
-        size_t bytes_remaining = buffer->data_size - relative_loc; // How many bytes till we hit the buffer wrap.
-        size_t header_bytes_remaining = bytes_remaining > sizeof(struct perf_event_header) ? sizeof(struct perf_event_header) : bytes_remaining;
+        uint64_t relative_loc = buffer->data_tail % buffer->data_size;
+        size_t bytes_remaining = buffer->data_size - relative_loc;
+        size_t header_bytes_remaining = bytes_remaining > sizeof(struct perf_event_header) ?
+            sizeof(struct perf_event_header) : bytes_remaining;
 
-        // Copy header to our stack
-        memcpy(&header, buffer_start + relative_loc, header_bytes_remaining); // Copy part at end of buffer.
-        memcpy((void*)&header + header_bytes_remaining, buffer_start, sizeof(struct perf_event_header) - header_bytes_remaining); // Copy part at start of buffer.
+        memcpy(&header, buffer_start + relative_loc, header_bytes_remaining);
+        memcpy((void*)&header + header_bytes_remaining, buffer_start, sizeof(struct perf_event_header) - header_bytes_remaining);
 
-        // Find struct sample location
         struct sample* sample = buffer_start + relative_loc;
         int used_malloc = 0;
         if (bytes_remaining < header.size) {
@@ -246,10 +238,7 @@ char* get_callchains(struct perf_event_mmap_page* buffer, Dwfl* dwfl)
             memcpy(sample, buffer_start + relative_loc, bytes_remaining);
             memcpy((void*)sample + bytes_remaining, buffer_start, header.size - bytes_remaining);
         }
-
-        // Do symbolization
         append_symbols_from_sample(callchains, sample, dwfl);
-
         if (used_malloc)
             free(sample);
 
@@ -260,8 +249,6 @@ char* get_callchains(struct perf_event_mmap_page* buffer, Dwfl* dwfl)
     return strfreewrap(callchains);
 }
 
-// Open energy file and read the initial energy value
-// New helper function to read current energy in microjoules.
 long long get_energy() {
     FILE* fp;
     char energy_buffer[256];
@@ -297,9 +284,8 @@ long get_process_time(pid_t pid) {
     char* end = strrchr(line, ')');
     if (!start || !end) return -1;
 
-    // Start parsing after the command field.
     char* p = end + 1;
-    int field = 2; // Already past pid and comm
+    int field = 2;
     while (*p && field < 14) {
         if (*p == ' ') {
             field++;
@@ -329,41 +315,43 @@ long get_total_cpu_time() {
 }
 
 int main(int argc, char** argv) {
-    unsigned int samp_freq = 1000;
-    unsigned int report_sleep = 1000000;
+    // Default values for optional arguments.
+    unsigned int callchains_per_report = 20;
+    unsigned int report_sleep_ms = 100;
 
     if (argc < 2) {
-        fprintf(stderr, "Usage: %s <pid>\n", *argv);
+        fprintf(stderr, "Usage: %s <pid> [callchains_per_report] [report_sleep_ms]\n", *argv);
         exit(EXIT_FAILURE);
     }
 
-    // Monitor the given pid
     pid_t pid = atoi(argv[1]);
     fprintf(stderr, "Got pid %i\n", pid);
 
-    // Create struct perf_event_attr
+    // Check if optional arguments are provided.
+    if (argc > 2) {
+        callchains_per_report = atoi(argv[2]);
+    }
+    if (argc > 3) {
+        report_sleep_ms = atoi(argv[3]);
+    }
+
     struct perf_event_attr attr = { 0 };
-    // Fields
     attr.size = sizeof(struct perf_event_attr);
     attr.type = PERF_TYPE_HARDWARE;
     attr.config = PERF_COUNT_HW_INSTRUCTIONS;
     attr.sample_type = PERF_SAMPLE_CALLCHAIN;
-    attr.sample_freq = samp_freq;
-    // Flags
+    attr.sample_freq = callchains_per_report * report_sleep_ms;
     attr.mmap = 1;
     attr.freq = 1;
     attr.ksymbol = 0;
-    // Require an enable call to start recording
     attr.disabled = 1;
 
-    // Invoke the perf recorder
     int fd = syscall(SYS_perf_event_open, &attr, pid, -1, -1, 0);
     if (fd == -1) {
         perror("perf_event_open");
         exit(EXIT_FAILURE);
     }
 
-    // Set up memory map to collect results
     void* buffer = mmap(NULL, 2 * PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
     if (buffer == MAP_FAILED) {
         perror("mmap");
@@ -371,27 +359,19 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    // Enable sampling
     ioctl(fd, PERF_EVENT_IOC_RESET, 0);
     ioctl(fd, PERF_EVENT_IOC_ENABLE, 0);
 
-    // Save a pointer to the info struct
     struct perf_event_mmap_page* buffer_info = buffer;
-
-    // Init dwfl
     Dwfl* dwfl = init_dwfl(pid);
-    struct timespec start;
-    clock_gettime(CLOCK_MONOTONIC, &start);
 
+    // Use zclock to get the start time in milliseconds.
+    long start_ms = zclock_mono();
     printf("timestamp, callchains, power, resource_usage\n");
 
     long long prevEnergy = get_energy();
+    long prev_time_ms = start_ms;
 
-    // Initialize a separate timer for power interval calculation.
-    struct timespec prev_time = start;
-    struct timespec now;
-
-    // Initialize CPU usage measurement variables.
     long prev_process_time = get_process_time(pid);
     long prev_total_time = get_total_cpu_time();
     if (prev_process_time == -1 || prev_total_time == -1) {
@@ -399,10 +379,10 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    // Continuously read samples and print callchains and power in CSV format.
     while (1) {
-        usleep(report_sleep);
-        // Check if the process still exists.
+        // Sleep for the report interval (converted to milliseconds)
+        zclock_sleep(report_sleep_ms);  // Sleep for the specified interval
+
         if (kill(pid, 0) == -1) {
             if (errno == ESRCH) {
                 fprintf(stderr, "Process %d has exited. Exiting program.\n", pid);
@@ -410,19 +390,16 @@ int main(int argc, char** argv) {
             }
         }
 
-        // Overall elapsed time from program start.
-        clock_gettime(CLOCK_MONOTONIC, &now);
-        double overall_elapsed = (now.tv_sec - start.tv_sec) + (now.tv_nsec - start.tv_nsec) / 1e9;
+        long now_ms = zclock_mono();
+        double overall_elapsed = (now_ms - start_ms) / 1000.0;
         long long currentEnergy = get_energy();
         long long deltaEnergy = currentEnergy - prevEnergy;
         prevEnergy = currentEnergy;
 
-        double interval_seconds = (now.tv_sec - prev_time.tv_sec) + (now.tv_nsec - prev_time.tv_nsec) / 1e9;
-        prev_time = now;
-
+        double interval_seconds = (now_ms - prev_time_ms) / 1000.0;
+        prev_time_ms = now_ms;
         double power = (deltaEnergy / 1e6) / interval_seconds;
 
-        // CPU usage measurement
         long curr_process_time = get_process_time(pid);
         long curr_total_time = get_total_cpu_time();
         double usage = 0.0;
@@ -450,21 +427,9 @@ int main(int argc, char** argv) {
         free(callchains);
     }
 
-    // Clean up
     ioctl(fd, PERF_EVENT_IOC_DISABLE, 0);
     munmap(buffer, 2 * PAGE_SIZE);
     close(fd);
     dwfl_end(dwfl);
     return EXIT_SUCCESS;
 }
-
-// For reading standard metrics (reported from fd)
-/*
-// Set up buffer to read results
-struct read_format results[100] = {0};
-// Read 1 result into buffer for testing
-read(fd, results, sizeof(struct read_format));
-printf("Value: %lu\nTime Enabled:%lu\nTime Running: %lu\nID:%lu\n",
-results[0].value, results[0].time_enabled, results[0].time_running, results[0].id);
-*/
-
