@@ -14,6 +14,7 @@
 #include <signal.h> // Needed for kill()
 #include <assert.h>
 #include <czmq.h> // Include czmq's zclock functions
+#include <nvml.h>
 
 #define PAGE_SIZE 4096
 
@@ -314,6 +315,27 @@ long get_total_cpu_time() {
     return user + nice + system + irq + softirq;
 }
 
+double get_gpu_power(unsigned int gpu_count) {
+    for (unsigned int i = 0; i < gpu_count; i++) {
+        nvmlDevice_t device;
+        nvmlReturn_t result = nvmlDeviceGetHandleByIndex(i, &device);
+        if (result != NVML_SUCCESS) {
+            fprintf(stderr, "Failed to get device handle\n");
+            continue;
+        }
+
+        unsigned int power;
+        result = nvmlDeviceGetPowerUsage(device, &power);
+        if (result != NVML_SUCCESS) {
+            fprintf(stderr, "Failed to get power usage for device %u\n", i);
+            continue;
+        }
+
+        return (double)power / 1000.0; // Convert to watts
+    }
+    return 0;
+}
+
 int main(int argc, char** argv) {
     // Default values for optional arguments.
     unsigned int callchains_per_report = 20;
@@ -333,6 +355,20 @@ int main(int argc, char** argv) {
     }
     if (argc > 3) {
         report_sleep_ms = atoi(argv[3]);
+    }
+
+    // Initialize NVML
+    nvmlReturn_t nvmlRet = nvmlInit();
+    if (nvmlRet != NVML_SUCCESS) {
+        fprintf(stderr, "Failed to initialize NVML\n");
+    }
+
+    // Get the number of devices
+    unsigned int gpuCount;
+    nvmlRet = nvmlDeviceGetCount(&gpuCount);
+    if (nvmlRet != NVML_SUCCESS) {
+        fprintf(stderr, "Failed to get device count\n");
+        nvmlShutdown();
     }
 
     struct perf_event_attr attr = { 0 };
@@ -367,7 +403,7 @@ int main(int argc, char** argv) {
 
     // Use zclock to get the start time in milliseconds.
     long start_ms = zclock_mono();
-    printf("timestamp, callchains, power, resource_usage\n");
+    printf("timestamp, callchains, power, resource_usage, gpu_power\n");
 
     long long prevEnergy = get_energy();
     long prev_time_ms = start_ms;
@@ -399,6 +435,7 @@ int main(int argc, char** argv) {
         double interval_seconds = (now_ms - prev_time_ms) / 1000.0;
         prev_time_ms = now_ms;
         double power = (deltaEnergy / 1e6) / interval_seconds;
+        double gpu_power = get_gpu_power(gpuCount);
 
         long curr_process_time = get_process_time(pid);
         long curr_total_time = get_total_cpu_time();
@@ -420,9 +457,9 @@ int main(int argc, char** argv) {
 
         char* callchains = get_callchains(buffer_info, dwfl);
         if (callchains)
-            printf("%.6lf, %s, %.6f, %.2f\n", overall_elapsed, callchains, power, usage);
+            printf("%.6lf, %s, %.6f, %.2f, %.6f\n", overall_elapsed, callchains, power, usage, gpu_power);
         else
-            printf("%.6lf, , %.6f, %.2f\n", overall_elapsed, power, usage);
+            printf("%.6lf, , %.6f, %.2f, %.6f\n", overall_elapsed, power, usage, gpu_power);
 
         free(callchains);
     }
@@ -431,5 +468,9 @@ int main(int argc, char** argv) {
     munmap(buffer, 2 * PAGE_SIZE);
     close(fd);
     dwfl_end(dwfl);
+    nvmlRet = nvmlShutdown();
+    if (nvmlRet != NVML_SUCCESS) {
+        fprintf(stderr, "Failed to shutdown NVML\n");
+    }
     return EXIT_SUCCESS;
 }

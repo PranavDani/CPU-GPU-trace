@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sudo apt install nvidia-driver-550 libnvidia-ml-dev
+
 # Function to display usage information
 usage() {
     echo "Usage: $0 <executable_path> [<executable_args>...]"

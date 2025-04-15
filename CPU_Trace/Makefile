@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
-LDFLAGS = -lczmq -ldw -lelf
+LDFLAGS = -lczmq -ldw -lelf -lnvidia-ml
 
 dw-pid: dw-pid.c
 	$(CC) $(CFLAGS) -o dw-pid dw-pid.c $(LDFLAGS)
