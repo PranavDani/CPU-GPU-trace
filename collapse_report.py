@@ -64,7 +64,7 @@ def read_csv_records(csv_path):
 def process_records(records, scinot):
     """
     Process CSV records to extract timestamps, CPU power consumption,
-    effective (actual) power consumption (CPU plus GPU) and aggregate callchain data.
+    effective (actual) power consumption (CPU plus GPU), effective CPU power and aggregate callchain data.
     
     For each record:
       - Total power is from column3.
@@ -79,6 +79,7 @@ def process_records(records, scinot):
     total_power_series = []
     effective_power_series = []
     gpu_power_series = []
+    effective_cpu_series = []
     callchain_power = defaultdict(float)
     callchain_num = defaultdict(int)
 
@@ -91,6 +92,7 @@ def process_records(records, scinot):
         
         resource_util = float(record['resource_util'])
         effective_cpu = (resource_util / 100.0) * total_power
+        effective_cpu_series.append(effective_cpu)
         
         gpu_power = float(record['gpu_power'])
         gpu_power_series.append(gpu_power)
@@ -114,7 +116,7 @@ def process_records(records, scinot):
     for key in callchain_power:
         callchain_power[key] *= (10 ** scinot)
         
-    return timestamps, total_power_series, effective_power_series, gpu_power_series, callchain_power, callchain_num
+    return timestamps, total_power_series, effective_power_series, gpu_power_series, effective_cpu_series, callchain_power, callchain_num
 
 def write_collapsed_files(target, directory, callchain_power, callchain_num):
     """
@@ -150,7 +152,7 @@ def plot_power_consumption(timestamps, total_power_series, directory, target):
 
 def plot_effective_power(timestamps, effective_power_series, directory, target):
     """
-    Plot effective power consumption (CPU + GPU) over time and save to an SVG file.
+    Plot effective power consumption (CPU+GPU) over time and save to an SVG file.
     """
     plt.figure(figsize=(12, 6))
     plt.plot(timestamps, effective_power_series, label='Effective (CPU+GPU) Power', color='orange')
@@ -158,7 +160,22 @@ def plot_effective_power(timestamps, effective_power_series, directory, target):
     plt.ylabel('Effective Power Consumption (watts)')
     plt.title('Effective (CPU+GPU) Power Consumption over Time')
     plt.legend()
-    filename = f'{target}_rapl_consumption.svg'
+    filename = f'{target}_effective.svg'
+    filepath = os.path.join(directory, filename)
+    plt.savefig(filepath)
+    plt.close()
+
+def plot_effective_cpu_power(timestamps, effective_cpu_series, directory, target):
+    """
+    Plot effective CPU power consumption over time and save to an SVG file.
+    """
+    plt.figure(figsize=(12, 6))
+    plt.plot(timestamps, effective_cpu_series, label='Effective CPU Power', color='red')
+    plt.xlabel('Timestamp (seconds)')
+    plt.ylabel('Effective CPU Power (watts)')
+    plt.title('Effective CPU Power Consumption over Time')
+    plt.legend()
+    filename = f'{target}_rapl.svg'
     filepath = os.path.join(directory, filename)
     plt.savefig(filepath)
     plt.close()
@@ -192,7 +209,8 @@ def main():
     records = read_csv_records(args.input_csv)
     
     # Process records to extract data and aggregate callchain data
-    timestamps, total_power_series, effective_power_series, gpu_power_series, callchain_power, callchain_num = process_records(records, args.scinot)
+    (timestamps, total_power_series, effective_power_series, gpu_power_series,
+     effective_cpu_series, callchain_power, callchain_num) = process_records(records, args.scinot)
 
     # Determine target name from the CSV file name (without extension)
     target = os.path.splitext(os.path.basename(args.input_csv))[0]
@@ -205,6 +223,9 @@ def main():
 
     # Plot total CPU power consumption over time
     plot_power_consumption(timestamps, total_power_series, directory, target_clean)
+
+    # Plot effective CPU power consumption over time
+    plot_effective_cpu_power(timestamps, effective_cpu_series, directory, target_clean)
 
     # Plot effective (CPU+GPU) power consumption over time
     plot_effective_power(timestamps, effective_power_series, directory, target_clean)

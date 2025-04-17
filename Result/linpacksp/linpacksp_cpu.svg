@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="422" onload="init(evt)" viewBox="0 0 1200 422" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="630" onload="init(evt)" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -421,529 +421,2713 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="422.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="630.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >CPU Flame Graph</text>
-<text id="details" x="10.00" y="405" > </text>
+<text id="details" x="10.00" y="613" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="405" > </text>
+<text id="matched" x="1090.00" y="613" > </text>
 <g id="frames">
 <g >
-<title>main (3,835 samples, 12.68%)</title><rect x="849.9" y="341" width="149.6" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
-<text  x="852.90" y="351.5" >main</text>
+<title>0xffffffffffffff80 (13 samples, 0.04%)</title><rect x="996.4" y="453" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="999.35" y="463.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (4,851 samples, 16.04%)</title><rect x="1000.7" y="325" width="189.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="1003.73" y="335.5" >0xfffffffffffffe00</text>
+<title>0xffffffff90c0bab4 (313 samples, 1.04%)</title><rect x="982.8" y="437" width="12.3" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="985.85" y="447.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (388 samples, 1.28%)</title><rect x="984.2" y="277" width="15.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="987.19" y="287.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="12.0" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.99" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="991.3" y="101" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="994.29" y="111.5" ></text>
+<title>0xffffffffffffff80 (11 samples, 0.04%)</title><rect x="987.8" y="293" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="990.80" y="303.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="983.9" y="309" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="986.92" y="319.5" ></text>
+<title>0xffffffff90d7038a (3 samples, 0.01%)</title><rect x="991.9" y="309" width="0.1" height="15.0" fill="rgb(249,204,49)" rx="2" ry="2" />
+<text  x="994.86" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff93097b77 (3 samples, 0.01%)</title><rect x="1189.9" y="293" width="0.1" height="15.0" fill="rgb(232,124,29)" rx="2" ry="2" />
-<text  x="1192.88" y="303.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="14.0" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.98" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="993.7" y="69" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="996.71" y="79.5" ></text>
+<title>0x7a90b56cbede (377 samples, 1.25%)</title><rect x="982.2" y="501" width="14.7" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
+<text  x="985.18" y="511.5" ></text>
 </g>
 <g >
-<title>0xffffffff9320012b (340 samples, 1.12%)</title><rect x="985.5" y="261" width="13.2" height="15.0" fill="rgb(243,177,42)" rx="2" ry="2" />
-<text  x="988.48" y="271.5" ></text>
+<title>0x20000200000009 (34 samples, 0.11%)</title><rect x="16.1" y="485" width="1.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.09" y="495.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="988.4" y="133" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.44" y="143.5" ></text>
+<title>0x2 (7 samples, 0.02%)</title><rect x="14.8" y="181" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.84" y="191.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (87 samples, 0.29%)</title><rect x="451.0" y="325" width="3.4" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="453.96" y="335.5" ></text>
+<title>0xffffffff90e25b93 (251 samples, 0.83%)</title><rect x="983.2" y="405" width="9.8" height="15.0" fill="rgb(230,115,27)" rx="2" ry="2" />
+<text  x="986.16" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f5eb5f (14 samples, 0.05%)</title><rect x="990.6" y="117" width="0.5" height="15.0" fill="rgb(234,134,32)" rx="2" ry="2" />
-<text  x="993.59" y="127.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="16.6" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.60" y="127.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (3,403 samples, 11.25%)</title><rect x="851.1" y="325" width="132.8" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="854.15" y="335.5" >0xfffffffffffffe00</text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.5" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f699d8 (3 samples, 0.01%)</title><rect x="993.7" y="85" width="0.1" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
-<text  x="996.71" y="95.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="982.0" y="501" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="985.03" y="511.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025b05 (6 samples, 0.02%)</title><rect x="987.3" y="181" width="0.2" height="15.0" fill="rgb(254,229,54)" rx="2" ry="2" />
-<text  x="990.27" y="191.5" ></text>
+<title>0xffffffff90d8fd72 (4 samples, 0.01%)</title><rect x="985.8" y="357" width="0.2" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
+<text  x="988.81" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fe23 (169 samples, 0.56%)</title><rect x="988.8" y="149" width="6.6" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
-<text  x="991.79" y="159.5" ></text>
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="985.0" y="341" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.99" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="987.9" y="133" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.94" y="143.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="15.7" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="63.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (17 samples, 0.06%)</title><rect x="997.1" y="165" width="0.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1000.07" y="175.5" ></text>
+<title>0x2 (8 samples, 0.03%)</title><rect x="17.9" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.88" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f699ba (5 samples, 0.02%)</title><rect x="992.6" y="101" width="0.2" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
-<text  x="995.58" y="111.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (12 samples, 0.04%)</title><rect x="14.8" y="341" width="0.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.84" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (22 samples, 0.07%)</title><rect x="984.6" y="245" width="0.9" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="987.62" y="255.5" ></text>
+<title>0x2 (24 samples, 0.08%)</title><rect x="10.5" y="309" width="0.9" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="994.0" y="69" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="996.98" y="79.5" ></text>
+<title>matgen (5 samples, 0.02%)</title><rect x="13.3" y="213" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.28" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7044c (67 samples, 0.22%)</title><rect x="992.5" y="117" width="2.7" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="995.54" y="127.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="16.1" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.09" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffff930a99f7 (12 samples, 0.04%)</title><rect x="990.6" y="101" width="0.5" height="15.0" fill="rgb(222,78,18)" rx="2" ry="2" />
-<text  x="993.59" y="111.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.0" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.99" y="79.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025048 (3 samples, 0.01%)</title><rect x="987.0" y="165" width="0.2" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="990.04" y="175.5" ></text>
+<title>0x20000200000009 (9 samples, 0.03%)</title><rect x="15.7" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff93097b77 (8 samples, 0.03%)</title><rect x="849.5" y="293" width="0.4" height="15.0" fill="rgb(232,124,29)" rx="2" ry="2" />
-<text  x="852.55" y="303.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="16.5" y="277" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.52" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff930956e9 (20 samples, 0.07%)</title><rect x="991.6" y="69" width="0.8" height="15.0" fill="rgb(219,65,15)" rx="2" ry="2" />
-<text  x="994.60" y="79.5" ></text>
+<title>0xffffffff90cb3126 (7 samples, 0.02%)</title><rect x="846.7" y="485" width="0.3" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="849.72" y="495.5" ></text>
 </g>
 <g >
-<title>0xffffffff91fe3661 (7 samples, 0.02%)</title><rect x="995.5" y="149" width="0.2" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
-<text  x="998.47" y="159.5" ></text>
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="13.8" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.79" y="79.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (16 samples, 0.05%)</title><rect x="991.6" y="37" width="0.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="994.60" y="47.5" ></text>
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="16.1" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.09" y="335.5" ></text>
 </g>
 <g >
-<title>clock (396 samples, 1.31%)</title><rect x="983.9" y="325" width="15.5" height="15.0" fill="rgb(228,108,25)" rx="2" ry="2" />
-<text  x="986.92" y="335.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.1" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.10" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="988.6" y="133" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.60" y="143.5" ></text>
+<title>0x20000200000009 (7 samples, 0.02%)</title><rect x="12.8" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.77" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff93200080 (23 samples, 0.08%)</title><rect x="984.6" y="261" width="0.9" height="15.0" fill="rgb(234,134,32)" rx="2" ry="2" />
-<text  x="987.58" y="271.5" ></text>
+<title>0x2 (10 samples, 0.03%)</title><rect x="11.6" y="309" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.60" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff91face1b (3 samples, 0.01%)</title><rect x="989.1" y="85" width="0.1" height="15.0" fill="rgb(245,184,44)" rx="2" ry="2" />
-<text  x="992.11" y="95.5" ></text>
+<title>0x2 (5 samples, 0.02%)</title><rect x="10.9" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.86" y="127.5" ></text>
 </g>
 <g >
-<title>0xffffffff920141a1 (7 samples, 0.02%)</title><rect x="849.6" y="213" width="0.3" height="15.0" fill="rgb(243,177,42)" rx="2" ry="2" />
-<text  x="852.59" y="223.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (10 samples, 0.03%)</title><rect x="14.3" y="277" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.25" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff920232b2 (7 samples, 0.02%)</title><rect x="985.6" y="213" width="0.3" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
-<text  x="988.60" y="223.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="15.0" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.00" y="111.5" ></text>
 </g>
 <g >
-<title>0xffffffff93200f0b (3 samples, 0.01%)</title><rect x="1189.9" y="309" width="0.1" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
-<text  x="1192.88" y="319.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (7 samples, 0.02%)</title><rect x="14.8" y="213" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.84" y="223.5" ></text>
 </g>
 <g >
-<title>clock_gettime@@GLIBC_2.17 (4 samples, 0.01%)</title><rect x="999.4" y="325" width="0.1" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
-<text  x="1002.37" y="335.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="16.1" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.09" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="987.4" y="149" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.35" y="159.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.9" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.89" y="143.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025b1c (215 samples, 0.71%)</title><rect x="987.5" y="181" width="8.4" height="15.0" fill="rgb(251,212,50)" rx="2" ry="2" />
-<text  x="990.51" y="191.5" ></text>
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="15.4" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.39" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff92016078 (3 samples, 0.01%)</title><rect x="1189.9" y="261" width="0.1" height="15.0" fill="rgb(213,37,9)" rx="2" ry="2" />
-<text  x="1192.88" y="271.5" ></text>
+<title>0x2 (5 samples, 0.02%)</title><rect x="13.8" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.79" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (7 samples, 0.02%)</title><rect x="985.6" y="197" width="0.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="988.60" y="207.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="13.3" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.28" y="63.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="995.8" y="149" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="998.78" y="159.5" ></text>
+<title>0xfffffffffffffe00 (15 samples, 0.05%)</title><rect x="13.6" y="325" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.55" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f5f72c (21 samples, 0.07%)</title><rect x="991.6" y="117" width="0.8" height="15.0" fill="rgb(244,180,43)" rx="2" ry="2" />
-<text  x="994.60" y="127.5" ></text>
+<title>0x2 (10 samples, 0.03%)</title><rect x="17.9" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.88" y="447.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (13 samples, 0.04%)</title><rect x="998.2" y="213" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1001.16" y="223.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.1" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.10" y="239.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fca0 (3 samples, 0.01%)</title><rect x="987.5" y="165" width="0.1" height="15.0" fill="rgb(216,52,12)" rx="2" ry="2" />
-<text  x="990.51" y="175.5" ></text>
+<title>0xfffffffffffffe00 (7 samples, 0.02%)</title><rect x="16.1" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.09" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff93200f0b (9 samples, 0.03%)</title><rect x="849.5" y="309" width="0.4" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
-<text  x="852.55" y="319.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="15.7" y="277" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.70" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff930988f8 (3 samples, 0.01%)</title><rect x="997.9" y="229" width="0.1" height="15.0" fill="rgb(236,146,35)" rx="2" ry="2" />
-<text  x="1000.92" y="239.5" ></text>
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="10.5" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="47.5" ></text>
 </g>
 <g >
-<title>0xffffffff93098931 (13 samples, 0.04%)</title><rect x="998.2" y="229" width="0.5" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
-<text  x="1001.16" y="239.5" ></text>
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="13.1" y="293" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.12" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fcf7 (3 samples, 0.01%)</title><rect x="988.1" y="149" width="0.1" height="15.0" fill="rgb(238,156,37)" rx="2" ry="2" />
-<text  x="991.13" y="159.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="14.8" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.84" y="63.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="987.5" y="149" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.51" y="159.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (7 samples, 0.02%)</title><rect x="12.8" y="405" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.77" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="987.0" y="149" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.04" y="159.5" ></text>
+<title>0xfffffffffffffe00 (9 samples, 0.03%)</title><rect x="12.0" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.99" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63b70 (3 samples, 0.01%)</title><rect x="987.9" y="149" width="0.2" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="990.94" y="159.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="16.1" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.09" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff91face3b (32 samples, 0.11%)</title><rect x="989.3" y="85" width="1.3" height="15.0" fill="rgb(232,125,29)" rx="2" ry="2" />
-<text  x="992.34" y="95.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.6" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.57" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fd76 (4 samples, 0.01%)</title><rect x="988.4" y="149" width="0.2" height="15.0" fill="rgb(242,172,41)" rx="2" ry="2" />
-<text  x="991.44" y="159.5" ></text>
+<title>0x20000200000009 (8 samples, 0.03%)</title><rect x="14.3" y="165" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.25" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63b82 (53 samples, 0.18%)</title><rect x="989.1" y="133" width="2.1" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
-<text  x="992.11" y="143.5" ></text>
+<title>main (10 samples, 0.03%)</title><rect x="12.0" y="405" width="0.4" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="14.99" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffff920258e4 (203 samples, 0.67%)</title><rect x="987.9" y="165" width="7.9" height="15.0" fill="rgb(240,162,38)" rx="2" ry="2" />
-<text  x="990.86" y="175.5" ></text>
+<title>0xffffffff90d699ba (4 samples, 0.01%)</title><rect x="990.1" y="309" width="0.1" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
+<text  x="993.07" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f6ffc7 (6 samples, 0.02%)</title><rect x="992.9" y="101" width="0.2" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="995.89" y="111.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.5" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.45" y="223.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (32 samples, 0.11%)</title><rect x="849.9" y="325" width="1.2" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="852.90" y="335.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="11.2" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.25" y="143.5" ></text>
 </g>
 <g >
-<title>clock_gettime@@GLIBC_2.17 (391 samples, 1.29%)</title><rect x="984.1" y="309" width="15.3" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
-<text  x="987.11" y="319.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.3" y="405" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.26" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="987.7" y="149" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.66" y="159.5" ></text>
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="11.2" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.25" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (15 samples, 0.05%)</title><rect x="998.7" y="245" width="0.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1001.74" y="255.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (7 samples, 0.02%)</title><rect x="16.1" y="405" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.09" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (6 samples, 0.02%)</title><rect x="992.9" y="85" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="995.89" y="95.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="15.7" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63bea (22 samples, 0.07%)</title><rect x="991.6" y="133" width="0.9" height="15.0" fill="rgb(222,82,19)" rx="2" ry="2" />
-<text  x="994.60" y="143.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="18.1" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.08" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffff91e6dc30 (20 samples, 0.07%)</title><rect x="991.6" y="85" width="0.8" height="15.0" fill="rgb(245,188,45)" rx="2" ry="2" />
-<text  x="994.60" y="95.5" ></text>
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="12.8" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.77" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff92023324 (46 samples, 0.15%)</title><rect x="996.1" y="213" width="1.8" height="15.0" fill="rgb(214,45,10)" rx="2" ry="2" />
-<text  x="999.09" y="223.5" ></text>
+<title>0x2 (9 samples, 0.03%)</title><rect x="15.7" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff91eb3126 (8 samples, 0.03%)</title><rect x="849.5" y="277" width="0.4" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="852.55" y="287.5" ></text>
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="14.3" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.25" y="143.5" ></text>
 </g>
 <g >
-<title>linpacksp (30,244 samples, 100.00%)</title><rect x="10.0" y="357" width="1180.0" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
-<text  x="13.00" y="367.5" >linpacksp</text>
+<title>daxpy_r.part.0.constprop.0 (14 samples, 0.05%)</title><rect x="10.5" y="213" width="0.6" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="993.5" y="69" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="996.52" y="79.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="14.6" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.64" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f9d6c0 (21 samples, 0.07%)</title><rect x="991.6" y="101" width="0.8" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="994.60" y="111.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.9" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.89" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff91fa188f (11 samples, 0.04%)</title><rect x="994.2" y="85" width="0.4" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
-<text  x="997.22" y="95.5" ></text>
+<title>0x2 (4 samples, 0.01%)</title><rect x="12.6" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.61" y="255.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7023b (5 samples, 0.02%)</title><rect x="993.1" y="101" width="0.2" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
-<text  x="996.13" y="111.5" ></text>
+<title>0xffffffff90cb3126 (7 samples, 0.02%)</title><rect x="1189.7" y="485" width="0.3" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="1192.73" y="495.5" ></text>
 </g>
 <g >
-<title>0xffffffff920232ed (244 samples, 0.81%)</title><rect x="986.5" y="213" width="9.6" height="15.0" fill="rgb(231,123,29)" rx="2" ry="2" />
-<text  x="989.53" y="223.5" ></text>
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="15.7" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="239.5" ></text>
 </g>
 <g >
-<title>0xffffffff930a9288 (3 samples, 0.01%)</title><rect x="991.3" y="117" width="0.1" height="15.0" fill="rgb(207,13,3)" rx="2" ry="2" />
-<text  x="994.29" y="127.5" ></text>
+<title>main (35 samples, 0.12%)</title><rect x="16.1" y="533" width="1.4" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="19.09" y="543.5" ></text>
 </g>
 <g >
-<title>0xffffffff91eb3126 (3 samples, 0.01%)</title><rect x="1189.9" y="277" width="0.1" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="1192.88" y="287.5" ></text>
+<title>0xffffffff90e258e4 (198 samples, 0.65%)</title><rect x="985.0" y="373" width="7.7" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
+<text  x="987.96" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff9201511f (3 samples, 0.01%)</title><rect x="1189.9" y="245" width="0.1" height="15.0" fill="rgb(254,229,54)" rx="2" ry="2" />
-<text  x="1192.88" y="255.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (9 samples, 0.03%)</title><rect x="13.1" y="277" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.12" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (17 samples, 0.06%)</title><rect x="985.9" y="197" width="0.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="988.87" y="207.5" ></text>
+<title>0x2 (11 samples, 0.04%)</title><rect x="16.1" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.09" y="447.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (7 samples, 0.02%)</title><rect x="995.5" y="133" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="998.47" y="143.5" ></text>
+<title>0xfffffffffffffe00 (38 samples, 0.13%)</title><rect x="10.5" y="389" width="1.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff9309125a (22 samples, 0.07%)</title><rect x="997.9" y="245" width="0.8" height="15.0" fill="rgb(222,80,19)" rx="2" ry="2" />
-<text  x="1000.89" y="255.5" ></text>
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="14.8" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.84" y="143.5" ></text>
 </g>
 <g >
-<title>0xffffffff91e0bab4 (317 samples, 1.05%)</title><rect x="985.5" y="229" width="12.4" height="15.0" fill="rgb(231,119,28)" rx="2" ry="2" />
-<text  x="988.52" y="239.5" ></text>
+<title>0x2 (9 samples, 0.03%)</title><rect x="12.0" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.99" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (12 samples, 0.04%)</title><rect x="990.6" y="85" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="993.59" y="95.5" ></text>
+<title>0x2 (10 samples, 0.03%)</title><rect x="13.1" y="373" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.12" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f3e653 (3 samples, 0.01%)</title><rect x="987.4" y="165" width="0.1" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
-<text  x="990.35" y="175.5" ></text>
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="18.3" y="421" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.27" y="431.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="997.9" y="213" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1000.92" y="223.5" ></text>
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="13.8" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.79" y="111.5" ></text>
 </g>
 <g >
-<title>0xffffffff9200dfb0 (3 samples, 0.01%)</title><rect x="996.1" y="197" width="0.1" height="15.0" fill="rgb(247,196,46)" rx="2" ry="2" />
-<text  x="999.09" y="207.5" ></text>
+<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="990.2" y="293" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="993.22" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffff91fa1853 (3 samples, 0.01%)</title><rect x="994.0" y="85" width="0.1" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="996.98" y="95.5" ></text>
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="11.6" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.60" y="111.5" ></text>
 </g>
 <g >
-<title>daxpy_r.part.0.constprop.0 (11,298 samples, 37.36%)</title><rect x="10.2" y="341" width="440.8" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
-<text  x="13.16" y="351.5" >daxpy_r.part.0.constprop.0</text>
+<title>0xfffffffffffffe00 (12 samples, 0.04%)</title><rect x="14.8" y="325" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.84" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63bb0 (10 samples, 0.03%)</title><rect x="991.2" y="133" width="0.4" height="15.0" fill="rgb(208,17,4)" rx="2" ry="2" />
-<text  x="994.21" y="143.5" ></text>
+<title>0x2 (78 samples, 0.26%)</title><rect x="10.5" y="501" width="3.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="511.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="988.1" y="133" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.13" y="143.5" ></text>
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="16.8" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.75" y="271.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="999.4" y="309" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="1002.37" y="319.5" ></text>
+<title>0x2 (4 samples, 0.01%)</title><rect x="16.8" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.75" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f69387 (6 samples, 0.02%)</title><rect x="849.6" y="197" width="0.3" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
-<text  x="852.62" y="207.5" ></text>
+<title>0xffffffff90d8fd56 (3 samples, 0.01%)</title><rect x="985.7" y="357" width="0.1" height="15.0" fill="rgb(224,91,21)" rx="2" ry="2" />
+<text  x="988.70" y="367.5" ></text>
 </g>
 <g >
-<title>0x767e75392ede (388 samples, 1.28%)</title><rect x="984.2" y="293" width="15.1" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
-<text  x="987.19" y="303.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="13.3" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.28" y="159.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (11,204 samples, 37.05%)</title><rect x="13.8" y="325" width="437.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="16.82" y="335.5" >0xfffffffffffffe00</text>
+<title>0xffffffffffffff80 (26 samples, 0.09%)</title><rect x="993.2" y="373" width="1.0" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="996.19" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7028f (10 samples, 0.03%)</title><rect x="993.5" y="101" width="0.4" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
-<text  x="996.52" y="111.5" ></text>
+<title>0xffffffff90d699d8 (3 samples, 0.01%)</title><rect x="990.9" y="293" width="0.1" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
+<text  x="993.93" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffff9309124e (318 samples, 1.05%)</title><rect x="985.5" y="245" width="12.4" height="15.0" fill="rgb(253,221,52)" rx="2" ry="2" />
-<text  x="988.48" y="255.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.4" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.38" y="111.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7f1d9 (4 samples, 0.01%)</title><rect x="849.7" y="165" width="0.1" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
-<text  x="852.66" y="175.5" ></text>
+<title>0x2 (12 samples, 0.04%)</title><rect x="14.8" y="245" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.84" y="255.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (31 samples, 0.10%)</title><rect x="999.5" y="325" width="1.2" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="1002.52" y="335.5" ></text>
+<title>0xfffffffffffffe00 (78 samples, 0.26%)</title><rect x="10.5" y="517" width="3.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="527.5" ></text>
 </g>
 <g >
-<title>0xffffffff930955f8 (16 samples, 0.05%)</title><rect x="991.6" y="53" width="0.6" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="994.60" y="63.5" ></text>
+<title>0x2 (9 samples, 0.03%)</title><rect x="13.1" y="245" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.12" y="255.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63bfe (69 samples, 0.23%)</title><rect x="992.5" y="133" width="2.7" height="15.0" fill="rgb(240,163,39)" rx="2" ry="2" />
-<text  x="995.46" y="143.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="11.6" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.60" y="47.5" ></text>
 </g>
 <g >
-<title>daxpy_ur.part.0.constprop.0 (10,225 samples, 33.81%)</title><rect x="451.0" y="341" width="398.9" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
-<text  x="453.96" y="351.5" >daxpy_ur.part.0.constprop.0</text>
+<title>0xffffffff90da1853 (3 samples, 0.01%)</title><rect x="991.1" y="293" width="0.1" height="15.0" fill="rgb(206,4,1)" rx="2" ry="2" />
+<text  x="994.12" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffff92016078 (8 samples, 0.03%)</title><rect x="849.5" y="261" width="0.4" height="15.0" fill="rgb(213,37,9)" rx="2" ry="2" />
-<text  x="852.55" y="271.5" ></text>
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="15.4" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.39" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff9269f57e (17 samples, 0.06%)</title><rect x="997.1" y="181" width="0.6" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
-<text  x="1000.07" y="191.5" ></text>
+<title>0x2 (10 samples, 0.03%)</title><rect x="14.3" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.25" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7036a (18 samples, 0.06%)</title><rect x="994.0" y="101" width="0.7" height="15.0" fill="rgb(243,175,41)" rx="2" ry="2" />
-<text  x="996.98" y="111.5" ></text>
+<title>0xffffffff90e25b05 (4 samples, 0.01%)</title><rect x="984.3" y="389" width="0.1" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="987.25" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7038a (7 samples, 0.02%)</title><rect x="994.8" y="101" width="0.3" height="15.0" fill="rgb(230,115,27)" rx="2" ry="2" />
-<text  x="997.84" y="111.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="18.5" y="549" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.55" y="559.5" ></text>
 </g>
 <g >
-<title>all (30,244 samples, 100%)</title><rect x="10.0" y="373" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="383.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.1" y="325" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.10" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff9269f579 (21 samples, 0.07%)</title><rect x="996.2" y="181" width="0.9" height="15.0" fill="rgb(223,87,20)" rx="2" ry="2" />
-<text  x="999.25" y="191.5" ></text>
+<title>0xfffffffffffffe00 (65 samples, 0.21%)</title><rect x="13.6" y="517" width="2.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.55" y="527.5" ></text>
 </g>
 <g >
-<title>0xffffffff920232e0 (17 samples, 0.06%)</title><rect x="985.9" y="213" width="0.6" height="15.0" fill="rgb(217,58,14)" rx="2" ry="2" />
-<text  x="988.87" y="223.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (18 samples, 0.06%)</title><rect x="10.5" y="277" width="0.7" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="988.9" y="117" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.87" y="127.5" ></text>
+<title>0x20000200000009 (7 samples, 0.02%)</title><rect x="15.7" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (21 samples, 0.07%)</title><rect x="996.2" y="165" width="0.9" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="999.25" y="175.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (9 samples, 0.03%)</title><rect x="17.5" y="405" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.45" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63b2d (5 samples, 0.02%)</title><rect x="988.8" y="133" width="0.2" height="15.0" fill="rgb(233,128,30)" rx="2" ry="2" />
-<text  x="991.83" y="143.5" ></text>
+<title>matgen (28 samples, 0.09%)</title><rect x="17.5" y="533" width="1.0" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="20.45" y="543.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="989.1" y="69" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="992.11" y="79.5" ></text>
+<title>0xffffffff90d7028f (5 samples, 0.02%)</title><rect x="990.8" y="309" width="0.2" height="15.0" fill="rgb(223,86,20)" rx="2" ry="2" />
+<text  x="993.85" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (11 samples, 0.04%)</title><rect x="994.2" y="69" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="997.22" y="79.5" ></text>
+<title>matgen (4 samples, 0.01%)</title><rect x="14.4" y="149" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.41" y="159.5" ></text>
 </g>
 <g >
-<title>0xffffffff932001c4 (15 samples, 0.05%)</title><rect x="998.7" y="261" width="0.6" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
-<text  x="1001.74" y="271.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.6" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.57" y="191.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (94 samples, 0.31%)</title><rect x="10.2" y="325" width="3.6" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="13.16" y="335.5" ></text>
+<title>0xffffffff90e25b2c (3 samples, 0.01%)</title><rect x="992.7" y="389" width="0.1" height="15.0" fill="rgb(215,47,11)" rx="2" ry="2" />
+<text  x="995.72" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7f5ed (6 samples, 0.02%)</title><rect x="849.6" y="181" width="0.3" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
-<text  x="852.62" y="191.5" ></text>
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="16.8" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.75" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff9201511f (8 samples, 0.03%)</title><rect x="849.5" y="245" width="0.4" height="15.0" fill="rgb(254,229,54)" rx="2" ry="2" />
-<text  x="852.55" y="255.5" ></text>
+<title>0x20000200000009 (8 samples, 0.03%)</title><rect x="17.9" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.88" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f699b5 (5 samples, 0.02%)</title><rect x="993.5" y="85" width="0.2" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
-<text  x="996.52" y="95.5" ></text>
+<title>0x2 (4 samples, 0.01%)</title><rect x="17.6" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.57" y="255.5" ></text>
 </g>
 <g >
-<title>0xffffffff920258ec (3 samples, 0.01%)</title><rect x="995.8" y="165" width="0.1" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="998.78" y="175.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="11.2" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.25" y="63.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="991.4" y="117" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="994.41" y="127.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (11 samples, 0.04%)</title><rect x="17.5" y="469" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.45" y="479.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="996.1" y="181" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="999.09" y="191.5" ></text>
+<title>0x2 (14 samples, 0.05%)</title><rect x="14.8" y="373" width="0.6" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.84" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff9200dfcd (39 samples, 0.13%)</title><rect x="996.2" y="197" width="1.6" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
-<text  x="999.25" y="207.5" ></text>
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.6" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.57" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025b93 (242 samples, 0.80%)</title><rect x="986.6" y="197" width="9.5" height="15.0" fill="rgb(209,21,5)" rx="2" ry="2" />
-<text  x="989.61" y="207.5" ></text>
+<title>0x2 (5 samples, 0.02%)</title><rect x="15.4" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.39" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff9202d1d7 (8 samples, 0.03%)</title><rect x="849.5" y="229" width="0.4" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="852.55" y="239.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.5" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="111.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (10,138 samples, 33.52%)</title><rect x="454.4" y="325" width="395.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="457.35" y="335.5" >0xfffffffffffffe00</text>
+<title>0x2 (4 samples, 0.01%)</title><rect x="12.0" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.99" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fd93 (3 samples, 0.01%)</title><rect x="988.6" y="149" width="0.1" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
-<text  x="991.60" y="159.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="10.7" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.66" y="47.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f5eb32 (38 samples, 0.13%)</title><rect x="989.1" y="117" width="1.5" height="15.0" fill="rgb(233,128,30)" rx="2" ry="2" />
-<text  x="992.11" y="127.5" ></text>
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="14.3" y="261" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.25" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="992.6" y="85" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="995.58" y="95.5" ></text>
+<title>0xfffffffffffffe00 (9 samples, 0.03%)</title><rect x="17.5" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (32 samples, 0.11%)</title><rect x="989.3" y="69" width="1.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="992.34" y="79.5" ></text>
+<title>0xfffffffffffffe00 (24 samples, 0.08%)</title><rect x="10.5" y="325" width="0.9" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff930a91ce (38 samples, 0.13%)</title><rect x="989.1" y="101" width="1.5" height="15.0" fill="rgb(245,188,45)" rx="2" ry="2" />
-<text  x="992.11" y="111.5" ></text>
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.9" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.89" y="191.5" ></text>
 </g>
 <g >
-<title>matgen (4,882 samples, 16.14%)</title><rect x="999.5" y="341" width="190.5" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
-<text  x="1002.52" y="351.5" >matgen</text>
+<title>0xffffffff91e97b77 (7 samples, 0.02%)</title><rect x="1189.7" y="501" width="0.3" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="1192.73" y="511.5" ></text>
 </g>
 <g >
-<title>0xffffffff9202584f (5 samples, 0.02%)</title><rect x="987.7" y="165" width="0.2" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
-<text  x="990.66" y="175.5" ></text>
+<title>0x2 (34 samples, 0.11%)</title><rect x="16.1" y="501" width="1.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.09" y="511.5" ></text>
 </g>
 <g >
-<title>0xffffffff9309891e (3 samples, 0.01%)</title><rect x="998.0" y="229" width="0.2" height="15.0" fill="rgb(232,124,29)" rx="2" ry="2" />
-<text  x="1001.04" y="239.5" ></text>
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="14.1" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.14" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025af4 (7 samples, 0.02%)</title><rect x="987.0" y="181" width="0.3" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="990.00" y="191.5" ></text>
+<title>0xffffffff91e97b77 (7 samples, 0.02%)</title><rect x="846.7" y="501" width="0.3" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="849.72" y="511.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.9" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.89" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="15.2" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.15" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="11.4" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.44" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.1" y="293" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.10" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="14.6" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.64" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="992.3" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="995.33" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="12.4" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.38" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.0" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.99" y="63.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="11.4" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.44" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="13.8" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.79" y="47.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (28 samples, 0.09%)</title><rect x="17.5" y="517" width="1.0" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="527.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.9" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.88" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.3" y="373" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.26" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="14.4" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.41" y="63.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (15 samples, 0.05%)</title><rect x="13.6" y="341" width="0.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.55" y="351.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63bb0 (5 samples, 0.02%)</title><rect x="988.3" y="341" width="0.2" height="15.0" fill="rgb(228,106,25)" rx="2" ry="2" />
+<text  x="991.27" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="13.1" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.12" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.5" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.1" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.10" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (11 samples, 0.04%)</title><rect x="13.6" y="229" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.55" y="239.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (14 samples, 0.05%)</title><rect x="10.5" y="165" width="0.6" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="175.5" ></text>
+</g>
+<g >
+<title>clock (387 samples, 1.28%)</title><rect x="981.8" y="533" width="15.1" height="15.0" fill="rgb(228,108,25)" rx="2" ry="2" />
+<text  x="984.79" y="543.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (65 samples, 0.21%)</title><rect x="13.6" y="533" width="2.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.55" y="543.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="13.6" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.55" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="991.1" y="277" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="994.12" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="14.3" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.25" y="335.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.1" y="373" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.10" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="18.1" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="21.08" y="223.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.5" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.45" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="13.1" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.12" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (12 samples, 0.04%)</title><rect x="16.5" y="373" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.52" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="15.7" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="12.0" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.99" y="239.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="16.6" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.60" y="207.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2d1d7 (5 samples, 0.02%)</title><rect x="846.7" y="437" width="0.2" height="15.0" fill="rgb(239,158,37)" rx="2" ry="2" />
+<text  x="849.72" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="17.6" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.57" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (10 samples, 0.03%)</title><rect x="13.1" y="405" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.12" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="11.6" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.60" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="14.1" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.14" y="335.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="15.0" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.00" y="127.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5eb00 (3 samples, 0.01%)</title><rect x="986.2" y="341" width="0.1" height="15.0" fill="rgb(234,136,32)" rx="2" ry="2" />
+<text  x="989.20" y="351.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="986.5" y="277" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="989.52" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="14.6" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.64" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="12.4" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.38" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e232e0 (4 samples, 0.01%)</title><rect x="983.0" y="421" width="0.1" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="985.97" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (58 samples, 0.19%)</title><rect x="10.5" y="469" width="2.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="16.6" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.60" y="191.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="14.4" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.41" y="79.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fd2e (4 samples, 0.01%)</title><rect x="985.5" y="357" width="0.1" height="15.0" fill="rgb(240,163,39)" rx="2" ry="2" />
+<text  x="988.46" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="13.6" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.55" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="10.9" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.86" y="111.5" ></text>
+</g>
+<g >
+<title>0xffffffff90de3661 (4 samples, 0.01%)</title><rect x="992.5" y="357" width="0.2" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="995.53" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="989.6" y="245" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="992.60" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="11.6" y="293" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.60" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.5" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (8 samples, 0.03%)</title><rect x="12.0" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.99" y="303.5" ></text>
+</g>
+<g >
+<title>0x0 (12 samples, 0.04%)</title><rect x="10.0" y="549" width="0.5" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="559.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="14.3" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.25" y="111.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="13.8" y="85" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.79" y="95.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (65 samples, 0.21%)</title><rect x="13.6" y="485" width="2.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.55" y="495.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.0" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.99" y="143.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="11.4" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.44" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="16.6" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.60" y="79.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="12.6" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.61" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5eb32 (34 samples, 0.11%)</title><rect x="986.5" y="325" width="1.3" height="15.0" fill="rgb(252,218,52)" rx="2" ry="2" />
+<text  x="989.48" y="335.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (7 samples, 0.02%)</title><rect x="16.1" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.09" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (9 samples, 0.03%)</title><rect x="12.0" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.99" y="367.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="16.1" y="277" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.09" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (58 samples, 0.19%)</title><rect x="10.5" y="421" width="2.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="431.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="10.5" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="79.5" ></text>
+</g>
+<g >
+<title>0xffffffff90dace24 (3 samples, 0.01%)</title><rect x="986.5" y="293" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="989.52" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="989.8" y="309" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="992.83" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="17.9" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.88" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="12.9" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.89" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="17.6" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.57" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (14 samples, 0.05%)</title><rect x="10.5" y="181" width="0.6" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7023b (4 samples, 0.01%)</title><rect x="990.6" y="309" width="0.1" height="15.0" fill="rgb(231,123,29)" rx="2" ry="2" />
+<text  x="993.58" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="12.4" y="357" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.38" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e0dfb0 (3 samples, 0.01%)</title><rect x="993.0" y="405" width="0.1" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="996.00" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.1" y="389" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.10" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (8 samples, 0.03%)</title><rect x="11.6" y="261" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.60" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="12.0" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.99" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="16.5" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.52" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="984.6" y="357" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.64" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="18.1" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.08" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="14.3" y="229" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.25" y="239.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.9" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.88" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (7 samples, 0.02%)</title><rect x="12.8" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.77" y="383.5" ></text>
+</g>
+<g >
+<title>main (4 samples, 0.01%)</title><rect x="17.2" y="469" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="20.22" y="479.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (8 samples, 0.03%)</title><rect x="10.5" y="149" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="16.5" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.52" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (11 samples, 0.04%)</title><rect x="17.5" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="463.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="11.2" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.25" y="79.5" ></text>
+</g>
+<g >
+<title>matgen (4 samples, 0.01%)</title><rect x="15.2" y="213" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="18.15" y="223.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7f5ed (4 samples, 0.01%)</title><rect x="1189.8" y="389" width="0.2" height="15.0" fill="rgb(227,104,24)" rx="2" ry="2" />
+<text  x="1192.80" y="399.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="13.6" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.55" y="223.5" ></text>
+</g>
+<g >
+<title>matgen (10 samples, 0.03%)</title><rect x="14.3" y="341" width="0.3" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.25" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="10.9" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.86" y="47.5" ></text>
+</g>
+<g >
+<title>main (3 samples, 0.01%)</title><rect x="12.4" y="149" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.38" y="159.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="16.8" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.75" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7 samples, 0.02%)</title><rect x="12.8" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.77" y="399.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.8" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.77" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="12.4" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.38" y="223.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="11.6" y="325" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.60" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.9" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.88" y="287.5" ></text>
+</g>
+<g >
+<title>main (3 samples, 0.01%)</title><rect x="15.0" y="149" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="18.00" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="11.2" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.25" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="11.6" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.60" y="175.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.9" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.88" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="13.3" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.28" y="207.5" ></text>
+</g>
+<g >
+<title>0xffffffff90da188f (10 samples, 0.03%)</title><rect x="991.3" y="293" width="0.4" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="994.28" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.6" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.57" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="14.4" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.41" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (12 samples, 0.04%)</title><rect x="14.8" y="261" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.84" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="16.6" y="85" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.60" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (7 samples, 0.02%)</title><rect x="17.5" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (11 samples, 0.04%)</title><rect x="13.1" y="437" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.12" y="447.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.1" y="341" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.10" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="11.4" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.44" y="143.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="15.7" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.70" y="223.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.6" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.61" y="191.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="16.4" y="357" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.40" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.9" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.89" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="14.8" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.84" y="47.5" ></text>
+</g>
+<g >
+<title>matgen (14 samples, 0.05%)</title><rect x="14.8" y="405" width="0.6" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.84" y="415.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (8 samples, 0.03%)</title><rect x="14.3" y="213" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.25" y="223.5" ></text>
+</g>
+<g >
+<title>main (3 samples, 0.01%)</title><rect x="10.7" y="85" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="13.66" y="95.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (18 samples, 0.06%)</title><rect x="16.5" y="453" width="0.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.52" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="14.8" y="149" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.84" y="159.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d9d6c0 (33 samples, 0.11%)</title><rect x="988.5" y="309" width="1.3" height="15.0" fill="rgb(220,69,16)" rx="2" ry="2" />
+<text  x="991.51" y="319.5" ></text>
+</g>
+<g >
+<title>main (4 samples, 0.01%)</title><rect x="11.4" y="341" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="14.44" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (7 samples, 0.02%)</title><rect x="14.8" y="165" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.84" y="175.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e25b1c (211 samples, 0.70%)</title><rect x="984.4" y="389" width="8.3" height="15.0" fill="rgb(221,77,18)" rx="2" ry="2" />
+<text  x="987.45" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="19.4" y="549" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="22.44" y="559.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (377 samples, 1.25%)</title><rect x="982.2" y="485" width="14.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="985.18" y="495.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e98931 (19 samples, 0.06%)</title><rect x="995.5" y="437" width="0.8" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
+<text  x="998.53" y="447.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e9891e (4 samples, 0.01%)</title><rect x="995.4" y="437" width="0.1" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="998.38" y="447.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="16.1" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.09" y="175.5" ></text>
+</g>
+<g >
+<title>0x2 (9 samples, 0.03%)</title><rect x="12.8" y="437" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.77" y="447.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e1511f (7 samples, 0.02%)</title><rect x="1189.7" y="453" width="0.3" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="1192.73" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63bfe (56 samples, 0.19%)</title><rect x="990.0" y="341" width="2.1" height="15.0" fill="rgb(210,23,5)" rx="2" ry="2" />
+<text  x="992.95" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (8 samples, 0.03%)</title><rect x="10.5" y="101" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="18.1" y="325" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.08" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="12.4" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.38" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="11.6" y="149" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.60" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.6" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.57" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.5" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="14.8" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.84" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="17.2" y="453" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.22" y="463.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="18.1" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.08" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="14.0" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.98" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (9 samples, 0.03%)</title><rect x="17.5" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (11 samples, 0.04%)</title><rect x="17.5" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="13.6" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.55" y="207.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (7 samples, 0.02%)</title><rect x="17.5" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="12.4" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.38" y="175.5" ></text>
+</g>
+<g >
+<title>main (5 samples, 0.02%)</title><rect x="14.6" y="405" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="17.64" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="12.0" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.99" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="15.0" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.00" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.9" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.89" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="18.1" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.08" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.9" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.88" y="143.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="14.3" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.25" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.6" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.61" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (28 samples, 0.09%)</title><rect x="17.5" y="485" width="1.0" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="495.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="12.4" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.38" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63b82 (47 samples, 0.16%)</title><rect x="986.4" y="341" width="1.9" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="989.44" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (12 samples, 0.04%)</title><rect x="14.8" y="309" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.84" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (29 samples, 0.10%)</title><rect x="986.7" y="277" width="1.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="989.67" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (7 samples, 0.02%)</title><rect x="15.7" y="341" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.70" y="351.5" ></text>
+</g>
+<g >
+<title>matgen (11 samples, 0.04%)</title><rect x="13.1" y="469" width="0.5" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.12" y="479.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (11 samples, 0.04%)</title><rect x="16.1" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.09" y="431.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="14.6" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.64" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.5" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.9" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.88" y="127.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="10.9" y="85" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.86" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (8 samples, 0.03%)</title><rect x="11.6" y="245" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.60" y="255.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e141a1 (6 samples, 0.02%)</title><rect x="1189.7" y="421" width="0.3" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="1192.73" y="431.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e25af4 (14 samples, 0.05%)</title><rect x="983.7" y="389" width="0.6" height="15.0" fill="rgb(239,158,37)" rx="2" ry="2" />
+<text  x="986.71" y="399.5" ></text>
+</g>
+<g >
+<title>main (3,842 samples, 12.71%)</title><rect x="847.1" y="549" width="149.9" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="850.08" y="559.5" >main</text>
+</g>
+<g >
+<title>0x20000200000009 (9 samples, 0.03%)</title><rect x="13.1" y="229" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.12" y="239.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4,945 samples, 16.35%)</title><rect x="997.0" y="533" width="193.0" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="1000.01" y="543.5" >0xfffffffffffffe00</text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="985.7" y="341" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="988.70" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="15.7" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="19.4" y="533" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="22.44" y="543.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7 samples, 0.02%)</title><rect x="15.7" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="335.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="14.4" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.41" y="47.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (9 samples, 0.03%)</title><rect x="17.9" y="405" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.88" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.5" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="191.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (14 samples, 0.05%)</title><rect x="10.5" y="197" width="0.6" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="207.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (9 samples, 0.03%)</title><rect x="15.7" y="405" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.70" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e9124e (315 samples, 1.04%)</title><rect x="982.8" y="453" width="12.3" height="15.0" fill="rgb(223,86,20)" rx="2" ry="2" />
+<text  x="985.81" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="15.7" y="85" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.70" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (10 samples, 0.03%)</title><rect x="14.3" y="245" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.25" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (11 samples, 0.04%)</title><rect x="13.6" y="261" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.55" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="13.8" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.79" y="63.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (8 samples, 0.03%)</title><rect x="10.5" y="133" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="18.3" y="453" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.27" y="463.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (12 samples, 0.04%)</title><rect x="14.8" y="293" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.84" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.9" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.88" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="11.2" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.25" y="175.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="992.5" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="995.53" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="15.7" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="12.6" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.61" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="11.2" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.25" y="207.5" ></text>
+</g>
+<g >
+<title>main (5 samples, 0.02%)</title><rect x="18.3" y="469" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="21.27" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.0" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.99" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (7 samples, 0.02%)</title><rect x="15.4" y="421" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.39" y="431.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="14.0" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.98" y="175.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="11.4" y="149" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.44" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="16.5" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.52" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="12.6" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.61" y="223.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="996.9" y="517" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="999.90" y="527.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="11.6" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.60" y="79.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (10 samples, 0.03%)</title><rect x="13.1" y="341" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.12" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (65 samples, 0.21%)</title><rect x="13.6" y="501" width="2.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.55" y="511.5" ></text>
+</g>
+<g >
+<title>0x0 (3 samples, 0.01%)</title><rect x="10.0" y="485" width="0.1" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="495.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="12.6" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.61" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="10.7" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.66" y="79.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="11.2" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.25" y="127.5" ></text>
+</g>
+<g >
+<title>matgen (4,945 samples, 16.35%)</title><rect x="997.0" y="549" width="193.0" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="1000.01" y="559.5" >matgen</text>
+</g>
+<g >
+<title>0xffffffffffffff80 (26 samples, 0.09%)</title><rect x="988.5" y="245" width="1.0" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="991.51" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="16.5" y="341" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.52" y="351.5" ></text>
+</g>
+<g >
+<title>0x0 (5 samples, 0.02%)</title><rect x="10.0" y="501" width="0.2" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="511.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (18 samples, 0.06%)</title><rect x="10.5" y="261" width="0.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (10 samples, 0.03%)</title><rect x="983.8" y="357" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="986.78" y="367.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="14.0" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.98" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.9" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.89" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="11.2" y="149" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.25" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="14.4" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.41" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="13.3" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.28" y="79.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (47 samples, 0.16%)</title><rect x="13.6" y="453" width="1.8" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.55" y="463.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (58 samples, 0.19%)</title><rect x="10.5" y="453" width="2.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.51" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2d1d7 (6 samples, 0.02%)</title><rect x="1189.7" y="437" width="0.3" height="15.0" fill="rgb(239,158,37)" rx="2" ry="2" />
+<text  x="1192.73" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="17.9" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.88" y="335.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="12.4" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.38" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (19 samples, 0.06%)</title><rect x="995.5" y="421" width="0.8" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="998.53" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (8 samples, 0.03%)</title><rect x="11.6" y="277" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.60" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (11 samples, 0.04%)</title><rect x="16.1" y="469" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.09" y="479.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (12 samples, 0.04%)</title><rect x="16.5" y="357" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.52" y="367.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="12.8" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.77" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="14.0" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.98" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="14.4" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.41" y="127.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="985.2" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="988.19" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="14.6" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.64" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="15.4" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.39" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="13.1" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.12" y="223.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5eb5f (12 samples, 0.04%)</title><rect x="987.8" y="325" width="0.5" height="15.0" fill="rgb(253,223,53)" rx="2" ry="2" />
+<text  x="990.80" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d699ce (5 samples, 0.02%)</title><rect x="990.2" y="309" width="0.2" height="15.0" fill="rgb(205,2,0)" rx="2" ry="2" />
+<text  x="993.22" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.4" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.38" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.9" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.89" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="18.1" y="309" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.08" y="319.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="15.4" y="405" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.39" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e232ed (252 samples, 0.83%)</title><rect x="983.1" y="421" width="9.9" height="15.0" fill="rgb(252,218,52)" rx="2" ry="2" />
+<text  x="986.12" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="14.4" y="85" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.41" y="95.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="15.7" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="431.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (11 samples, 0.04%)</title><rect x="17.5" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="431.5" ></text>
+</g>
+<g >
+<title>0x2 (28 samples, 0.09%)</title><rect x="17.5" y="501" width="1.0" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="511.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="14.1" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.14" y="319.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="13.3" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.28" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (38 samples, 0.13%)</title><rect x="10.5" y="373" width="1.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="11.2" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.25" y="239.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="13.8" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.79" y="207.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (11 samples, 0.04%)</title><rect x="13.6" y="277" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.55" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (11,134 samples, 36.82%)</title><rect x="19.8" y="549" width="434.5" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="22.80" y="559.5" >daxpy_r.part.0.constprop.0</text>
+</g>
+<g >
+<title>0x20000200000009 (11 samples, 0.04%)</title><rect x="13.1" y="421" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.12" y="431.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="14.0" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.98" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffff90c6dc30 (32 samples, 0.11%)</title><rect x="988.5" y="293" width="1.3" height="15.0" fill="rgb(215,47,11)" rx="2" ry="2" />
+<text  x="991.51" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d3e66e (3 samples, 0.01%)</title><rect x="983.2" y="389" width="0.2" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="986.24" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="13.1" y="389" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.12" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="13.1" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.12" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (38 samples, 0.13%)</title><rect x="10.5" y="357" width="1.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="11.4" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.44" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="16.5" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.52" y="319.5" ></text>
+</g>
+<g >
+<title>matgen (3 samples, 0.01%)</title><rect x="12.9" y="277" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="15.89" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffff91ea91ce (34 samples, 0.11%)</title><rect x="986.5" y="309" width="1.3" height="15.0" fill="rgb(216,52,12)" rx="2" ry="2" />
+<text  x="989.48" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.8" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.77" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="14.8" y="85" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.84" y="95.5" ></text>
+</g>
+<g >
+<title>matgen (3 samples, 0.01%)</title><rect x="16.4" y="405" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="19.40" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e95602 (3 samples, 0.01%)</title><rect x="989.6" y="261" width="0.1" height="15.0" fill="rgb(227,102,24)" rx="2" ry="2" />
+<text  x="992.60" y="271.5" ></text>
+</g>
+<g >
+<title>matgen (3 samples, 0.01%)</title><rect x="16.6" y="213" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="19.60" y="223.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="10.5" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="63.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="15.7" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="47.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fcf7 (5 samples, 0.02%)</title><rect x="985.2" y="357" width="0.2" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
+<text  x="988.19" y="367.5" ></text>
+</g>
+<g >
+<title>matgen (5 samples, 0.02%)</title><rect x="10.9" y="149" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="13.86" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (47 samples, 0.16%)</title><rect x="13.6" y="437" width="1.8" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.55" y="447.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="13.3" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.28" y="47.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (12 samples, 0.04%)</title><rect x="14.8" y="229" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.84" y="239.5" ></text>
+</g>
+<g >
+<title>matgen (4 samples, 0.01%)</title><rect x="17.6" y="277" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="20.57" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.0" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.99" y="47.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="983.2" y="373" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="986.24" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90dace3b (29 samples, 0.10%)</title><rect x="986.7" y="293" width="1.1" height="15.0" fill="rgb(251,214,51)" rx="2" ry="2" />
+<text  x="989.67" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="12.6" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.61" y="239.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="14.8" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.84" y="79.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="11.4" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.44" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (11 samples, 0.04%)</title><rect x="13.1" y="453" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.12" y="463.5" ></text>
+</g>
+<g >
+<title>matgen (10 samples, 0.03%)</title><rect x="11.6" y="341" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="14.60" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="14.3" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.25" y="127.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="12.8" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.77" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="16.6" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.60" y="47.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="12.4" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.38" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="14.0" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.98" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="15.2" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.15" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="15.7" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffff92000f0b (9 samples, 0.03%)</title><rect x="846.7" y="517" width="0.4" height="15.0" fill="rgb(233,131,31)" rx="2" ry="2" />
+<text  x="849.72" y="527.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="10.9" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.86" y="79.5" ></text>
+</g>
+<g >
+<title>0x76623194fef2 (3 samples, 0.01%)</title><rect x="18.8" y="549" width="0.1" height="15.0" fill="rgb(208,18,4)" rx="2" ry="2" />
+<text  x="21.82" y="559.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="10.9" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.86" y="63.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="16.1" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.09" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="16.8" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.75" y="207.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (28 samples, 0.09%)</title><rect x="13.6" y="357" width="1.0" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.55" y="367.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.6" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.57" y="223.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63b6c (3 samples, 0.01%)</title><rect x="985.0" y="357" width="0.1" height="15.0" fill="rgb(233,128,30)" rx="2" ry="2" />
+<text  x="987.99" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (10 samples, 0.03%)</title><rect x="13.1" y="309" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.12" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="14.8" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.84" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="16.8" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.75" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="15.4" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.39" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (28 samples, 0.09%)</title><rect x="13.6" y="373" width="1.0" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.55" y="383.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (8 samples, 0.03%)</title><rect x="17.9" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.88" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="12.8" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.77" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="986.2" y="325" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="989.20" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="12.4" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.38" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="12.0" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.99" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (9 samples, 0.03%)</title><rect x="15.7" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="13.8" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.79" y="175.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fe23 (161 samples, 0.53%)</title><rect x="986.2" y="357" width="6.3" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="989.20" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="14.6" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.64" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="17.9" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.88" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="17.2" y="437" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.22" y="447.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="16.8" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.75" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.6" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.57" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="15.7" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffff92000080 (13 samples, 0.04%)</title><rect x="982.3" y="469" width="0.5" height="15.0" fill="rgb(253,223,53)" rx="2" ry="2" />
+<text  x="985.26" y="479.5" ></text>
+</g>
+<g >
+<title>linpacksp (30,236 samples, 100.00%)</title><rect x="10.0" y="565" width="1180.0" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
+<text  x="13.00" y="575.5" >linpacksp</text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="14.3" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.25" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.9" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.88" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="12.6" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.61" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="16.5" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.52" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e141a1 (4 samples, 0.01%)</title><rect x="846.8" y="421" width="0.1" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="849.76" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="16.6" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.60" y="159.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (47 samples, 0.16%)</title><rect x="13.6" y="469" width="1.8" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.55" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (7 samples, 0.02%)</title><rect x="15.4" y="437" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.39" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.6" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.61" y="207.5" ></text>
+</g>
+<g >
+<title>matgen (3 samples, 0.01%)</title><rect x="17.1" y="405" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="20.10" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (17 samples, 0.06%)</title><rect x="994.2" y="373" width="0.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="997.20" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (12 samples, 0.04%)</title><rect x="14.8" y="277" width="0.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.84" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="16.6" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.60" y="63.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="16.1" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.09" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (9 samples, 0.03%)</title><rect x="17.5" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="11.6" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.60" y="191.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="11.6" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.60" y="223.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d69387 (4 samples, 0.01%)</title><rect x="1189.8" y="405" width="0.2" height="15.0" fill="rgb(219,65,15)" rx="2" ry="2" />
+<text  x="1192.80" y="415.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (24 samples, 0.08%)</title><rect x="10.5" y="293" width="0.9" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="13.8" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.79" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (18 samples, 0.06%)</title><rect x="10.5" y="245" width="0.7" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.8" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.77" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7f5ed (4 samples, 0.01%)</title><rect x="846.8" y="389" width="0.1" height="15.0" fill="rgb(227,104,24)" rx="2" ry="2" />
+<text  x="849.76" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (15 samples, 0.05%)</title><rect x="13.6" y="293" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.55" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e0dfcd (43 samples, 0.14%)</title><rect x="993.2" y="405" width="1.7" height="15.0" fill="rgb(225,95,22)" rx="2" ry="2" />
+<text  x="996.19" y="415.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="14.6" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.64" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (58 samples, 0.19%)</title><rect x="10.5" y="437" width="2.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="447.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="16.6" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.60" y="111.5" ></text>
+</g>
+<g >
+<title>0xffffffff92000f0b (7 samples, 0.02%)</title><rect x="1189.7" y="517" width="0.3" height="15.0" fill="rgb(233,131,31)" rx="2" ry="2" />
+<text  x="1192.73" y="527.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (13 samples, 0.04%)</title><rect x="982.3" y="453" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="985.26" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="985.5" y="341" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="988.46" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.9" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.88" y="111.5" ></text>
+</g>
+<g >
+<title>0x0 (8 samples, 0.03%)</title><rect x="10.0" y="517" width="0.3" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="527.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5f79c (3 samples, 0.01%)</title><rect x="989.8" y="325" width="0.2" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
+<text  x="992.83" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e955f8 (26 samples, 0.09%)</title><rect x="988.5" y="261" width="1.0" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
+<text  x="991.51" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="12.0" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.99" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.1" y="309" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.10" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10,064 samples, 33.28%)</title><rect x="454.3" y="533" width="392.8" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="457.31" y="543.5" >0xfffffffffffffe00</text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="16.6" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.60" y="143.5" ></text>
+</g>
+<g >
+<title>0xffffffff920001c4 (13 samples, 0.04%)</title><rect x="996.4" y="469" width="0.5" height="15.0" fill="rgb(243,177,42)" rx="2" ry="2" />
+<text  x="999.35" y="479.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (13 samples, 0.04%)</title><rect x="16.5" y="405" width="0.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.52" y="415.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (18 samples, 0.06%)</title><rect x="10.5" y="229" width="0.7" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="15.7" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="12.0" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.99" y="111.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e1511f (7 samples, 0.02%)</title><rect x="846.7" y="453" width="0.3" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="849.72" y="463.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.5" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.45" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (28 samples, 0.09%)</title><rect x="13.6" y="389" width="1.0" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.55" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="15.4" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.39" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (5 samples, 0.02%)</title><rect x="17.9" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.88" y="351.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6 samples, 0.02%)</title><rect x="12.0" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.99" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.9" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.88" y="175.5" ></text>
+</g>
+<g >
+<title>main (4 samples, 0.01%)</title><rect x="12.6" y="341" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.61" y="351.5" ></text>
+</g>
+<g >
+<title>0x0 (9 samples, 0.03%)</title><rect x="10.0" y="533" width="0.4" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="543.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="18.1" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.08" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="15.2" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.15" y="159.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7044c (55 samples, 0.18%)</title><rect x="990.0" y="325" width="2.1" height="15.0" fill="rgb(206,4,1)" rx="2" ry="2" />
+<text  x="992.99" y="335.5" ></text>
+</g>
+<g >
+<title>all (30,236 samples, 100%)</title><rect x="10.0" y="581" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="591.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5f72c (34 samples, 0.11%)</title><rect x="988.5" y="325" width="1.3" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="991.47" y="335.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="11.4" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.44" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="16.6" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.60" y="175.5" ></text>
+</g>
+<g >
+<title>0x2 (7 samples, 0.02%)</title><rect x="15.7" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (10 samples, 0.03%)</title><rect x="15.7" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="447.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e9125a (31 samples, 0.10%)</title><rect x="995.1" y="453" width="1.2" height="15.0" fill="rgb(243,175,41)" rx="2" ry="2" />
+<text  x="998.10" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffff9200012b (347 samples, 1.15%)</title><rect x="982.8" y="469" width="13.5" height="15.0" fill="rgb(212,36,8)" rx="2" ry="2" />
+<text  x="985.77" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="11.2" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.25" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="16.8" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.75" y="319.5" ></text>
+</g>
+<g >
+<title>main (9 samples, 0.03%)</title><rect x="12.8" y="469" width="0.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.77" y="479.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7 samples, 0.02%)</title><rect x="17.5" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.45" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (78 samples, 0.26%)</title><rect x="10.5" y="533" width="3.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="543.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (11 samples, 0.04%)</title><rect x="16.1" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.09" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.9" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.88" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="13.1" y="357" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.12" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (10 samples, 0.03%)</title><rect x="12.4" y="373" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.38" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="15.4" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.39" y="383.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.3" y="389" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.26" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (47 samples, 0.16%)</title><rect x="13.6" y="421" width="1.8" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.55" y="431.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="11.4" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.44" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="13.8" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.79" y="127.5" ></text>
+</g>
+<g >
+<title>0x2 (8 samples, 0.03%)</title><rect x="14.3" y="181" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.25" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="15.2" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.15" y="127.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="11.6" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.60" y="95.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7036a (14 samples, 0.05%)</title><rect x="991.1" y="309" width="0.6" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="994.12" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="16.4" y="389" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.40" y="399.5" ></text>
+</g>
+<g >
+<title>clock_gettime@@GLIBC_2.17 (3 samples, 0.01%)</title><rect x="996.9" y="533" width="0.1" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="999.90" y="543.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="16.1" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.09" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="10.5" y="85" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="95.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="15.2" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.15" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="12.4" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.38" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="981.8" y="517" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="984.79" y="527.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="15.7" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.70" y="159.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10 samples, 0.03%)</title><rect x="17.9" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.88" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (10 samples, 0.03%)</title><rect x="17.9" y="469" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.88" y="479.5" ></text>
+</g>
+<g >
+<title>clock_gettime@@GLIBC_2.17 (378 samples, 1.25%)</title><rect x="982.1" y="517" width="14.8" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="985.15" y="527.5" ></text>
+</g>
+<g >
+<title>clock (3 samples, 0.01%)</title><rect x="19.7" y="549" width="0.1" height="15.0" fill="rgb(228,108,25)" rx="2" ry="2" />
+<text  x="22.68" y="559.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (11,134 samples, 36.82%)</title><rect x="19.8" y="533" width="434.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="22.80" y="543.5" >0xfffffffffffffe00</text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="12.0" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.99" y="95.5" ></text>
+</g>
+<g >
+<title>0xffffffff9149f57e (17 samples, 0.06%)</title><rect x="994.2" y="389" width="0.7" height="15.0" fill="rgb(209,18,4)" rx="2" ry="2" />
+<text  x="997.20" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (9 samples, 0.03%)</title><rect x="12.8" y="421" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.77" y="431.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e956e9 (32 samples, 0.11%)</title><rect x="988.5" y="277" width="1.3" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
+<text  x="991.51" y="287.5" ></text>
+</g>
+<g >
+<title>matgen (3 samples, 0.01%)</title><rect x="18.1" y="341" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="21.08" y="351.5" ></text>
+</g>
+<g >
+<title>0xffffffff9149f579 (26 samples, 0.09%)</title><rect x="993.2" y="389" width="1.0" height="15.0" fill="rgb(243,176,42)" rx="2" ry="2" />
+<text  x="996.19" y="399.5" ></text>
+</g>
+<g >
+<title>0x2 (11 samples, 0.04%)</title><rect x="13.6" y="245" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.55" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="12.9" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.89" y="159.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="16.1" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.09" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="12.4" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.38" y="239.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (14 samples, 0.05%)</title><rect x="14.8" y="357" width="0.6" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.84" y="367.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="11.4" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.44" y="335.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="13.3" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.28" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="16.1" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.09" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="11.4" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.44" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (38 samples, 0.13%)</title><rect x="10.5" y="405" width="1.5" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (8 samples, 0.03%)</title><rect x="14.3" y="197" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.25" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (9 samples, 0.03%)</title><rect x="13.1" y="261" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.12" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (5 samples, 0.02%)</title><rect x="984.4" y="357" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.45" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2583a (5 samples, 0.02%)</title><rect x="984.4" y="373" width="0.2" height="15.0" fill="rgb(243,175,41)" rx="2" ry="2" />
+<text  x="987.45" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="13.3" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.28" y="127.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (18 samples, 0.06%)</title><rect x="16.5" y="469" width="0.7" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.52" y="479.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (14 samples, 0.05%)</title><rect x="14.8" y="389" width="0.6" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.84" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="15.2" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.15" y="143.5" ></text>
+</g>
+<g >
+<title>matgen (5 samples, 0.02%)</title><rect x="13.8" y="213" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.79" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (206 samples, 0.68%)</title><rect x="10.5" y="549" width="8.0" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="559.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e16078 (7 samples, 0.02%)</title><rect x="846.7" y="469" width="0.3" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="849.72" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="16.4" y="373" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.40" y="383.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,452 samples, 11.42%)</title><rect x="847.1" y="533" width="134.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="850.08" y="543.5" >0xfffffffffffffe00</text>
+</g>
+<g >
+<title>0xffffffff91ea99f7 (11 samples, 0.04%)</title><rect x="987.8" y="309" width="0.4" height="15.0" fill="rgb(242,172,41)" rx="2" ry="2" />
+<text  x="990.80" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="11.6" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.60" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="18.1" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.08" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (12 samples, 0.04%)</title><rect x="16.5" y="389" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.52" y="399.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d69387 (4 samples, 0.01%)</title><rect x="846.8" y="405" width="0.1" height="15.0" fill="rgb(219,65,15)" rx="2" ry="2" />
+<text  x="849.76" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="17.9" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.88" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (10 samples, 0.03%)</title><rect x="991.3" y="277" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="994.28" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2584f (5 samples, 0.02%)</title><rect x="984.6" y="373" width="0.2" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
+<text  x="987.64" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.5" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.45" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="18.3" y="437" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.27" y="447.5" ></text>
+</g>
+<g >
+<title>matgen (6 samples, 0.02%)</title><rect x="16.8" y="341" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="19.75" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="18.1" y="293" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.08" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="990.1" y="293" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="993.07" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (7 samples, 0.02%)</title><rect x="17.5" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.45" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (8 samples, 0.03%)</title><rect x="11.6" y="229" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.60" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="11.4" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.44" y="191.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="11.4" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.44" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (10,064 samples, 33.28%)</title><rect x="454.3" y="549" width="392.8" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="457.31" y="559.5" >daxpy_ur.part.0.constprop.0</text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="10.9" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.86" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="13.1" y="325" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.12" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="11.2" y="85" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.25" y="95.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.1" y="357" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.10" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e16078 (7 samples, 0.02%)</title><rect x="1189.7" y="469" width="0.3" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="1192.73" y="479.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (24 samples, 0.08%)</title><rect x="10.5" y="341" width="0.9" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.51" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="16.8" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.75" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="11.2" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.25" y="47.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="17.3" y="357" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.26" y="367.5" ></text>
+</g>
+<g >
+<title>matgen (10 samples, 0.03%)</title><rect x="15.7" y="469" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="18.70" y="479.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="19.4" y="517" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="22.44" y="527.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="17.5" y="277" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.45" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e23324 (53 samples, 0.18%)</title><rect x="993.0" y="421" width="2.1" height="15.0" fill="rgb(235,140,33)" rx="2" ry="2" />
+<text  x="996.00" y="431.5" ></text>
+</g>
+<g >
+<title>0x2 (4 samples, 0.01%)</title><rect x="15.2" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.15" y="191.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (28 samples, 0.09%)</title><rect x="13.6" y="405" width="1.0" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.55" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (5 samples, 0.02%)</title><rect x="13.3" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.28" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.1" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.10" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="18.1" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="21.08" y="287.5" ></text>
+</g>
+<g >
+<title>__vdso_clock_gettime (3 samples, 0.01%)</title><rect x="982.0" y="517" width="0.1" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
+<text  x="985.03" y="527.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7 samples, 0.02%)</title><rect x="14.8" y="197" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.84" y="207.5" ></text>
+</g>
+<g >
+<title>main (8 samples, 0.03%)</title><rect x="15.4" y="469" width="0.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="18.39" y="479.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7 samples, 0.02%)</title><rect x="15.4" y="453" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.39" y="463.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (9 samples, 0.03%)</title><rect x="12.8" y="453" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.77" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="16.8" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.75" y="223.5" ></text>
+</g>
+<g >
+<title>matgen (4 samples, 0.01%)</title><rect x="14.0" y="277" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.98" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (34 samples, 0.11%)</title><rect x="16.1" y="517" width="1.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.09" y="527.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (5 samples, 0.02%)</title><rect x="13.3" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.28" y="175.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="12.0" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.99" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="11.2" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.25" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="18.5" y="533" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.55" y="543.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="11.6" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.60" y="63.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6 samples, 0.02%)</title><rect x="16.8" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.75" y="335.5" ></text>
+</g>
+<g >
+<title>0x2 (8 samples, 0.03%)</title><rect x="12.0" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.99" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="11.6" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.60" y="127.5" ></text>
+</g>
+<g >
+<title>0x2 (7 samples, 0.02%)</title><rect x="16.1" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.09" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="993.0" y="389" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="996.00" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="13.3" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.28" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="17.6" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.57" y="143.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3 samples, 0.01%)</title><rect x="12.8" y="277" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.77" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (8 samples, 0.03%)</title><rect x="12.0" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.99" y="335.5" ></text>
+</g>
+<g >
+<title>matgen (5 samples, 0.02%)</title><rect x="11.2" y="277" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="14.25" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="12.9" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.89" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (6 samples, 0.02%)</title><rect x="12.4" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.38" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (15 samples, 0.05%)</title><rect x="13.6" y="309" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.55" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6 samples, 0.02%)</title><rect x="12.4" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.38" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="10.7" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.66" y="63.5" ></text>
+</g>
+<g >
+<title>main (3 samples, 0.01%)</title><rect x="14.1" y="341" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="17.14" y="351.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (4 samples, 0.01%)</title><rect x="983.0" y="405" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="985.97" y="415.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (8 samples, 0.03%)</title><rect x="12.0" y="341" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.99" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="15.7" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.70" y="175.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (5 samples, 0.02%)</title><rect x="16.5" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.52" y="271.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10 samples, 0.03%)</title><rect x="12.4" y="389" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.38" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (78 samples, 0.26%)</title><rect x="10.5" y="485" width="3.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.51" y="495.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="15.7" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.70" y="79.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2504f (10 samples, 0.03%)</title><rect x="983.8" y="373" width="0.4" height="15.0" fill="rgb(206,4,1)" rx="2" ry="2" />
+<text  x="986.78" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63bea (38 samples, 0.13%)</title><rect x="988.5" y="341" width="1.5" height="15.0" fill="rgb(242,171,41)" rx="2" ry="2" />
+<text  x="991.47" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (18 samples, 0.06%)</title><rect x="16.5" y="421" width="0.7" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.52" y="431.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="11.2" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.25" y="111.5" ></text>
+</g>
+<g >
+<title>0x2 (8 samples, 0.03%)</title><rect x="10.5" y="117" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.51" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4 samples, 0.01%)</title><rect x="17.2" y="421" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.22" y="431.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="17.9" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.88" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (3 samples, 0.01%)</title><rect x="15.7" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.70" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3 samples, 0.01%)</title><rect x="990.9" y="277" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="993.93" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3 samples, 0.01%)</title><rect x="16.1" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.09" y="239.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3 samples, 0.01%)</title><rect x="11.4" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.44" y="207.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (4 samples, 0.01%)</title><rect x="12.6" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.61" y="287.5" ></text>
+</g>
+<g >
+<title>matgen (10 samples, 0.03%)</title><rect x="12.4" y="405" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="15.38" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="13.8" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.79" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (18 samples, 0.06%)</title><rect x="16.5" y="437" width="0.7" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.52" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4 samples, 0.01%)</title><rect x="11.4" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.44" y="271.5" ></text>
 </g>
 </g>
 </svg>

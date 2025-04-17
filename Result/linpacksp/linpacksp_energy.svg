@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="422" onload="init(evt)" viewBox="0 0 1200 422" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="630" onload="init(evt)" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -421,545 +421,2713 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="422.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="630.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Energy Flame Graph</text>
-<text id="details" x="10.00" y="405" > </text>
+<text id="details" x="10.00" y="613" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="405" > </text>
+<text id="matched" x="1090.00" y="613" > </text>
 <g id="frames">
 <g >
-<title>0xffffffff91f699d8 (1,181,988 microwatts, 0.01%)</title><rect x="993.6" y="85" width="0.1" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
-<text  x="996.56" y="95.5" ></text>
+<title>0xffffffffffffff80 (822,501 microwatts, 0.01%)</title><rect x="984.5" y="341" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.46" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f70380 (1,130,381 microwatts, 0.01%)</title><rect x="994.6" y="101" width="0.1" height="15.0" fill="rgb(246,191,45)" rx="2" ry="2" />
-<text  x="997.63" y="111.5" ></text>
+<title>matgen (7,483,716 microwatts, 0.09%)</title><rect x="17.4" y="533" width="1.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="20.42" y="543.5" ></text>
 </g>
 <g >
-<title>0xffffffff9201511f (3,486,060 microwatts, 0.03%)</title><rect x="849.5" y="245" width="0.3" height="15.0" fill="rgb(254,229,54)" rx="2" ry="2" />
-<text  x="852.45" y="255.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (808,984 microwatts, 0.01%)</title><rect x="17.2" y="405" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.22" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,204,622 microwatts, 0.01%)</title><rect x="987.8" y="133" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.85" y="143.5" ></text>
+<title>0x2 (2,437,971 microwatts, 0.03%)</title><rect x="17.8" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.84" y="447.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025048 (1,215,663 microwatts, 0.01%)</title><rect x="986.7" y="165" width="0.2" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="989.74" y="175.5" ></text>
+<title>0xfffffffffffffe00 (1,278,558 microwatts, 0.02%)</title><rect x="13.4" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.36" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffff920258e4 (87,323,249 microwatts, 0.69%)</title><rect x="987.6" y="165" width="8.1" height="15.0" fill="rgb(240,162,38)" rx="2" ry="2" />
-<text  x="990.56" y="175.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (1,989,448 microwatts, 0.02%)</title><rect x="17.4" y="341" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.42" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,130,381 microwatts, 0.01%)</title><rect x="994.6" y="85" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="997.63" y="95.5" ></text>
+<title>0xfffffffffffffe00 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="79.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f69387 (2,615,718 microwatts, 0.02%)</title><rect x="849.5" y="197" width="0.3" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
-<text  x="852.53" y="207.5" ></text>
+<title>0xffffffff90e2d1d7 (1,814,788 microwatts, 0.02%)</title><rect x="1189.7" y="437" width="0.3" height="15.0" fill="rgb(239,158,37)" rx="2" ry="2" />
+<text  x="1192.69" y="447.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fd93 (1,466,760 microwatts, 0.01%)</title><rect x="988.3" y="149" width="0.2" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
-<text  x="991.34" y="159.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.45" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7038a (3,164,505 microwatts, 0.03%)</title><rect x="994.7" y="101" width="0.3" height="15.0" fill="rgb(230,115,27)" rx="2" ry="2" />
-<text  x="997.73" y="111.5" ></text>
+<title>0x2 (1,072,151 microwatts, 0.01%)</title><rect x="15.2" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.16" y="191.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (4,195,270,303 microwatts, 33.34%)</title><rect x="456.4" y="325" width="393.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="459.38" y="335.5" >0xfffffffffffffe00</text>
+<title>0xfffffffffffffe00 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.94" y="143.5" ></text>
 </g>
 <g >
-<title>0xffffffff930956e9 (8,113,282 microwatts, 0.06%)</title><rect x="991.4" y="69" width="0.8" height="15.0" fill="rgb(219,65,15)" rx="2" ry="2" />
-<text  x="994.41" y="79.5" ></text>
+<title>matgen (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="149" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.45" y="159.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (5,711,278 microwatts, 0.05%)</title><rect x="998.1" y="213" width="0.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1001.15" y="223.5" ></text>
+<title>0x2 (4,743,724 microwatts, 0.06%)</title><rect x="16.5" y="437" width="0.7" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.50" y="447.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,254,627 microwatts, 0.01%)</title><rect x="987.7" y="133" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.65" y="143.5" ></text>
+<title>0xfffffffffffffe00 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.02" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffff9200dfcd (15,806,155 microwatts, 0.13%)</title><rect x="996.2" y="197" width="1.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
-<text  x="999.25" y="207.5" ></text>
+<title>0xffffffffffffff80 (852,597 microwatts, 0.01%)</title><rect x="990.8" y="277" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="993.79" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff9269f579 (8,439,713 microwatts, 0.07%)</title><rect x="996.2" y="181" width="0.8" height="15.0" fill="rgb(223,87,20)" rx="2" ry="2" />
-<text  x="999.25" y="191.5" ></text>
+<title>0x2 (2,023,508 microwatts, 0.02%)</title><rect x="11.7" y="245" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.69" y="255.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63b70 (1,254,627 microwatts, 0.01%)</title><rect x="987.7" y="149" width="0.1" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="990.65" y="159.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.52" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff9202584f (2,071,503 microwatts, 0.02%)</title><rect x="987.4" y="165" width="0.2" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
-<text  x="990.36" y="175.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (3,070,625 microwatts, 0.04%)</title><rect x="16.1" y="469" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.05" y="479.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (1,983,099 microwatts, 0.02%)</title><rect x="999.4" y="309" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="1002.38" y="319.5" ></text>
+<title>0xffffffff90d8fd56 (800,358 microwatts, 0.01%)</title><rect x="985.2" y="357" width="0.1" height="15.0" fill="rgb(224,91,21)" rx="2" ry="2" />
+<text  x="988.19" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,291,469 microwatts, 0.01%)</title><rect x="988.9" y="69" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.89" y="79.5" ></text>
+<title>0x2 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.85" y="127.5" ></text>
 </g>
 <g >
-<title>0xffffffff91eb3126 (1,283,188 microwatts, 0.01%)</title><rect x="1189.9" y="277" width="0.1" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="1192.88" y="287.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.84" y="159.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (2,071,503 microwatts, 0.02%)</title><rect x="987.4" y="149" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.36" y="159.5" ></text>
+<title>0xfffffffffffffe00 (803,765 microwatts, 0.01%)</title><rect x="13.2" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.20" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,100,249 microwatts, 0.01%)</title><rect x="992.6" y="85" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="995.61" y="95.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="277" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.86" y="287.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (164,805,903 microwatts, 1.31%)</title><rect x="983.9" y="277" width="15.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="986.89" y="287.5" ></text>
+<title>0x2 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.45" y="127.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (4,745,946 microwatts, 0.04%)</title><rect x="994.1" y="69" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="997.06" y="79.5" ></text>
+<title>matgen (1,076,911 microwatts, 0.01%)</title><rect x="14.0" y="277" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.04" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f5f72c (8,518,398 microwatts, 0.07%)</title><rect x="991.4" y="117" width="0.8" height="15.0" fill="rgb(244,180,43)" rx="2" ry="2" />
-<text  x="994.41" y="127.5" ></text>
+<title>0xffffffff920001c4 (3,637,224 microwatts, 0.04%)</title><rect x="996.2" y="469" width="0.5" height="15.0" fill="rgb(243,177,42)" rx="2" ry="2" />
+<text  x="999.18" y="479.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7f1d9 (1,730,362 microwatts, 0.01%)</title><rect x="849.6" y="165" width="0.1" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
-<text  x="852.58" y="175.5" ></text>
+<title>0xfffffffffffffe00 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.84" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffff93097b77 (1,283,188 microwatts, 0.01%)</title><rect x="1189.9" y="293" width="0.1" height="15.0" fill="rgb(232,124,29)" rx="2" ry="2" />
-<text  x="1192.88" y="303.5" ></text>
+<title>0x20000200000009 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.94" y="47.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (13,090,003 microwatts, 0.10%)</title><rect x="989.1" y="69" width="1.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="992.13" y="79.5" ></text>
+<title>0x20000200000009 (777,675 microwatts, 0.01%)</title><rect x="15.0" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.01" y="111.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (4,682,319,590 microwatts, 37.21%)</title><rect x="13.8" y="325" width="439.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="16.82" y="335.5" >0xfffffffffffffe00</text>
+<title>0xfffffffffffffe00 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.45" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f5eb32 (15,648,820 microwatts, 0.12%)</title><rect x="988.9" y="117" width="1.5" height="15.0" fill="rgb(233,128,30)" rx="2" ry="2" />
-<text  x="991.89" y="127.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.42" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffff9200dfb0 (1,339,182 microwatts, 0.01%)</title><rect x="996.1" y="197" width="0.1" height="15.0" fill="rgb(247,196,46)" rx="2" ry="2" />
-<text  x="999.08" y="207.5" ></text>
+<title>0xfffffffffffffe00 (1,256,344 microwatts, 0.02%)</title><rect x="16.5" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.50" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fd76 (1,868,274 microwatts, 0.01%)</title><rect x="988.2" y="149" width="0.1" height="15.0" fill="rgb(242,172,41)" rx="2" ry="2" />
-<text  x="991.17" y="159.5" ></text>
+<title>0xffffffff90dace3b (7,794,288 microwatts, 0.10%)</title><rect x="986.2" y="293" width="1.2" height="15.0" fill="rgb(251,214,51)" rx="2" ry="2" />
+<text  x="989.22" y="303.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (12,578,330 microwatts, 0.10%)</title><rect x="999.6" y="325" width="1.1" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="1002.57" y="335.5" ></text>
+<title>0xffffffff9149f57e (4,889,696 microwatts, 0.06%)</title><rect x="994.0" y="389" width="0.7" height="15.0" fill="rgb(209,18,4)" rx="2" ry="2" />
+<text  x="997.01" y="399.5" ></text>
 </g>
 <g >
-<title>all (12,582,258,796 microwatts, 100%)</title><rect x="10.0" y="373" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="383.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.45" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025af4 (2,729,776 microwatts, 0.02%)</title><rect x="986.7" y="181" width="0.3" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="989.70" y="191.5" ></text>
+<title>0xffffffff90e232ed (70,102,097 microwatts, 0.86%)</title><rect x="982.6" y="421" width="10.1" height="15.0" fill="rgb(252,218,52)" rx="2" ry="2" />
+<text  x="985.57" y="431.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (6,272,382 microwatts, 0.05%)</title><rect x="998.8" y="245" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1001.76" y="255.5" ></text>
+<title>0x20000200000009 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.84" y="239.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7023b (2,119,281 microwatts, 0.02%)</title><rect x="992.9" y="101" width="0.2" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
-<text  x="995.95" y="111.5" ></text>
+<title>0x20000200000009 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.72" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (8,439,713 microwatts, 0.07%)</title><rect x="996.2" y="165" width="0.8" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="999.25" y="175.5" ></text>
+<title>0xffffffffffffff80 (3,637,224 microwatts, 0.04%)</title><rect x="996.2" y="453" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="999.18" y="463.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63bfe (29,781,260 microwatts, 0.24%)</title><rect x="992.3" y="133" width="2.8" height="15.0" fill="rgb(240,163,39)" rx="2" ry="2" />
-<text  x="995.27" y="143.5" ></text>
+<title>main (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="341" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.67" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7044c (28,873,963 microwatts, 0.23%)</title><rect x="992.4" y="117" width="2.7" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="995.35" y="127.5" ></text>
+<title>0xffffffff90e25b1c (58,802,223 microwatts, 0.72%)</title><rect x="983.9" y="389" width="8.6" height="15.0" fill="rgb(221,77,18)" rx="2" ry="2" />
+<text  x="986.93" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff920258ec (1,623,229 microwatts, 0.01%)</title><rect x="995.7" y="165" width="0.2" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="998.75" y="175.5" ></text>
+<title>0x20000200000009 (1,475,508 microwatts, 0.02%)</title><rect x="15.4" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.39" y="367.5" ></text>
 </g>
 <g >
-<title>clock_gettime@@GLIBC_2.17 (1,983,099 microwatts, 0.02%)</title><rect x="999.4" y="325" width="0.2" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
-<text  x="1002.38" y="335.5" ></text>
+<title>0x20000200000009 (3,964,244 microwatts, 0.05%)</title><rect x="13.6" y="293" width="0.6" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.62" y="303.5" ></text>
 </g>
 <g >
-<title>daxpy_r.part.0.constprop.0 (4,721,549,007 microwatts, 37.53%)</title><rect x="10.1" y="341" width="442.8" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
-<text  x="13.14" y="351.5" >daxpy_r.part.0.constprop.0</text>
+<title>matgen (808,290 microwatts, 0.01%)</title><rect x="16.4" y="405" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="19.38" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (2,452,612 microwatts, 0.02%)</title><rect x="992.7" y="85" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="995.72" y="95.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.05" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffff91fe3661 (3,291,052 microwatts, 0.03%)</title><rect x="995.4" y="149" width="0.3" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
-<text  x="998.37" y="159.5" ></text>
+<title>0xfffffffffffffe00 (1,236,173 microwatts, 0.02%)</title><rect x="10.6" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="79.5" ></text>
 </g>
 <g >
-<title>0xffffffff930955f8 (6,473,649 microwatts, 0.05%)</title><rect x="991.4" y="53" width="0.6" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="994.41" y="63.5" ></text>
+<title>0x2 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,092,240 microwatts, 0.01%)</title><rect x="993.8" y="69" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="996.82" y="79.5" ></text>
+<title>0x20000200000009 (2,963,214 microwatts, 0.04%)</title><rect x="17.4" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="431.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (2,059,214 microwatts, 0.02%)</title><rect x="991.2" y="117" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="994.22" y="127.5" ></text>
+<title>0xfffffffffffffe00 (2,641,058,775 microwatts, 32.45%)</title><rect x="464.0" y="533" width="382.8" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="466.96" y="543.5" >0xfffffffffffffe00</text>
 </g>
 <g >
-<title>main (1,596,757,204 microwatts, 12.69%)</title><rect x="849.8" y="341" width="149.8" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
-<text  x="852.82" y="351.5" >main</text>
+<title>0x20000200000009 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="357" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.07" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff92023324 (18,987,051 microwatts, 0.15%)</title><rect x="996.1" y="213" width="1.8" height="15.0" fill="rgb(214,45,10)" rx="2" ry="2" />
-<text  x="999.08" y="223.5" ></text>
+<title>0xffffffffffffff80 (1,399,692 microwatts, 0.02%)</title><rect x="984.1" y="357" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.11" y="367.5" ></text>
 </g>
 <g >
-<title>linpacksp (12,582,258,796 microwatts, 100.00%)</title><rect x="10.0" y="357" width="1180.0" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
-<text  x="13.00" y="367.5" >linpacksp</text>
+<title>0x2 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025b1c (92,717,830 microwatts, 0.74%)</title><rect x="987.2" y="181" width="8.7" height="15.0" fill="rgb(251,212,50)" rx="2" ry="2" />
-<text  x="990.20" y="191.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (2,134,833 microwatts, 0.03%)</title><rect x="17.8" y="405" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.84" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fcf7 (1,204,622 microwatts, 0.01%)</title><rect x="987.8" y="149" width="0.2" height="15.0" fill="rgb(238,156,37)" rx="2" ry="2" />
-<text  x="990.85" y="159.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="277" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.30" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,466,760 microwatts, 0.01%)</title><rect x="988.3" y="133" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.34" y="143.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (755,738 microwatts, 0.01%)</title><rect x="14.9" y="85" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.86" y="95.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7036a (7,716,256 microwatts, 0.06%)</title><rect x="993.8" y="101" width="0.7" height="15.0" fill="rgb(243,175,41)" rx="2" ry="2" />
-<text  x="996.82" y="111.5" ></text>
+<title>0x20000200000009 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.02" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63b82 (22,078,240 microwatts, 0.18%)</title><rect x="988.9" y="133" width="2.1" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
-<text  x="991.89" y="143.5" ></text>
+<title>0x2 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.94" y="63.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,725,061 microwatts, 0.01%)</title><rect x="988.6" y="117" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.64" y="127.5" ></text>
+<title>0xfffffffffffffe00 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.52" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff92016078 (1,283,188 microwatts, 0.01%)</title><rect x="1189.9" y="261" width="0.1" height="15.0" fill="rgb(213,37,9)" rx="2" ry="2" />
-<text  x="1192.88" y="271.5" ></text>
+<title>0xfffffffffffffe00 (831,710 microwatts, 0.01%)</title><rect x="12.9" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.86" y="271.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (3,291,052 microwatts, 0.03%)</title><rect x="995.4" y="133" width="0.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="998.37" y="143.5" ></text>
+<title>main (1,419,689 microwatts, 0.02%)</title><rect x="18.2" y="469" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="21.20" y="479.5" ></text>
 </g>
 <g >
-<title>daxpy_ur.part.0.constprop.0 (4,231,900,546 microwatts, 33.63%)</title><rect x="452.9" y="341" width="396.9" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
-<text  x="455.94" y="351.5" >daxpy_ur.part.0.constprop.0</text>
+<title>0xffffffff90e0dfcd (12,011,035 microwatts, 0.15%)</title><rect x="993.0" y="405" width="1.7" height="15.0" fill="rgb(225,95,22)" rx="2" ry="2" />
+<text  x="995.98" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffff930988f8 (1,444,976 microwatts, 0.01%)</title><rect x="997.9" y="229" width="0.1" height="15.0" fill="rgb(236,146,35)" rx="2" ry="2" />
-<text  x="1000.90" y="239.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (4,743,724 microwatts, 0.06%)</title><rect x="16.5" y="469" width="0.7" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.50" y="479.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7f5ed (2,615,718 microwatts, 0.02%)</title><rect x="849.5" y="181" width="0.3" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
-<text  x="852.53" y="191.5" ></text>
+<title>0xfffffffffffffe00 (2,963,214 microwatts, 0.04%)</title><rect x="17.4" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="463.5" ></text>
 </g>
 <g >
-<title>0xffffffff91eb3126 (3,486,060 microwatts, 0.03%)</title><rect x="849.5" y="277" width="0.3" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="852.45" y="287.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (1,395,647 microwatts, 0.02%)</title><rect x="16.1" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.05" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff9309125a (9,537,361 microwatts, 0.08%)</title><rect x="997.9" y="245" width="0.9" height="15.0" fill="rgb(222,80,19)" rx="2" ry="2" />
-<text  x="1000.86" y="255.5" ></text>
+<title>0x2 (2,439,205 microwatts, 0.03%)</title><rect x="17.4" y="373" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="383.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (13,076,339 microwatts, 0.10%)</title><rect x="849.8" y="325" width="1.2" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="852.82" y="335.5" ></text>
+<title>0xfffffffffffffe00 (1,332,198,686 microwatts, 16.37%)</title><rect x="996.9" y="533" width="193.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="999.87" y="543.5" >0xfffffffffffffe00</text>
 </g>
 <g >
-<title>0xffffffff91f63b2d (2,110,020 microwatts, 0.02%)</title><rect x="988.6" y="133" width="0.2" height="15.0" fill="rgb(233,128,30)" rx="2" ry="2" />
-<text  x="991.60" y="143.5" ></text>
+<title>linpacksp (8,139,543,664 microwatts, 100.00%)</title><rect x="10.0" y="565" width="1180.0" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
+<text  x="13.00" y="575.5" >linpacksp</text>
 </g>
 <g >
-<title>0xffffffff9201511f (1,283,188 microwatts, 0.01%)</title><rect x="1189.9" y="245" width="0.1" height="15.0" fill="rgb(254,229,54)" rx="2" ry="2" />
-<text  x="1192.88" y="255.5" ></text>
+<title>0xfffffffffffffe00 (4,743,724 microwatts, 0.06%)</title><rect x="16.5" y="453" width="0.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.50" y="463.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (9,016,064 microwatts, 0.07%)</title><rect x="984.4" y="245" width="0.8" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="987.37" y="255.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="85" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.57" y="95.5" ></text>
 </g>
 <g >
-<title>0xffffffff91face3b (13,090,003 microwatts, 0.10%)</title><rect x="989.1" y="85" width="1.3" height="15.0" fill="rgb(232,125,29)" rx="2" ry="2" />
-<text  x="992.13" y="95.5" ></text>
+<title>0xffffffff91e9125a (8,268,190 microwatts, 0.10%)</title><rect x="994.9" y="453" width="1.2" height="15.0" fill="rgb(243,175,41)" rx="2" ry="2" />
+<text  x="997.94" y="463.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f5eb5f (6,000,762 microwatts, 0.05%)</title><rect x="990.4" y="117" width="0.5" height="15.0" fill="rgb(234,134,32)" rx="2" ry="2" />
-<text  x="993.36" y="127.5" ></text>
+<title>0x20000200000009 (1,256,344 microwatts, 0.02%)</title><rect x="16.5" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.50" y="239.5" ></text>
 </g>
 <g >
-<title>0xffffffff930a99f7 (5,179,256 microwatts, 0.04%)</title><rect x="990.4" y="101" width="0.4" height="15.0" fill="rgb(222,78,18)" rx="2" ry="2" />
-<text  x="993.36" y="111.5" ></text>
+<title>0xfffffffffffffe00 (1,313,383 microwatts, 0.02%)</title><rect x="13.8" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.85" y="207.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63bea (9,099,047 microwatts, 0.07%)</title><rect x="991.4" y="133" width="0.9" height="15.0" fill="rgb(222,82,19)" rx="2" ry="2" />
-<text  x="994.41" y="143.5" ></text>
+<title>matgen (1,265,596 microwatts, 0.02%)</title><rect x="11.3" y="277" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="14.34" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff91fa1853 (1,092,240 microwatts, 0.01%)</title><rect x="993.8" y="85" width="0.1" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="996.82" y="95.5" ></text>
+<title>0xffffffffffffff80 (1,120,014 microwatts, 0.01%)</title><rect x="984.9" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.95" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff93098931 (5,711,278 microwatts, 0.05%)</title><rect x="998.1" y="229" width="0.6" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
-<text  x="1001.15" y="239.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (831,710 microwatts, 0.01%)</title><rect x="12.9" y="277" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.86" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,339,182 microwatts, 0.01%)</title><rect x="996.1" y="181" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="999.08" y="191.5" ></text>
+<title>0xfffffffffffffe00 (1,249,362 microwatts, 0.02%)</title><rect x="15.4" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.39" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,257,780 microwatts, 0.01%)</title><rect x="987.2" y="149" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.20" y="159.5" ></text>
+<title>0x2 (1,399,302 microwatts, 0.02%)</title><rect x="19.4" y="533" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="22.44" y="543.5" ></text>
 </g>
 <g >
-<title>0xffffffff91face1b (1,291,469 microwatts, 0.01%)</title><rect x="988.9" y="85" width="0.1" height="15.0" fill="rgb(245,184,44)" rx="2" ry="2" />
-<text  x="991.89" y="95.5" ></text>
+<title>0x20000200000009 (4,952,342 microwatts, 0.06%)</title><rect x="10.6" y="229" width="0.7" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="239.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025b05 (2,603,780 microwatts, 0.02%)</title><rect x="987.0" y="181" width="0.2" height="15.0" fill="rgb(254,229,54)" rx="2" ry="2" />
-<text  x="989.96" y="191.5" ></text>
+<title>0xfffffffffffffe00 (2,803,110 microwatts, 0.03%)</title><rect x="12.5" y="389" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.45" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff9202d1d7 (3,486,060 microwatts, 0.03%)</title><rect x="849.5" y="229" width="0.3" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="852.45" y="239.5" ></text>
+<title>0xffffffff90d63bb0 (1,506,124 microwatts, 0.02%)</title><rect x="987.8" y="341" width="0.3" height="15.0" fill="rgb(228,106,25)" rx="2" ry="2" />
+<text  x="990.84" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f7028f (4,380,048 microwatts, 0.03%)</title><rect x="993.3" y="101" width="0.4" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
-<text  x="996.34" y="111.5" ></text>
+<title>0xffffffff90e25b05 (1,188,033 microwatts, 0.01%)</title><rect x="983.7" y="389" width="0.2" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="986.72" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f699ba (1,952,245 microwatts, 0.02%)</title><rect x="992.4" y="101" width="0.2" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
-<text  x="995.39" y="111.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (16,790,714 microwatts, 0.21%)</title><rect x="13.6" y="533" width="2.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.62" y="543.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f699ce (1,100,249 microwatts, 0.01%)</title><rect x="992.6" y="101" width="0.1" height="15.0" fill="rgb(236,143,34)" rx="2" ry="2" />
-<text  x="995.61" y="111.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="341" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.86" y="351.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,952,245 microwatts, 0.02%)</title><rect x="992.4" y="85" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="995.39" y="95.5" ></text>
+<title>0xffffffff92000f0b (2,110,999 microwatts, 0.03%)</title><rect x="1189.7" y="517" width="0.3" height="15.0" fill="rgb(233,131,31)" rx="2" ry="2" />
+<text  x="1192.69" y="527.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,428,742 microwatts, 0.01%)</title><rect x="991.1" y="101" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="994.09" y="111.5" ></text>
+<title>0xffffffff90e232e0 (1,178,038 microwatts, 0.01%)</title><rect x="982.4" y="421" width="0.2" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="985.40" y="431.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f63bb0 (4,460,879 microwatts, 0.04%)</title><rect x="991.0" y="133" width="0.4" height="15.0" fill="rgb(208,17,4)" rx="2" ry="2" />
-<text  x="994.00" y="143.5" ></text>
+<title>0xfffffffffffffe00 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.52" y="143.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (36,630,243 microwatts, 0.29%)</title><rect x="452.9" y="325" width="3.5" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="455.94" y="335.5" ></text>
+<title>0xffffffff90cb3126 (2,049,238 microwatts, 0.03%)</title><rect x="846.5" y="485" width="0.2" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="849.45" y="495.5" ></text>
 </g>
 <g >
-<title>0xffffffff93097b77 (3,486,060 microwatts, 0.03%)</title><rect x="849.5" y="293" width="0.3" height="15.0" fill="rgb(232,124,29)" rx="2" ry="2" />
-<text  x="852.45" y="303.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (817,937 microwatts, 0.01%)</title><rect x="14.0" y="213" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.04" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,181,988 microwatts, 0.01%)</title><rect x="993.6" y="69" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="996.56" y="79.5" ></text>
+<title>__vdso_clock_gettime (878,250 microwatts, 0.01%)</title><rect x="981.5" y="517" width="0.1" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
+<text  x="984.47" y="527.5" ></text>
 </g>
 <g >
-<title>clock_gettime@@GLIBC_2.17 (165,989,665 microwatts, 1.32%)</title><rect x="983.8" y="309" width="15.6" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
-<text  x="986.82" y="319.5" ></text>
+<title>0xfffffffffffffe00 (12,228,917 microwatts, 0.15%)</title><rect x="13.6" y="453" width="1.8" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.62" y="463.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (2,383,703 microwatts, 0.02%)</title><rect x="993.3" y="69" width="0.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="996.34" y="79.5" ></text>
+<title>0xfffffffffffffe00 (758,537 microwatts, 0.01%)</title><rect x="11.7" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.69" y="79.5" ></text>
 </g>
 <g >
-<title>matgen (2,030,551,664 microwatts, 16.14%)</title><rect x="999.6" y="341" width="190.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
-<text  x="1002.57" y="351.5" >matgen</text>
+<title>0x20000200000009 (1,313,383 microwatts, 0.02%)</title><rect x="13.8" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.85" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,444,976 microwatts, 0.01%)</title><rect x="997.9" y="213" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1000.90" y="223.5" ></text>
+<title>0x2 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.05" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffff930a9288 (1,428,742 microwatts, 0.01%)</title><rect x="991.1" y="117" width="0.1" height="15.0" fill="rgb(207,13,3)" rx="2" ry="2" />
-<text  x="994.09" y="127.5" ></text>
+<title>0xfffffffffffffe00 (1,797,791 microwatts, 0.02%)</title><rect x="15.7" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,215,663 microwatts, 0.01%)</title><rect x="986.7" y="149" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="989.74" y="159.5" ></text>
+<title>0x20000200000009 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="357" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.20" y="367.5" ></text>
 </g>
 <g >
-<title>0xffffffff9320012b (144,453,781 microwatts, 1.15%)</title><rect x="985.2" y="261" width="13.6" height="15.0" fill="rgb(243,177,42)" rx="2" ry="2" />
-<text  x="988.21" y="271.5" ></text>
+<title>0x20000200000009 (2,600,954 microwatts, 0.03%)</title><rect x="15.7" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="431.5" ></text>
 </g>
 <g >
-<title>0xffffffff9309891e (1,172,821 microwatts, 0.01%)</title><rect x="998.0" y="229" width="0.1" height="15.0" fill="rgb(232,124,29)" rx="2" ry="2" />
-<text  x="1001.04" y="239.5" ></text>
+<title>0x2 (1,205,091 microwatts, 0.01%)</title><rect x="17.5" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.53" y="255.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (6,473,649 microwatts, 0.05%)</title><rect x="991.4" y="37" width="0.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="994.41" y="47.5" ></text>
+<title>0x2 (1,783,140 microwatts, 0.02%)</title><rect x="14.9" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.86" y="191.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,868,274 microwatts, 0.01%)</title><rect x="988.2" y="133" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="991.17" y="143.5" ></text>
+<title>0x20000200000009 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.34" y="47.5" ></text>
 </g>
 <g >
-<title>0xffffffff91fa188f (4,745,946 microwatts, 0.04%)</title><rect x="994.1" y="85" width="0.4" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
-<text  x="997.06" y="95.5" ></text>
+<title>0x20000200000009 (732,439 microwatts, 0.01%)</title><rect x="13.4" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.36" y="47.5" ></text>
 </g>
 <g >
-<title>0xffffffff920232e0 (7,132,747 microwatts, 0.06%)</title><rect x="985.6" y="213" width="0.7" height="15.0" fill="rgb(217,58,14)" rx="2" ry="2" />
-<text  x="988.59" y="223.5" ></text>
+<title>0xffffffff90d7044c (15,401,723 microwatts, 0.19%)</title><rect x="989.6" y="325" width="2.3" height="15.0" fill="rgb(206,4,1)" rx="2" ry="2" />
+<text  x="992.65" y="335.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (1,413,802,123 microwatts, 11.24%)</title><rect x="851.0" y="325" width="132.6" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="854.05" y="335.5" >0xfffffffffffffe00</text>
+<title>0x2 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.34" y="127.5" ></text>
 </g>
 <g >
-<title>clock (167,895,643 microwatts, 1.33%)</title><rect x="983.6" y="325" width="15.8" height="15.0" fill="rgb(228,108,25)" rx="2" ry="2" />
-<text  x="986.64" y="335.5" ></text>
+<title>0xfffffffffffffe00 (3,648,276 microwatts, 0.04%)</title><rect x="14.9" y="389" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.86" y="399.5" ></text>
 </g>
 <g >
-<title>0xffffffff930a91ce (15,648,820 microwatts, 0.12%)</title><rect x="988.9" y="101" width="1.5" height="15.0" fill="rgb(245,188,45)" rx="2" ry="2" />
-<text  x="991.89" y="111.5" ></text>
+<title>0xfffffffffffffe00 (777,675 microwatts, 0.01%)</title><rect x="15.0" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.01" y="143.5" ></text>
 </g>
 <g >
-<title> 0xfffffffffffffe00 (39,229,418 microwatts, 0.31%)</title><rect x="10.1" y="325" width="3.7" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="13.14" y="335.5" ></text>
+<title>0x20000200000009 (2,084,915 microwatts, 0.03%)</title><rect x="14.3" y="165" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.30" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff920232ed (104,418,951 microwatts, 0.83%)</title><rect x="986.3" y="213" width="9.7" height="15.0" fill="rgb(231,123,29)" rx="2" ry="2" />
-<text  x="989.26" y="223.5" ></text>
+<title>0xffffffff90e2583a (1,278,756 microwatts, 0.02%)</title><rect x="983.9" y="373" width="0.2" height="15.0" fill="rgb(243,175,41)" rx="2" ry="2" />
+<text  x="986.93" y="383.5" ></text>
 </g>
 <g >
-<title>0xffffffff9309124e (134,916,420 microwatts, 1.07%)</title><rect x="985.2" y="245" width="12.7" height="15.0" fill="rgb(253,221,52)" rx="2" ry="2" />
-<text  x="988.21" y="255.5" ></text>
+<title>0x20000200000009 (2,887,334 microwatts, 0.04%)</title><rect x="13.6" y="229" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.62" y="239.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,211,111 microwatts, 0.01%)</title><rect x="987.1" y="149" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="990.05" y="159.5" ></text>
+<title>0xffffffff90e16078 (2,110,999 microwatts, 0.03%)</title><rect x="1189.7" y="469" width="0.3" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="1192.69" y="479.5" ></text>
 </g>
 <g >
-<title>0xffffffff93200080 (9,637,557 microwatts, 0.08%)</title><rect x="984.3" y="261" width="0.9" height="15.0" fill="rgb(234,134,32)" rx="2" ry="2" />
-<text  x="987.31" y="271.5" ></text>
+<title>0x2 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="309" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.02" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fca0 (1,257,780 microwatts, 0.01%)</title><rect x="987.2" y="165" width="0.1" height="15.0" fill="rgb(216,52,12)" rx="2" ry="2" />
-<text  x="990.20" y="175.5" ></text>
+<title>0xffffffff90e25b93 (69,769,281 microwatts, 0.86%)</title><rect x="982.6" y="405" width="10.1" height="15.0" fill="rgb(230,115,27)" rx="2" ry="2" />
+<text  x="985.62" y="415.5" ></text>
 </g>
 <g >
-<title>0xffffffff932001c4 (6,272,382 microwatts, 0.05%)</title><rect x="998.8" y="261" width="0.5" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
-<text  x="1001.76" y="271.5" ></text>
+<title>0x2 (977,603 microwatts, 0.01%)</title><rect x="12.7" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.67" y="191.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (1,905,978 microwatts, 0.02%)</title><rect x="983.6" y="309" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="986.64" y="319.5" ></text>
+<title>0xffffffff90d5eb32 (9,275,585 microwatts, 0.11%)</title><rect x="986.0" y="325" width="1.4" height="15.0" fill="rgb(252,218,52)" rx="2" ry="2" />
+<text  x="989.01" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (5,179,256 microwatts, 0.04%)</title><rect x="990.4" y="85" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="993.36" y="95.5" ></text>
+<title>0x20000200000009 (1,783,140 microwatts, 0.02%)</title><rect x="14.9" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.86" y="175.5" ></text>
 </g>
 <g >
-<title>0xffffffff920141a1 (3,036,086 microwatts, 0.02%)</title><rect x="849.5" y="213" width="0.3" height="15.0" fill="rgb(243,177,42)" rx="2" ry="2" />
-<text  x="852.50" y="223.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="85" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.94" y="95.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (1,623,229 microwatts, 0.01%)</title><rect x="995.7" y="149" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="998.75" y="159.5" ></text>
+<title>0xffffffff90d7036a (4,116,408 microwatts, 0.05%)</title><rect x="990.8" y="309" width="0.6" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="993.79" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff93200f0b (1,283,188 microwatts, 0.01%)</title><rect x="1189.9" y="309" width="0.1" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
-<text  x="1192.88" y="319.5" ></text>
+<title>0x2 (2,887,334 microwatts, 0.04%)</title><rect x="13.6" y="245" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.62" y="255.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f6ffc7 (2,452,612 microwatts, 0.02%)</title><rect x="992.7" y="101" width="0.2" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="995.72" y="111.5" ></text>
+<title>0xfffffffffffffe00 (1,077,469 microwatts, 0.01%)</title><rect x="17.2" y="453" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.18" y="463.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (6,923,721 microwatts, 0.06%)</title><rect x="997.0" y="165" width="0.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1000.04" y="175.5" ></text>
+<title>0xfffffffffffffe00 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="325" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.30" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff9269f57e (6,923,721 microwatts, 0.06%)</title><rect x="997.0" y="181" width="0.7" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
-<text  x="1000.04" y="191.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.98" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f9d6c0 (8,518,398 microwatts, 0.07%)</title><rect x="991.4" y="101" width="0.8" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="994.41" y="111.5" ></text>
+<title>daxpy_r.part.0.constprop.0 (3,919,653 microwatts, 0.05%)</title><rect x="10.6" y="213" width="0.5" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="223.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (7,132,747 microwatts, 0.06%)</title><rect x="985.6" y="197" width="0.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="988.59" y="207.5" ></text>
+<title>0xffffffff91e97b77 (2,049,238 microwatts, 0.03%)</title><rect x="846.5" y="501" width="0.2" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="849.45" y="511.5" ></text>
 </g>
 <g >
-<title>0xfffffffffffffe00 (2,017,973,334 microwatts, 16.04%)</title><rect x="1000.7" y="325" width="189.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="1003.75" y="335.5" >0xfffffffffffffe00</text>
+<title>0x20000200000009 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="293" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.02" y="303.5" ></text>
 </g>
 <g >
-<title>0xffffffff93200f0b (3,921,442 microwatts, 0.03%)</title><rect x="849.5" y="309" width="0.3" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
-<text  x="852.45" y="319.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.84" y="287.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f699b5 (2,383,703 microwatts, 0.02%)</title><rect x="993.3" y="85" width="0.3" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
-<text  x="996.34" y="95.5" ></text>
+<title>0xfffffffffffffe00 (2,168,961 microwatts, 0.03%)</title><rect x="12.1" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.06" y="335.5" ></text>
 </g>
 <g >
-<title>0xffffffff91e0bab4 (134,492,781 microwatts, 1.07%)</title><rect x="985.3" y="229" width="12.6" height="15.0" fill="rgb(231,119,28)" rx="2" ry="2" />
-<text  x="988.25" y="239.5" ></text>
+<title>0x20000200000009 (9,131,159 microwatts, 0.11%)</title><rect x="16.1" y="485" width="1.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.05" y="495.5" ></text>
 </g>
 <g >
-<title>0xffffffff92016078 (3,486,060 microwatts, 0.03%)</title><rect x="849.5" y="261" width="0.3" height="15.0" fill="rgb(213,37,9)" rx="2" ry="2" />
-<text  x="852.45" y="271.5" ></text>
+<title>0x2 (1,989,448 microwatts, 0.02%)</title><rect x="17.4" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="319.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f8fe23 (71,836,481 microwatts, 0.57%)</title><rect x="988.6" y="149" width="6.7" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
-<text  x="991.57" y="159.5" ></text>
+<title>0x2 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.69" y="127.5" ></text>
 </g>
 <g >
-<title>0x767e75392ede (164,805,903 microwatts, 1.31%)</title><rect x="983.9" y="293" width="15.4" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
-<text  x="986.89" y="303.5" ></text>
+<title>0x2 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.84" y="127.5" ></text>
 </g>
 <g >
-<title>0xffffffff91e6dc30 (8,113,282 microwatts, 0.06%)</title><rect x="991.4" y="85" width="0.8" height="15.0" fill="rgb(245,188,45)" rx="2" ry="2" />
-<text  x="994.41" y="95.5" ></text>
+<title>daxpy_ur.part.0.constprop.0 (2,641,058,775 microwatts, 32.45%)</title><rect x="464.0" y="549" width="382.8" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="466.96" y="559.5" >daxpy_ur.part.0.constprop.0</text>
 </g>
 <g >
-<title>0xffffffff920232b2 (2,835,607 microwatts, 0.02%)</title><rect x="985.3" y="213" width="0.3" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
-<text  x="988.32" y="223.5" ></text>
+<title>0xffffffff90e2d1d7 (1,472,572 microwatts, 0.02%)</title><rect x="846.5" y="437" width="0.2" height="15.0" fill="rgb(239,158,37)" rx="2" ry="2" />
+<text  x="849.45" y="447.5" ></text>
 </g>
 <g >
-<title>0xffffffff91f3e653 (1,211,111 microwatts, 0.01%)</title><rect x="987.1" y="165" width="0.1" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
-<text  x="990.05" y="175.5" ></text>
+<title>main (777,675 microwatts, 0.01%)</title><rect x="15.0" y="149" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="18.01" y="159.5" ></text>
 </g>
 <g >
-<title>0xffffffff92025b93 (103,495,814 microwatts, 0.82%)</title><rect x="986.3" y="197" width="9.7" height="15.0" fill="rgb(209,21,5)" rx="2" ry="2" />
-<text  x="989.34" y="207.5" ></text>
+<title>0x0 (1,484,311 microwatts, 0.02%)</title><rect x="10.0" y="501" width="0.2" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="511.5" ></text>
 </g>
 <g >
-<title>0xffffffffffffff80 (2,835,607 microwatts, 0.02%)</title><rect x="985.3" y="197" width="0.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="988.32" y="207.5" ></text>
+<title>0x2 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.02" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.94" y="79.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,437,971 microwatts, 0.03%)</title><rect x="17.8" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.84" y="463.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (7,483,716 microwatts, 0.09%)</title><rect x="17.4" y="501" width="1.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="511.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (799,000 microwatts, 0.01%)</title><rect x="989.5" y="309" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="992.49" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (1,797,791 microwatts, 0.02%)</title><rect x="15.7" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,328,319 microwatts, 0.03%)</title><rect x="15.7" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (1,880,124 microwatts, 0.02%)</title><rect x="17.8" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.84" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e141a1 (1,814,788 microwatts, 0.02%)</title><rect x="1189.7" y="421" width="0.3" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="1192.69" y="431.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (6,492,528 microwatts, 0.08%)</title><rect x="10.6" y="325" width="0.9" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="335.5" ></text>
+</g>
+<g >
+<title>0x2 (805,281 microwatts, 0.01%)</title><rect x="15.2" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.16" y="127.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,023,508 microwatts, 0.02%)</title><rect x="11.7" y="277" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.69" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,205,091 microwatts, 0.01%)</title><rect x="17.5" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.53" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (5,046,242 microwatts, 0.06%)</title><rect x="995.4" y="421" width="0.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="998.36" y="431.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.85" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (1,278,558 microwatts, 0.02%)</title><rect x="13.4" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.36" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.57" y="63.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (874,460 microwatts, 0.01%)</title><rect x="985.7" y="325" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="988.71" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,265,401 microwatts, 0.02%)</title><rect x="12.5" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.45" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (16,790,714 microwatts, 0.21%)</title><rect x="13.6" y="501" width="2.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.62" y="511.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (3,063,808,004 microwatts, 37.64%)</title><rect x="19.8" y="549" width="444.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="22.80" y="559.5" >daxpy_r.part.0.constprop.0</text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,286,501 microwatts, 0.03%)</title><rect x="10.6" y="133" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="143.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (7,121,339 microwatts, 0.09%)</title><rect x="993.0" y="373" width="1.0" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="995.98" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (755,738 microwatts, 0.01%)</title><rect x="14.9" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.86" y="47.5" ></text>
+</g>
+<g >
+<title>main (1,034,910,737 microwatts, 12.71%)</title><rect x="846.8" y="549" width="150.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="849.84" y="559.5" >main</text>
+</g>
+<g >
+<title>0x76623194fef2 (886,939 microwatts, 0.01%)</title><rect x="18.8" y="549" width="0.1" height="15.0" fill="rgb(208,18,4)" rx="2" ry="2" />
+<text  x="21.80" y="559.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,880,124 microwatts, 0.02%)</title><rect x="17.8" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.84" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (15,723,889 microwatts, 0.19%)</title><rect x="10.6" y="421" width="2.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="431.5" ></text>
+</g>
+<g >
+<title>0x2 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.72" y="191.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="47.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.69" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (977,603 microwatts, 0.01%)</title><rect x="12.7" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.67" y="207.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,535,547 microwatts, 0.02%)</title><rect x="16.5" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.50" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.84" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="389" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.20" y="399.5" ></text>
+</g>
+<g >
+<title>0x2 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.06" y="63.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,278,558 microwatts, 0.02%)</title><rect x="13.4" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.36" y="175.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,016,394 microwatts, 0.01%)</title><rect x="13.6" y="213" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.62" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (864,691 microwatts, 0.01%)</title><rect x="18.5" y="533" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.50" y="543.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.52" y="175.5" ></text>
+</g>
+<g >
+<title>matgen (1,205,091 microwatts, 0.01%)</title><rect x="17.5" y="277" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="20.53" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (792,695 microwatts, 0.01%)</title><rect x="14.7" y="293" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.67" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="111.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (725,210 microwatts, 0.01%)</title><rect x="982.7" y="373" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="985.69" y="383.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,023,508 microwatts, 0.02%)</title><rect x="11.7" y="261" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.69" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,419,689 microwatts, 0.02%)</title><rect x="18.2" y="421" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.20" y="431.5" ></text>
+</g>
+<g >
+<title>0x2 (758,537 microwatts, 0.01%)</title><rect x="11.7" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.69" y="63.5" ></text>
+</g>
+<g >
+<title>0x2 (2,084,915 microwatts, 0.03%)</title><rect x="14.3" y="181" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.30" y="191.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,072,151 microwatts, 0.01%)</title><rect x="15.2" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.16" y="175.5" ></text>
+</g>
+<g >
+<title>0x2 (1,475,508 microwatts, 0.02%)</title><rect x="15.4" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.39" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e97b77 (2,110,999 microwatts, 0.03%)</title><rect x="1189.7" y="501" width="0.3" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="1192.69" y="511.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.67" y="223.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,723,421 microwatts, 0.02%)</title><rect x="15.4" y="453" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.39" y="463.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,988,759 microwatts, 0.02%)</title><rect x="16.1" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.05" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fd72 (1,127,610 microwatts, 0.01%)</title><rect x="985.3" y="357" width="0.2" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
+<text  x="988.31" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (817,937 microwatts, 0.01%)</title><rect x="14.0" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.04" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,401,323 microwatts, 0.03%)</title><rect x="12.9" y="421" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.86" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="85" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.67" y="95.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (805,281 microwatts, 0.01%)</title><rect x="15.2" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.16" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (878,250 microwatts, 0.01%)</title><rect x="981.5" y="501" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="984.47" y="511.5" ></text>
+</g>
+<g >
+<title>0x2 (817,937 microwatts, 0.01%)</title><rect x="14.0" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.04" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fe23 (45,143,206 microwatts, 0.55%)</title><rect x="985.7" y="357" width="6.6" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="988.71" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (803,765 microwatts, 0.01%)</title><rect x="13.2" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.20" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (805,281 microwatts, 0.01%)</title><rect x="15.2" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.16" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,084,915 microwatts, 0.03%)</title><rect x="14.3" y="197" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.30" y="207.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,797,791 microwatts, 0.02%)</title><rect x="15.7" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,848,804 microwatts, 0.03%)</title><rect x="13.2" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.20" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63b82 (12,879,389 microwatts, 0.16%)</title><rect x="986.0" y="341" width="1.8" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="988.97" y="351.5" ></text>
+</g>
+<g >
+<title>matgen (1,278,558 microwatts, 0.02%)</title><rect x="13.4" y="213" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.36" y="223.5" ></text>
+</g>
+<g >
+<title>0x2 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.94" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (808,290 microwatts, 0.01%)</title><rect x="16.4" y="357" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.38" y="367.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.05" y="207.5" ></text>
+</g>
+<g >
+<title>matgen (1,313,383 microwatts, 0.02%)</title><rect x="13.8" y="213" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.85" y="223.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5eb5f (3,351,070 microwatts, 0.04%)</title><rect x="987.4" y="325" width="0.4" height="15.0" fill="rgb(253,223,53)" rx="2" ry="2" />
+<text  x="990.35" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,988,759 microwatts, 0.02%)</title><rect x="16.1" y="405" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.05" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.85" y="79.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,289,804 microwatts, 0.02%)</title><rect x="15.7" y="277" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.67" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,302,687 microwatts, 0.02%)</title><rect x="14.7" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.67" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,574,301 microwatts, 0.03%)</title><rect x="11.7" y="293" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.69" y="303.5" ></text>
+</g>
+<g >
+<title>clock_gettime@@GLIBC_2.17 (794,631 microwatts, 0.01%)</title><rect x="996.8" y="533" width="0.1" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="999.75" y="543.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="111.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3,057,547 microwatts, 0.04%)</title><rect x="987.4" y="293" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="990.35" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.05" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,077,469 microwatts, 0.01%)</title><rect x="17.2" y="421" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.18" y="431.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="325" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.07" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,249,362 microwatts, 0.02%)</title><rect x="15.4" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.39" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (4,743,724 microwatts, 0.06%)</title><rect x="16.5" y="421" width="0.7" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.50" y="431.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,150,588 microwatts, 0.01%)</title><rect x="992.1" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="995.09" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3,070,625 microwatts, 0.04%)</title><rect x="16.1" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.05" y="431.5" ></text>
+</g>
+<g >
+<title>matgen (778,082 microwatts, 0.01%)</title><rect x="16.6" y="213" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="19.57" y="223.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.05" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,178,038 microwatts, 0.01%)</title><rect x="982.4" y="405" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="985.40" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,408,273 microwatts, 0.03%)</title><rect x="12.1" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.06" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.57" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.98" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,168,961 microwatts, 0.03%)</title><rect x="12.1" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.06" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.98" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="207.5" ></text>
+</g>
+<g >
+<title>matgen (1,072,151 microwatts, 0.01%)</title><rect x="15.2" y="213" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="18.16" y="223.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,616,114 microwatts, 0.02%)</title><rect x="12.9" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.86" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,265,596 microwatts, 0.02%)</title><rect x="11.3" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.34" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.52" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (20,974,016 microwatts, 0.26%)</title><rect x="10.6" y="501" width="3.0" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="511.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,265,401 microwatts, 0.02%)</title><rect x="12.5" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.45" y="175.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.57" y="79.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,475,508 microwatts, 0.02%)</title><rect x="15.4" y="405" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.39" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.98" y="271.5" ></text>
+</g>
+<g >
+<title>clock_gettime@@GLIBC_2.17 (104,561,642 microwatts, 1.28%)</title><rect x="981.6" y="517" width="15.2" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="984.60" y="527.5" ></text>
+</g>
+<g >
+<title>0x2 (864,691 microwatts, 0.01%)</title><rect x="18.5" y="549" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.50" y="559.5" ></text>
+</g>
+<g >
+<title>main (1,077,469 microwatts, 0.01%)</title><rect x="17.2" y="469" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="20.18" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (755,738 microwatts, 0.01%)</title><rect x="14.9" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.86" y="63.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,286,501 microwatts, 0.03%)</title><rect x="10.6" y="149" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="159.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (977,603 microwatts, 0.01%)</title><rect x="12.7" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.67" y="175.5" ></text>
+</g>
+<g >
+<title>0xffffffff9149f579 (7,121,339 microwatts, 0.09%)</title><rect x="993.0" y="389" width="1.0" height="15.0" fill="rgb(243,176,42)" rx="2" ry="2" />
+<text  x="995.98" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3,196,886 microwatts, 0.04%)</title><rect x="16.5" y="357" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.50" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.69" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="293" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.20" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="21.02" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,624,198 microwatts, 0.02%)</title><rect x="12.1" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.06" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e258e4 (55,400,928 microwatts, 0.68%)</title><rect x="984.4" y="373" width="8.1" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
+<text  x="987.42" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="373" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.07" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="341" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.07" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (1,256,344 microwatts, 0.02%)</title><rect x="16.5" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.50" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,205,091 microwatts, 0.01%)</title><rect x="17.5" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.53" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.07" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,723,421 microwatts, 0.02%)</title><rect x="15.4" y="421" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.39" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.06" y="95.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,395,647 microwatts, 0.02%)</title><rect x="16.1" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.05" y="335.5" ></text>
+</g>
+<g >
+<title>0x2 (977,649 microwatts, 0.01%)</title><rect x="13.4" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.36" y="127.5" ></text>
+</g>
+<g >
+<title>0x2 (777,675 microwatts, 0.01%)</title><rect x="15.0" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.01" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,063,808,004 microwatts, 37.64%)</title><rect x="19.8" y="533" width="444.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="22.80" y="543.5" >0xfffffffffffffe00</text>
+</g>
+<g >
+<title>matgen (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="149" width="0.2" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="13.94" y="159.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,661,338 microwatts, 0.02%)</title><rect x="16.7" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.72" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (1,076,911 microwatts, 0.01%)</title><rect x="14.0" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.04" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="149" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.53" y="159.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (7,358,421 microwatts, 0.09%)</title><rect x="988.1" y="245" width="1.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="991.10" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.34" y="191.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,919,653 microwatts, 0.05%)</title><rect x="10.6" y="197" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="207.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.98" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="389" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.07" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.53" y="143.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.05" y="239.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,289,804 microwatts, 0.02%)</title><rect x="15.7" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.69" y="223.5" ></text>
+</g>
+<g >
+<title>0x2 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="309" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.07" y="319.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (977,649 microwatts, 0.01%)</title><rect x="13.4" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.36" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.06" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (3,964,244 microwatts, 0.05%)</title><rect x="13.6" y="309" width="0.6" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.62" y="319.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.42" y="159.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d9d6c0 (9,334,592 microwatts, 0.11%)</title><rect x="988.1" y="309" width="1.4" height="15.0" fill="rgb(220,69,16)" rx="2" ry="2" />
+<text  x="991.10" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffff90da188f (3,012,284 microwatts, 0.04%)</title><rect x="990.9" y="293" width="0.5" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="993.95" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,102,174 microwatts, 0.01%)</title><rect x="992.3" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="995.29" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (15,723,889 microwatts, 0.19%)</title><rect x="10.6" y="453" width="2.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="463.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.72" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.69" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (779,978 microwatts, 0.01%)</title><rect x="989.3" y="245" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="992.25" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.57" y="159.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3,648,276 microwatts, 0.04%)</title><rect x="14.9" y="357" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.86" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.84" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e25b2c (869,040 microwatts, 0.01%)</title><rect x="992.5" y="389" width="0.1" height="15.0" fill="rgb(215,47,11)" rx="2" ry="2" />
+<text  x="995.50" y="399.5" ></text>
+</g>
+<g >
+<title>0x2 (4,952,342 microwatts, 0.06%)</title><rect x="10.6" y="245" width="0.7" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="255.5" ></text>
+</g>
+<g >
+<title>0xffffffff90c6dc30 (9,084,042 microwatts, 0.11%)</title><rect x="988.1" y="293" width="1.3" height="15.0" fill="rgb(215,47,11)" rx="2" ry="2" />
+<text  x="991.10" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="207.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.53" y="223.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.34" y="159.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (808,984 microwatts, 0.01%)</title><rect x="17.2" y="357" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.22" y="367.5" ></text>
+</g>
+<g >
+<title>matgen (784,404 microwatts, 0.01%)</title><rect x="13.0" y="277" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="15.98" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7,277,954 microwatts, 0.09%)</title><rect x="13.6" y="389" width="1.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.62" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (926,925,241 microwatts, 11.39%)</title><rect x="846.8" y="533" width="134.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="849.84" y="543.5" >0xfffffffffffffe00</text>
+</g>
+<g >
+<title>0x2 (1,016,394 microwatts, 0.01%)</title><rect x="13.6" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.62" y="191.5" ></text>
+</g>
+<g >
+<title>main (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="341" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="14.52" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (735,270 microwatts, 0.01%)</title><rect x="14.2" y="325" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.19" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7038a (809,477 microwatts, 0.01%)</title><rect x="991.6" y="309" width="0.1" height="15.0" fill="rgb(249,204,49)" rx="2" ry="2" />
+<text  x="994.57" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,072,151 microwatts, 0.01%)</title><rect x="15.2" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.16" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,624,198 microwatts, 0.02%)</title><rect x="12.1" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.06" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (1,616,114 microwatts, 0.02%)</title><rect x="12.9" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.86" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (4,952,342 microwatts, 0.06%)</title><rect x="10.6" y="261" width="0.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.34" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,616,114 microwatts, 0.02%)</title><rect x="12.9" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.86" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (792,695 microwatts, 0.01%)</title><rect x="14.7" y="341" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.67" y="351.5" ></text>
+</g>
+<g >
+<title>0xffffffff90dace24 (933,625 microwatts, 0.01%)</title><rect x="986.0" y="293" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="989.04" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.98" y="143.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,340,712 microwatts, 0.03%)</title><rect x="13.2" y="277" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.20" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (2,328,319 microwatts, 0.03%)</title><rect x="15.7" y="405" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.67" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffff92000080 (3,424,991 microwatts, 0.04%)</title><rect x="981.7" y="469" width="0.5" height="15.0" fill="rgb(253,223,53)" rx="2" ry="2" />
+<text  x="984.71" y="479.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e9124e (87,570,485 microwatts, 1.08%)</title><rect x="982.2" y="453" width="12.7" height="15.0" fill="rgb(223,86,20)" rx="2" ry="2" />
+<text  x="985.25" y="463.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.53" y="111.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (4,952,342 microwatts, 0.06%)</title><rect x="10.6" y="277" width="0.7" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (755,738 microwatts, 0.01%)</title><rect x="14.9" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.86" y="79.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.57" y="207.5" ></text>
+</g>
+<g >
+<title>0xffffffff91ea99f7 (3,057,547 microwatts, 0.04%)</title><rect x="987.4" y="309" width="0.4" height="15.0" fill="rgb(242,172,41)" rx="2" ry="2" />
+<text  x="990.35" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="69" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.45" y="79.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,016,394 microwatts, 0.01%)</title><rect x="13.6" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.62" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,574,301 microwatts, 0.03%)</title><rect x="11.7" y="325" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.69" y="335.5" ></text>
+</g>
+<g >
+<title>main (1,960,843 microwatts, 0.02%)</title><rect x="15.4" y="469" width="0.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="18.39" y="479.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63bfe (15,665,863 microwatts, 0.19%)</title><rect x="989.6" y="341" width="2.3" height="15.0" fill="rgb(210,23,5)" rx="2" ry="2" />
+<text  x="992.61" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.53" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (1,077,469 microwatts, 0.01%)</title><rect x="17.2" y="437" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.18" y="447.5" ></text>
+</g>
+<g >
+<title>0xffffffff90da1853 (852,597 microwatts, 0.01%)</title><rect x="990.8" y="293" width="0.1" height="15.0" fill="rgb(206,4,1)" rx="2" ry="2" />
+<text  x="993.79" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (977,649 microwatts, 0.01%)</title><rect x="13.4" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.36" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,889,982 microwatts, 0.02%)</title><rect x="12.9" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.86" y="367.5" ></text>
+</g>
+<g >
+<title>main (735,270 microwatts, 0.01%)</title><rect x="14.2" y="341" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="17.19" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (7,277,954 microwatts, 0.09%)</title><rect x="13.6" y="373" width="1.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.62" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,535,547 microwatts, 0.02%)</title><rect x="16.5" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.50" y="303.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,289,804 microwatts, 0.02%)</title><rect x="15.7" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.98" y="111.5" ></text>
+</g>
+<g >
+<title>0x2 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="245" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.30" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,783,140 microwatts, 0.02%)</title><rect x="14.9" y="213" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.86" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,056,202 microwatts, 0.01%)</title><rect x="12.1" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.06" y="175.5" ></text>
+</g>
+<g >
+<title>all (8,139,543,664 microwatts, 100%)</title><rect x="10.0" y="581" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="591.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,236,173 microwatts, 0.02%)</title><rect x="10.6" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="47.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e956e9 (9,084,042 microwatts, 0.11%)</title><rect x="988.1" y="277" width="1.3" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
+<text  x="991.10" y="287.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (16,790,714 microwatts, 0.21%)</title><rect x="13.6" y="485" width="2.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.62" y="495.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.67" y="175.5" ></text>
+</g>
+<g >
+<title>0x2 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.53" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,475,508 microwatts, 0.02%)</title><rect x="15.4" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.39" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (746,390 microwatts, 0.01%)</title><rect x="12.5" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.45" y="143.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3,919,653 microwatts, 0.05%)</title><rect x="10.6" y="165" width="0.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="175.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e23324 (14,715,674 microwatts, 0.18%)</title><rect x="992.8" y="421" width="2.1" height="15.0" fill="rgb(235,140,33)" rx="2" ry="2" />
+<text  x="995.77" y="431.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (758,537 microwatts, 0.01%)</title><rect x="11.7" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.69" y="47.5" ></text>
+</g>
+<g >
+<title>0x2 (1,624,198 microwatts, 0.02%)</title><rect x="12.1" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.06" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,624,198 microwatts, 0.02%)</title><rect x="12.1" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.06" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.84" y="255.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,056,202 microwatts, 0.01%)</title><rect x="12.1" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.06" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (831,710 microwatts, 0.01%)</title><rect x="12.9" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.86" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (1,535,547 microwatts, 0.02%)</title><rect x="16.5" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.50" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,399,302 microwatts, 0.02%)</title><rect x="19.4" y="549" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="22.44" y="559.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.67" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.57" y="191.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="293" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.07" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.53" y="175.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (4,889,696 microwatts, 0.06%)</title><rect x="994.0" y="373" width="0.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="997.01" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.34" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (746,390 microwatts, 0.01%)</title><rect x="12.5" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.45" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,989,448 microwatts, 0.02%)</title><rect x="17.4" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="85" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.85" y="95.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,439,205 microwatts, 0.03%)</title><rect x="17.4" y="389" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.67" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (7,794,288 microwatts, 0.10%)</title><rect x="986.2" y="277" width="1.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="989.22" y="287.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,887,334 microwatts, 0.04%)</title><rect x="13.6" y="261" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.62" y="271.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3,012,284 microwatts, 0.04%)</title><rect x="990.9" y="277" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="993.95" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,278,756 microwatts, 0.02%)</title><rect x="983.9" y="357" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="986.93" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="309" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.30" y="319.5" ></text>
+</g>
+<g >
+<title>matgen (2,803,110 microwatts, 0.03%)</title><rect x="12.5" y="405" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="15.45" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (1,395,647 microwatts, 0.02%)</title><rect x="16.1" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.05" y="319.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (2,437,971 microwatts, 0.03%)</title><rect x="17.8" y="469" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.84" y="479.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2504f (2,767,243 microwatts, 0.03%)</title><rect x="983.2" y="373" width="0.4" height="15.0" fill="rgb(206,4,1)" rx="2" ry="2" />
+<text  x="986.24" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,016,394 microwatts, 0.01%)</title><rect x="13.6" y="165" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.62" y="175.5" ></text>
+</g>
+<g >
+<title>0x2 (3,648,276 microwatts, 0.04%)</title><rect x="14.9" y="373" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.86" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (6,492,528 microwatts, 0.08%)</title><rect x="10.6" y="341" width="0.9" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="351.5" ></text>
+</g>
+<g >
+<title>matgen (1,661,338 microwatts, 0.02%)</title><rect x="16.7" y="341" width="0.3" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="19.72" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,265,596 microwatts, 0.02%)</title><rect x="11.3" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.34" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (2,286,501 microwatts, 0.03%)</title><rect x="10.6" y="117" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (808,290 microwatts, 0.01%)</title><rect x="16.4" y="389" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.38" y="399.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (12,228,917 microwatts, 0.15%)</title><rect x="13.6" y="469" width="1.8" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.62" y="479.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,395,647 microwatts, 0.02%)</title><rect x="16.1" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.05" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="277" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.67" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (1,889,982 microwatts, 0.02%)</title><rect x="12.9" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.86" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.45" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (6,492,528 microwatts, 0.08%)</title><rect x="10.6" y="293" width="0.9" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.98" y="191.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,880,124 microwatts, 0.02%)</title><rect x="17.8" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.84" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,005,465 microwatts, 0.01%)</title><rect x="14.9" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.86" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,750,973 microwatts, 0.02%)</title><rect x="981.2" y="517" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="984.21" y="527.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (803,765 microwatts, 0.01%)</title><rect x="13.2" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.20" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (7,483,716 microwatts, 0.09%)</title><rect x="17.4" y="485" width="1.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="495.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e1511f (2,049,238 microwatts, 0.03%)</title><rect x="846.5" y="453" width="0.2" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="849.45" y="463.5" ></text>
+</g>
+<g >
+<title>0xffffffff90de3661 (1,102,174 microwatts, 0.01%)</title><rect x="992.3" y="357" width="0.2" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="995.29" y="367.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (7,277,954 microwatts, 0.09%)</title><rect x="13.6" y="405" width="1.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.62" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (817,937 microwatts, 0.01%)</title><rect x="14.0" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.04" y="207.5" ></text>
+</g>
+<g >
+<title>clock (107,190,866 microwatts, 1.32%)</title><rect x="981.2" y="533" width="15.6" height="15.0" fill="rgb(228,108,25)" rx="2" ry="2" />
+<text  x="984.21" y="543.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,023,508 microwatts, 0.02%)</title><rect x="11.7" y="229" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.69" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffff91ea91ce (9,275,585 microwatts, 0.11%)</title><rect x="986.0" y="309" width="1.4" height="15.0" fill="rgb(216,52,12)" rx="2" ry="2" />
+<text  x="989.01" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (855,819 microwatts, 0.01%)</title><rect x="992.8" y="389" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="995.77" y="399.5" ></text>
+</g>
+<g >
+<title>main (9,402,945 microwatts, 0.12%)</title><rect x="16.1" y="533" width="1.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="19.05" y="543.5" ></text>
+</g>
+<g >
+<title>matgen (2,600,954 microwatts, 0.03%)</title><rect x="15.7" y="469" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="18.67" y="479.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,005,465 microwatts, 0.01%)</title><rect x="14.9" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.86" y="159.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e0dfb0 (855,819 microwatts, 0.01%)</title><rect x="992.8" y="405" width="0.1" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="995.77" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.45" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,033,972 microwatts, 0.01%)</title><rect x="14.3" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.30" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (735,270 microwatts, 0.01%)</title><rect x="14.2" y="309" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.19" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,070,625 microwatts, 0.04%)</title><rect x="16.1" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.05" y="463.5" ></text>
+</g>
+<g >
+<title>clock (776,394 microwatts, 0.01%)</title><rect x="19.7" y="549" width="0.1" height="15.0" fill="rgb(228,108,25)" rx="2" ry="2" />
+<text  x="22.68" y="559.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.52" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (794,631 microwatts, 0.01%)</title><rect x="996.8" y="517" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="999.75" y="527.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="325" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.20" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fcf7 (1,417,216 microwatts, 0.02%)</title><rect x="984.7" y="357" width="0.2" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
+<text  x="987.66" y="367.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (846,293 microwatts, 0.01%)</title><rect x="990.6" y="277" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="993.59" y="287.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (15,723,889 microwatts, 0.19%)</title><rect x="10.6" y="469" width="2.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="479.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.45" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="277" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="19.05" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (1,661,338 microwatts, 0.02%)</title><rect x="16.7" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.72" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (20,974,016 microwatts, 0.26%)</title><rect x="10.6" y="485" width="3.0" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="495.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,964,244 microwatts, 0.05%)</title><rect x="13.6" y="325" width="0.6" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.62" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="213" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.84" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.45" y="303.5" ></text>
+</g>
+<g >
+<title>0x0 (2,459,998 microwatts, 0.03%)</title><rect x="10.0" y="517" width="0.4" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="527.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.67" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.34" y="223.5" ></text>
+</g>
+<g >
+<title>0x2 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.06" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.34" y="79.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,600,954 microwatts, 0.03%)</title><rect x="15.7" y="453" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="463.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="229" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.30" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (933,625 microwatts, 0.01%)</title><rect x="986.0" y="277" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="989.04" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (732,439 microwatts, 0.01%)</title><rect x="13.4" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.36" y="63.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (977,649 microwatts, 0.01%)</title><rect x="13.4" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.36" y="143.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="149" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.85" y="159.5" ></text>
+</g>
+<g >
+<title>0x2 (1,723,421 microwatts, 0.02%)</title><rect x="15.4" y="437" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.39" y="447.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,989,448 microwatts, 0.02%)</title><rect x="17.4" y="293" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="277" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.72" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7028f (1,416,816 microwatts, 0.02%)</title><rect x="990.5" y="309" width="0.2" height="15.0" fill="rgb(223,86,20)" rx="2" ry="2" />
+<text  x="993.51" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.85" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.06" y="47.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (20,974,016 microwatts, 0.26%)</title><rect x="10.6" y="533" width="3.0" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="543.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.72" y="271.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.85" y="47.5" ></text>
+</g>
+<g >
+<title>0x2 (831,710 microwatts, 0.01%)</title><rect x="12.9" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.86" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (746,390 microwatts, 0.01%)</title><rect x="12.5" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.45" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,033,972 microwatts, 0.01%)</title><rect x="14.3" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.30" y="111.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.57" y="47.5" ></text>
+</g>
+<g >
+<title>0x2 (792,695 microwatts, 0.01%)</title><rect x="14.7" y="309" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.67" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,408,273 microwatts, 0.03%)</title><rect x="12.1" y="357" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.06" y="367.5" ></text>
+</g>
+<g >
+<title>matgen (693,144 microwatts, 0.01%)</title><rect x="18.0" y="341" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="21.02" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="293" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.30" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (3,196,886 microwatts, 0.04%)</title><rect x="16.5" y="373" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.50" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e25af4 (3,832,626 microwatts, 0.05%)</title><rect x="983.2" y="389" width="0.5" height="15.0" fill="rgb(239,158,37)" rx="2" ry="2" />
+<text  x="986.16" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,889,982 microwatts, 0.02%)</title><rect x="12.9" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.86" y="399.5" ></text>
+</g>
+<g >
+<title>0x0 (3,664,274 microwatts, 0.05%)</title><rect x="10.0" y="549" width="0.5" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="559.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.52" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="261" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.86" y="271.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,661,338 microwatts, 0.02%)</title><rect x="16.7" y="325" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.72" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.72" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (1,419,689 microwatts, 0.02%)</title><rect x="18.2" y="437" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.20" y="447.5" ></text>
+</g>
+<g >
+<title>0x2 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.52" y="191.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.07" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (2,848,804 microwatts, 0.03%)</title><rect x="13.2" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.20" y="447.5" ></text>
+</g>
+<g >
+<title>0x2 (3,919,653 microwatts, 0.05%)</title><rect x="10.6" y="181" width="0.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (808,984 microwatts, 0.01%)</title><rect x="17.2" y="373" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.22" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.72" y="255.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7f5ed (1,231,047 microwatts, 0.02%)</title><rect x="1189.8" y="389" width="0.2" height="15.0" fill="rgb(227,104,24)" rx="2" ry="2" />
+<text  x="1192.78" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,340,712 microwatts, 0.03%)</title><rect x="13.2" y="229" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.20" y="239.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="101" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.69" y="111.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.34" y="207.5" ></text>
+</g>
+<g >
+<title>matgen (3,648,276 microwatts, 0.04%)</title><rect x="14.9" y="405" width="0.5" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.86" y="415.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,249,362 microwatts, 0.02%)</title><rect x="15.4" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="18.39" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,106,103 microwatts, 0.01%)</title><rect x="989.7" y="293" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="992.72" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d3e66e (725,210 microwatts, 0.01%)</title><rect x="982.7" y="389" width="0.1" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="985.69" y="399.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,377,917 microwatts, 0.02%)</title><rect x="989.9" y="293" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="992.88" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.07" y="239.5" ></text>
+</g>
+<g >
+<title>0x2 (764,793 microwatts, 0.01%)</title><rect x="15.7" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="63.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (763,041 microwatts, 0.01%)</title><rect x="17.1" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.07" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (2,168,961 microwatts, 0.03%)</title><rect x="12.1" y="309" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.06" y="319.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="341" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.20" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (2,340,712 microwatts, 0.03%)</title><rect x="13.2" y="245" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.20" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.52" y="271.5" ></text>
+</g>
+<g >
+<title>0x0 (2,730,252 microwatts, 0.03%)</title><rect x="10.0" y="533" width="0.4" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="543.5" ></text>
+</g>
+<g >
+<title>0x2 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.34" y="63.5" ></text>
+</g>
+<g >
+<title>0x2 (2,401,323 microwatts, 0.03%)</title><rect x="12.9" y="437" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.86" y="447.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (10,249,480 microwatts, 0.13%)</title><rect x="10.6" y="405" width="1.5" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffff92000f0b (2,670,166 microwatts, 0.03%)</title><rect x="846.5" y="517" width="0.3" height="15.0" fill="rgb(233,131,31)" rx="2" ry="2" />
+<text  x="849.45" y="527.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="229" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.86" y="239.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,236,173 microwatts, 0.02%)</title><rect x="10.6" y="85" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="13.58" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (1,265,401 microwatts, 0.02%)</title><rect x="12.5" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.45" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffff90c0bab4 (87,036,351 microwatts, 1.07%)</title><rect x="982.3" y="437" width="12.6" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="985.28" y="447.5" ></text>
+</g>
+<g >
+<title>0x2 (1,265,596 microwatts, 0.02%)</title><rect x="11.3" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.34" y="255.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (7,483,716 microwatts, 0.09%)</title><rect x="17.4" y="517" width="1.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="527.5" ></text>
+</g>
+<g >
+<title>0x2 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.67" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.84" y="111.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,168,961 microwatts, 0.03%)</title><rect x="12.1" y="341" width="0.3" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.06" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,005,465 microwatts, 0.01%)</title><rect x="14.9" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.86" y="111.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="149" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.52" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.84" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (2,803,110 microwatts, 0.03%)</title><rect x="12.5" y="373" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.45" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="213" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.52" y="223.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,265,401 microwatts, 0.02%)</title><rect x="12.5" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.45" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.34" y="175.5" ></text>
+</g>
+<g >
+<title>0x2 (903,233 microwatts, 0.01%)</title><rect x="17.5" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.53" y="191.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (802,987 microwatts, 0.01%)</title><rect x="10.8" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.76" y="79.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,056,202 microwatts, 0.01%)</title><rect x="12.1" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.06" y="207.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.98" y="239.5" ></text>
+</g>
+<g >
+<title>matgen (1,332,198,686 microwatts, 16.37%)</title><rect x="996.9" y="549" width="193.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="999.87" y="559.5" >matgen</text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,076,911 microwatts, 0.01%)</title><rect x="14.0" y="261" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.04" y="271.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (732,439 microwatts, 0.01%)</title><rect x="13.4" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.36" y="95.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.02" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (10,249,480 microwatts, 0.13%)</title><rect x="10.6" y="389" width="1.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="399.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3,964,244 microwatts, 0.05%)</title><rect x="13.6" y="341" width="0.6" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.62" y="351.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d699d8 (846,293 microwatts, 0.01%)</title><rect x="990.6" y="293" width="0.1" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
+<text  x="993.59" y="303.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7023b (1,130,362 microwatts, 0.01%)</title><rect x="990.2" y="309" width="0.2" height="15.0" fill="rgb(231,123,29)" rx="2" ry="2" />
+<text  x="993.23" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (732,439 microwatts, 0.01%)</title><rect x="13.4" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.36" y="79.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e9891e (1,128,067 microwatts, 0.01%)</title><rect x="995.2" y="437" width="0.2" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="998.20" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,401,323 microwatts, 0.03%)</title><rect x="12.9" y="453" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.86" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,797,791 microwatts, 0.02%)</title><rect x="15.7" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="18.67" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.52" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="21.02" y="191.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5eb00 (874,460 microwatts, 0.01%)</title><rect x="985.7" y="341" width="0.1" height="15.0" fill="rgb(234,136,32)" rx="2" ry="2" />
+<text  x="988.71" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (9,131,159 microwatts, 0.11%)</title><rect x="16.1" y="517" width="1.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.05" y="527.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.45" y="143.5" ></text>
+</g>
+<g >
+<title>main (802,987 microwatts, 0.01%)</title><rect x="10.8" y="85" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="13.76" y="95.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="261" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="271.5" ></text>
+</g>
+<g >
+<title>0x0 (862,003 microwatts, 0.01%)</title><rect x="10.0" y="485" width="0.1" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="13.00" y="495.5" ></text>
+</g>
+<g >
+<title>0x2 (1,289,804 microwatts, 0.02%)</title><rect x="15.7" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="255.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,848,804 microwatts, 0.03%)</title><rect x="13.2" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.20" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,186,981 microwatts, 0.01%)</title><rect x="17.8" y="341" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="20.84" y="351.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,963,214 microwatts, 0.04%)</title><rect x="17.4" y="469" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.42" y="479.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (3,424,991 microwatts, 0.04%)</title><rect x="981.7" y="453" width="0.5" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="984.71" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (2,084,915 microwatts, 0.03%)</title><rect x="14.3" y="213" width="0.3" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.30" y="223.5" ></text>
+</g>
+<g >
+<title>matgen (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="341" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="17.30" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,578,440 microwatts, 0.03%)</title><rect x="14.3" y="261" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.30" y="271.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="325" width="0.4" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.86" y="335.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (782,821 microwatts, 0.01%)</title><rect x="11.3" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.34" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (802,987 microwatts, 0.01%)</title><rect x="10.8" y="53" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.76" y="63.5" ></text>
+</g>
+<g >
+<title>0x2 (1,313,383 microwatts, 0.02%)</title><rect x="13.8" y="181" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.85" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.57" y="127.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (1,417,216 microwatts, 0.02%)</title><rect x="984.7" y="341" width="0.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="987.66" y="351.5" ></text>
+</g>
+<g >
+<title>0x2 (1,249,362 microwatts, 0.02%)</title><rect x="15.4" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.39" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="239.5" ></text>
+</g>
+<g >
+<title>main (1,302,687 microwatts, 0.02%)</title><rect x="14.7" y="405" width="0.2" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="17.67" y="415.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="101" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.06" y="111.5" ></text>
+</g>
+<g >
+<title>0x2 (1,302,687 microwatts, 0.02%)</title><rect x="14.7" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.67" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d8fd2e (1,120,014 microwatts, 0.01%)</title><rect x="984.9" y="357" width="0.2" height="15.0" fill="rgb(240,163,39)" rx="2" ry="2" />
+<text  x="987.95" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,437,971 microwatts, 0.03%)</title><rect x="17.8" y="421" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.84" y="431.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (54,651,391 microwatts, 0.67%)</title><rect x="10.6" y="549" width="7.9" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="559.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d7f5ed (1,170,610 microwatts, 0.01%)</title><rect x="846.5" y="389" width="0.2" height="15.0" fill="rgb(227,104,24)" rx="2" ry="2" />
+<text  x="849.49" y="399.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,256,344 microwatts, 0.02%)</title><rect x="16.5" y="277" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.50" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e95602 (779,978 microwatts, 0.01%)</title><rect x="989.3" y="261" width="0.1" height="15.0" fill="rgb(227,102,24)" rx="2" ry="2" />
+<text  x="992.25" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.52" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (1,033,972 microwatts, 0.01%)</title><rect x="14.3" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.30" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="293" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.86" y="303.5" ></text>
+</g>
+<g >
+<title>0x2 (2,963,214 microwatts, 0.04%)</title><rect x="17.4" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="447.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.67" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="85" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.45" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (808,290 microwatts, 0.01%)</title><rect x="16.4" y="373" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.38" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (6,492,528 microwatts, 0.08%)</title><rect x="10.6" y="309" width="0.9" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,340,712 microwatts, 0.03%)</title><rect x="13.2" y="261" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.20" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (826,253 microwatts, 0.01%)</title><rect x="16.1" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.05" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.98" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="37" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.45" y="47.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (2,328,319 microwatts, 0.03%)</title><rect x="15.7" y="389" width="0.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.67" y="399.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (735,270 microwatts, 0.01%)</title><rect x="14.2" y="293" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.19" y="303.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (758,537 microwatts, 0.01%)</title><rect x="11.7" y="85" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.69" y="95.5" ></text>
+</g>
+<g >
+<title>0x2 (1,005,465 microwatts, 0.01%)</title><rect x="14.9" y="117" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.86" y="127.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (3,196,886 microwatts, 0.04%)</title><rect x="16.5" y="389" width="0.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.50" y="399.5" ></text>
+</g>
+<g >
+<title>0x2 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.67" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (12,228,917 microwatts, 0.15%)</title><rect x="13.6" y="421" width="1.8" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.62" y="431.5" ></text>
+</g>
+<g >
+<title>matgen (2,574,301 microwatts, 0.03%)</title><rect x="11.7" y="341" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="14.69" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,803,110 microwatts, 0.03%)</title><rect x="12.5" y="357" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.45" y="367.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,186,981 microwatts, 0.01%)</title><rect x="17.8" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.84" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d699ce (1,377,917 microwatts, 0.02%)</title><rect x="989.9" y="309" width="0.2" height="15.0" fill="rgb(205,2,0)" rx="2" ry="2" />
+<text  x="992.88" y="319.5" ></text>
+</g>
+<g >
+<title>0x7a90b56cbede (104,318,129 microwatts, 1.28%)</title><rect x="981.6" y="501" width="15.2" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
+<text  x="984.63" y="511.5" ></text>
+</g>
+<g >
+<title>0x2 (1,186,981 microwatts, 0.01%)</title><rect x="17.8" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.84" y="319.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,419,689 microwatts, 0.02%)</title><rect x="18.2" y="453" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.20" y="463.5" ></text>
+</g>
+<g >
+<title>0x2 (803,765 microwatts, 0.01%)</title><rect x="13.2" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.20" y="191.5" ></text>
+</g>
+<g >
+<title>main (2,401,323 microwatts, 0.03%)</title><rect x="12.9" y="469" width="0.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.86" y="479.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="405" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="16.20" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="373" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.20" y="383.5" ></text>
+</g>
+<g >
+<title>0x2 (1,050,943 microwatts, 0.01%)</title><rect x="14.4" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.45" y="63.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,783,140 microwatts, 0.02%)</title><rect x="14.9" y="197" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.86" y="207.5" ></text>
+</g>
+<g >
+<title>0x2 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="309" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.86" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e16078 (2,049,238 microwatts, 0.03%)</title><rect x="846.5" y="469" width="0.2" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="849.45" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (2,600,954 microwatts, 0.03%)</title><rect x="15.7" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="447.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,286,501 microwatts, 0.03%)</title><rect x="10.6" y="101" width="0.3" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="111.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="149" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.06" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="325" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="21.02" y="335.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="277" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.42" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (10,249,480 microwatts, 0.13%)</title><rect x="10.6" y="373" width="1.5" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e98931 (5,046,242 microwatts, 0.06%)</title><rect x="995.4" y="437" width="0.7" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
+<text  x="998.36" y="447.5" ></text>
+</g>
+<g >
+<title>0x2 (9,131,159 microwatts, 0.11%)</title><rect x="16.1" y="501" width="1.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.05" y="511.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.57" y="143.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (2,439,205 microwatts, 0.03%)</title><rect x="17.4" y="357" width="0.4" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.42" y="367.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,033,972 microwatts, 0.01%)</title><rect x="14.3" y="149" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="17.30" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="133" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="14.69" y="143.5" ></text>
+</g>
+<g >
+<title>0x2 (2,408,273 microwatts, 0.03%)</title><rect x="12.1" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.06" y="383.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,399,302 microwatts, 0.02%)</title><rect x="19.4" y="517" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="22.44" y="527.5" ></text>
+</g>
+<g >
+<title>0xffffffff9200012b (96,112,919 microwatts, 1.18%)</title><rect x="982.2" y="469" width="13.9" height="15.0" fill="rgb(212,36,8)" rx="2" ry="2" />
+<text  x="985.21" y="479.5" ></text>
+</g>
+<g >
+<title>0x2 (15,723,889 microwatts, 0.19%)</title><rect x="10.6" y="437" width="2.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.42" y="143.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,988,759 microwatts, 0.02%)</title><rect x="16.1" y="389" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.05" y="399.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (104,318,129 microwatts, 1.28%)</title><rect x="981.6" y="485" width="15.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="984.63" y="495.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,539,820 microwatts, 0.02%)</title><rect x="11.7" y="149" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="14.69" y="159.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d699ba (1,106,103 microwatts, 0.01%)</title><rect x="989.7" y="309" width="0.2" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
+<text  x="992.72" y="319.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (778,082 microwatts, 0.01%)</title><rect x="16.6" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="19.57" y="175.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,302,687 microwatts, 0.02%)</title><rect x="14.7" y="357" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.67" y="367.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (16,790,714 microwatts, 0.21%)</title><rect x="13.6" y="517" width="2.5" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="16.62" y="527.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,268,033 microwatts, 0.02%)</title><rect x="12.7" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="15.67" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63bea (10,699,996 microwatts, 0.13%)</title><rect x="988.1" y="341" width="1.5" height="15.0" fill="rgb(242,171,41)" rx="2" ry="2" />
+<text  x="991.06" y="351.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (808,984 microwatts, 0.01%)</title><rect x="17.2" y="389" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="20.22" y="399.5" ></text>
+</g>
+<g >
+<title>0x2 (784,356 microwatts, 0.01%)</title><rect x="17.4" y="245" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="20.42" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (12,228,917 microwatts, 0.15%)</title><rect x="13.6" y="437" width="1.8" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.62" y="447.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (784,404 microwatts, 0.01%)</title><rect x="13.0" y="197" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.98" y="207.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (805,281 microwatts, 0.01%)</title><rect x="15.2" y="133" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="18.16" y="143.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (2,887,334 microwatts, 0.04%)</title><rect x="13.6" y="277" width="0.4" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="16.62" y="287.5" ></text>
+</g>
+<g >
+<title>0x2 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="245" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.45" y="255.5" ></text>
+</g>
+<g >
+<title>0x2 (1,044,966 microwatts, 0.01%)</title><rect x="13.8" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.85" y="63.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (10,249,480 microwatts, 0.13%)</title><rect x="10.6" y="357" width="1.5" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.58" y="367.5" ></text>
+</g>
+<g >
+<title>0x2 (1,988,759 microwatts, 0.02%)</title><rect x="16.1" y="373" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.05" y="383.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,889,982 microwatts, 0.02%)</title><rect x="12.9" y="405" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.86" y="415.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="277" width="0.1" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="21.02" y="287.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (2,767,243 microwatts, 0.03%)</title><rect x="983.2" y="357" width="0.4" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="986.24" y="367.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (792,695 microwatts, 0.01%)</title><rect x="14.7" y="325" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="17.67" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5f72c (9,651,847 microwatts, 0.12%)</title><rect x="988.1" y="325" width="1.4" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="991.06" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d5f79c (799,000 microwatts, 0.01%)</title><rect x="989.5" y="325" width="0.1" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
+<text  x="992.49" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e2584f (1,399,692 microwatts, 0.02%)</title><rect x="984.1" y="373" width="0.2" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
+<text  x="987.11" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d63b6c (822,501 microwatts, 0.01%)</title><rect x="984.5" y="357" width="0.1" height="15.0" fill="rgb(233,128,30)" rx="2" ry="2" />
+<text  x="987.46" y="367.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (2,439,205 microwatts, 0.03%)</title><rect x="17.4" y="405" width="0.4" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="20.42" y="415.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d69387 (1,170,610 microwatts, 0.01%)</title><rect x="846.5" y="405" width="0.2" height="15.0" fill="rgb(219,65,15)" rx="2" ry="2" />
+<text  x="849.49" y="415.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (1,616,114 microwatts, 0.02%)</title><rect x="12.9" y="341" width="0.2" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.86" y="351.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,182,652 microwatts, 0.01%)</title><rect x="11.5" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="14.52" y="303.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (7,277,954 microwatts, 0.09%)</title><rect x="13.6" y="357" width="1.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="16.62" y="367.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,076,911 microwatts, 0.01%)</title><rect x="14.0" y="229" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="17.04" y="239.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e141a1 (1,170,610 microwatts, 0.01%)</title><rect x="846.5" y="421" width="0.2" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="849.49" y="431.5" ></text>
+</g>
+<g >
+<title>daxpy_r.part.0.constprop.0 (977,603 microwatts, 0.01%)</title><rect x="12.7" y="213" width="0.1" height="15.0" fill="rgb(205,4,1)" rx="2" ry="2" />
+<text  x="15.67" y="223.5" ></text>
+</g>
+<g >
+<title>0xffffffff91e955f8 (7,358,421 microwatts, 0.09%)</title><rect x="988.1" y="261" width="1.1" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
+<text  x="991.10" y="271.5" ></text>
+</g>
+<g >
+<title>0x2 (1,535,077 microwatts, 0.02%)</title><rect x="12.5" y="309" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.45" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (2,574,301 microwatts, 0.03%)</title><rect x="11.7" y="309" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.69" y="319.5" ></text>
+</g>
+<g >
+<title>0x2 (3,139,508 microwatts, 0.04%)</title><rect x="14.9" y="245" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="17.86" y="255.5" ></text>
+</g>
+<g >
+<title>main (2,671,299 microwatts, 0.03%)</title><rect x="12.1" y="405" width="0.4" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.06" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (1,056,202 microwatts, 0.01%)</title><rect x="12.1" y="181" width="0.1" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="15.06" y="191.5" ></text>
+</g>
+<g >
+<title>0x2 (3,070,625 microwatts, 0.04%)</title><rect x="16.1" y="437" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="19.05" y="447.5" ></text>
+</g>
+<g >
+<title>matgen (2,848,804 microwatts, 0.03%)</title><rect x="13.2" y="469" width="0.4" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="16.20" y="479.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (1,535,547 microwatts, 0.02%)</title><rect x="16.5" y="325" width="0.2" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="19.50" y="335.5" ></text>
+</g>
+<g >
+<title>0xffffffffffffff80 (800,358 microwatts, 0.01%)</title><rect x="985.2" y="341" width="0.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="988.19" y="351.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (1,154,756 microwatts, 0.01%)</title><rect x="16.7" y="213" width="0.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.72" y="223.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (700,914 microwatts, 0.01%)</title><rect x="17.8" y="165" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.84" y="175.5" ></text>
+</g>
+<g >
+<title>main (746,390 microwatts, 0.01%)</title><rect x="12.5" y="149" width="0.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="15.45" y="159.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (785,184 microwatts, 0.01%)</title><rect x="12.1" y="69" width="0.1" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="15.06" y="79.5" ></text>
+</g>
+<g >
+<title>0xffffffff90e1511f (2,110,999 microwatts, 0.03%)</title><rect x="1189.7" y="453" width="0.3" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="1192.69" y="463.5" ></text>
+</g>
+<g >
+<title>daxpy_ur.part.0.constprop.0 (3,437,803 microwatts, 0.04%)</title><rect x="16.5" y="405" width="0.5" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="19.50" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (2,568,704 microwatts, 0.03%)</title><rect x="13.2" y="309" width="0.4" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="16.20" y="319.5" ></text>
+</g>
+<g >
+<title>0xffffffff90cb3126 (2,110,999 microwatts, 0.03%)</title><rect x="1189.7" y="485" width="0.3" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="1192.69" y="495.5" ></text>
+</g>
+<g >
+<title>0x2 (2,328,319 microwatts, 0.03%)</title><rect x="15.7" y="373" width="0.3" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="18.67" y="383.5" ></text>
+</g>
+<g >
+<title>0xffffffff90d69387 (1,231,047 microwatts, 0.02%)</title><rect x="1189.8" y="405" width="0.2" height="15.0" fill="rgb(219,65,15)" rx="2" ry="2" />
+<text  x="1192.78" y="415.5" ></text>
+</g>
+<g >
+<title>0xfffffffffffffe00 (20,974,016 microwatts, 0.26%)</title><rect x="10.6" y="517" width="3.0" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="13.58" y="527.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (693,144 microwatts, 0.01%)</title><rect x="18.0" y="229" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="21.02" y="239.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (1,186,981 microwatts, 0.01%)</title><rect x="17.8" y="293" width="0.2" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="20.84" y="303.5" ></text>
+</g>
+<g >
+<title>matgen (763,041 microwatts, 0.01%)</title><rect x="17.1" y="405" width="0.1" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="20.07" y="415.5" ></text>
+</g>
+<g >
+<title>0x2 (907,548 microwatts, 0.01%)</title><rect x="11.5" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="14.52" y="127.5" ></text>
+</g>
+<g >
+<title>0x20000200000009 (802,987 microwatts, 0.01%)</title><rect x="10.8" y="37" width="0.1" height="15.0" fill="rgb(253,221,53)" rx="2" ry="2" />
+<text  x="13.76" y="47.5" ></text>
+</g>
+<g >
+<title>0x2 (1,392,947 microwatts, 0.02%)</title><rect x="10.9" y="117" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.94" y="127.5" ></text>
+</g>
+<g >
+<title>0x2 (1,236,173 microwatts, 0.02%)</title><rect x="10.6" y="53" width="0.2" height="15.0" fill="rgb(205,1,0)" rx="2" ry="2" />
+<text  x="13.58" y="63.5" ></text>
 </g>
 </g>
 </svg>
