@@ -1,0 +1,54 @@
+00400000-00420000 r--p 00000000 103:05 54791446                          /usr/bin/python3.12
+00420000-00703000 r-xp 00020000 103:05 54791446                          /usr/bin/python3.12
+00703000-00a27000 r--p 00303000 103:05 54791446                          /usr/bin/python3.12
+00a27000-00a28000 r--p 00627000 103:05 54791446                          /usr/bin/python3.12
+00a28000-00ba6000 rw-p 00628000 103:05 54791446                          /usr/bin/python3.12
+00ba6000-00ba9000 rw-p 00000000 00:00 0 
+01123000-0126d000 rw-p 00000000 00:00 0                                  [heap]
+7e986af00000-7e986b200000 rw-p 00000000 00:00 0 
+7e986b200000-7e986b228000 r--p 00000000 103:05 54790660                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7e986b228000-7e986b3b0000 r-xp 00028000 103:05 54790660                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7e986b3b0000-7e986b3ff000 r--p 001b0000 103:05 54790660                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7e986b3ff000-7e986b403000 r--p 001fe000 103:05 54790660                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7e986b403000-7e986b405000 rw-p 00202000 103:05 54790660                  /usr/lib/x86_64-linux-gnu/libc.so.6
+7e986b405000-7e986b412000 rw-p 00000000 00:00 0 
+7e986b423000-7e986b429000 r--p 00000000 103:05 54810846                  /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+7e986b429000-7e986b43b000 r-xp 00006000 103:05 54810846                  /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+7e986b43b000-7e986b441000 r--p 00018000 103:05 54810846                  /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+7e986b441000-7e986b442000 r--p 0001d000 103:05 54810846                  /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+7e986b442000-7e986b446000 rw-p 0001e000 103:05 54810846                  /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+7e986b446000-7e986b4a8000 rw-p 00000000 00:00 0 
+7e986b4a8000-7e986b4fc000 r--p 00000000 07:02 189                        /snap/code/191/usr/lib/locale/aa_DJ.utf8/LC_CTYPE
+7e986b4fc000-7e986b4fe000 rw-p 00000000 00:00 0 
+7e986b4fe000-7e986b502000 r--p 00000000 103:05 54788992                  /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+7e986b502000-7e986b51f000 r-xp 00004000 103:05 54788992                  /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+7e986b51f000-7e986b527000 r--p 00021000 103:05 54788992                  /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+7e986b527000-7e986b529000 r--p 00028000 103:05 54788992                  /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+7e986b529000-7e986b52a000 rw-p 0002a000 103:05 54788992                  /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+7e986b52a000-7e986b52c000 r--p 00000000 103:05 54804229                  /usr/lib/x86_64-linux-gnu/libz.so.1.3
+7e986b52c000-7e986b53e000 r-xp 00002000 103:05 54804229                  /usr/lib/x86_64-linux-gnu/libz.so.1.3
+7e986b53e000-7e986b544000 r--p 00014000 103:05 54804229                  /usr/lib/x86_64-linux-gnu/libz.so.1.3
+7e986b544000-7e986b545000 r--p 0001a000 103:05 54804229                  /usr/lib/x86_64-linux-gnu/libz.so.1.3
+7e986b545000-7e986b546000 rw-p 0001b000 103:05 54804229                  /usr/lib/x86_64-linux-gnu/libz.so.1.3
+7e986b546000-7e986b556000 r--p 00000000 103:05 54790663                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7e986b556000-7e986b5d5000 r-xp 00010000 103:05 54790663                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7e986b5d5000-7e986b62d000 r--p 0008f000 103:05 54790663                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7e986b62d000-7e986b62e000 r--p 000e7000 103:05 54790663                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7e986b62e000-7e986b62f000 rw-p 000e8000 103:05 54790663                  /usr/lib/x86_64-linux-gnu/libm.so.6
+7e986b62f000-7e986b631000 r--p 00000000 103:05 54803618                  /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+7e986b631000-7e986b638000 r-xp 00002000 103:05 54803618                  /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+7e986b638000-7e986b639000 r--p 00009000 103:05 54803618                  /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+7e986b639000-7e986b63a000 r--p 0000a000 103:05 54803618                  /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+7e986b63a000-7e986b63b000 rw-p 0000b000 103:05 54803618                  /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+7e986b63b000-7e986b63f000 rw-p 00000000 00:00 0 
+7e986b63f000-7e986b646000 r--s 00000000 103:05 54790618                  /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7e986b646000-7e986b648000 rw-p 00000000 00:00 0 
+7e986b648000-7e986b64c000 r--p 00000000 00:00 0                          [vvar]
+7e986b64c000-7e986b64e000 r-xp 00000000 00:00 0                          [vdso]
+7e986b64e000-7e986b64f000 r--p 00000000 103:05 54790657                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7e986b64f000-7e986b67a000 r-xp 00001000 103:05 54790657                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7e986b67a000-7e986b684000 r--p 0002c000 103:05 54790657                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7e986b684000-7e986b686000 r--p 00036000 103:05 54790657                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7e986b686000-7e986b688000 rw-p 00038000 103:05 54790657                  /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffda2106000-7ffda2128000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

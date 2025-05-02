@@ -36,10 +36,11 @@ add_pid_to_cgroup() {
 
 # Function to run the executable
 run_executable() {
-    $EXECUTABLE_PATH "$@" &
+    export CUDA_INJECTION64_PATH="/usr/local/cuda/extras/CUPTI/samples/cupti_trace_injection/libcupti_trace_injection.so"
+    $EXECUTABLE_PATH "$@" > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_cupti" 2>&1 &
     PID=$!
     if [ $? -ne 0 ]; then
-        echo "Failed to start the executable"
+        echo "Failed to start the executable" 
         sudo rmdir /sys/fs/cgroup/$CONTROLLER/$CGROUP_NAME
         exit 1
     fi
@@ -52,6 +53,16 @@ start_tracing() {
     # sudo turbostat --Summary --quiet --show Time_Of_Day_Seconds,CorWatt --interval 0.1 > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_RAPL.csv" & TURBOSTAT_PID=$!
 }
 
+# Function to copy the process maps file into the Result directory
+copy_pid_maps() {
+    cp /proc/"$1"/maps "./Result/${CGROUP_NAME}/${CGROUP_NAME}.maps"
+    if [ $? -ne 0 ]; then
+        echo "Failed to copy maps for PID $1"
+    else
+        echo "Copied maps for PID $1 to ./Result/${CGROUP_NAME}/${CGROUP_NAME}.maps"
+    fi
+}
+
 # Function to clean up the cgroup on exit
 cleanup() {
     sudo rmdir /sys/fs/cgroup/$CONTROLLER/$CGROUP_NAME
@@ -61,6 +72,7 @@ cleanup() {
 # Main execution flow
 
 ( cd ./CPU_Trace && make dw-pid )
+( cd /usr/local/cuda/extras/CUPTI/samples/cupti_trace_injection && sudo make)
 
 # Check if sufficient arguments are provided
 if [ $# -lt 1 ]; then
@@ -96,12 +108,16 @@ start_tracing
 
 echo "Executable is running in cgroup $CGROUP_NAME under controller $CONTROLLER with PID $PID"
 
+# Copy /proc/<PID>/maps to the Result directory
+copy_pid_maps "$PID"
+
 # Wait for the executable to finish
 wait $PID
 wait $DW_PID
 # Kill the tracing processes after the executable ends
 # sudo kill $DW_PID
 # sudo kill $TURBOSTAT_PID
+
 
 # Function to process results and generate reports
 process_results() {
