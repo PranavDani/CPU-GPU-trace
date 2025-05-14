@@ -118,19 +118,21 @@ wait $DW_PID
 # sudo kill $DW_PID
 # sudo kill $TURBOSTAT_PID
 
-
 # Function to process results and generate reports
 process_results() {
+
+    cd GPU_trace && ./clean.py "../Result/${CGROUP_NAME}/${CGROUP_NAME}_cupti" && cd ../
+
     # Execute collapse_report.py on the generated csv
-    ./collapse_report.py -e 6 "./Result/${CGROUP_NAME}/${CGROUP_NAME}.csv"
-    
-    # Echo before running flamegraph.pl for energy flame graph
-    echo "Running flamegraph.pl for Energy Flame Graph..."
-    ./flamegraph.pl --title "Energy Flame Graph" --countname "microwatts" "./Result/${CGROUP_NAME}/${CGROUP_NAME}_energy.collapsed" > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_energy.svg"
+    ./collapse_report.py -e 6 "./Result/${CGROUP_NAME}/${CGROUP_NAME}.csv" "./Result/${CGROUP_NAME}/${CGROUP_NAME}_cupti_clean.csv"
     
     # Echo before running flamegraph.pl for CPU flame graph
     echo "Running flamegraph.pl for CPU Flame Graph..."
     ./flamegraph.pl --title "CPU Flame Graph" --countname "samples" "./Result/${CGROUP_NAME}/${CGROUP_NAME}_cpu.collapsed" > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_cpu.svg"
+    
+    # Echo before running flamegraph.pl for energy flame graph
+    echo "Running flamegraph.pl for Energy Flame Graph..."
+    ./flamegraph.pl --title "Energy Flame Graph" --countname "microwatts" "./Result/${CGROUP_NAME}/${CGROUP_NAME}_energy.collapsed" > "./Result/${CGROUP_NAME}/${CGROUP_NAME}_energy.svg"
 }
 
 # Run the function to process results after tracing is complete
