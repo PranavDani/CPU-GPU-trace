@@ -72,7 +72,21 @@ cleanup() {
 # Main execution flow
 
 ( cd ./CPU_Trace && make dw-pid )
-( cd /usr/local/cuda/extras/CUPTI/samples/cupti_trace_injection && sudo make)
+
+# Check if the CUDA toolkit is installed
+(
+    if [ ! -d "/usr/local/cuda" ]; then
+        echo "CUDA toolkit not found. Please install it first."
+        exit 1
+    fi
+
+    if ! cd /usr/local/cuda/extras/CUPTI/samples/cupti_trace_injection; then
+        echo "Failed to change directory to cupti_trace_injection samples."
+        exit 1
+    fi
+
+    sudo make
+)
 
 # Check if sufficient arguments are provided
 if [ $# -lt 1 ]; then
